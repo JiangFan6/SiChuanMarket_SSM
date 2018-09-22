@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.ssm.demo.dao.PersonMapperDao">
+
+    <!--添加一个用户-->
+    <insert id="addAnewPerson" parameterType="Person">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO person(name,password,phone,email,status) VALUES (#{name},#{password},#{phone},#{email},#{status});
+    </insert>
+
+    <!--查询所有用户-->
+    <select id="findAllUsers" resultType="Person">
+        SELECT * FROM person
+    </select>
+
+    <!--修改某个用户-->
+    <update id="updateUser" parameterType="Person">
+        UPDATE person SET name=#{name}, password=#{password}, phone=#{phone}, email=#{email}, status=#{status} WHERE id=#{id}
+    </update>
+
+    <!--删除某个用户-->
+    <delete id="deleteUser" parameterType="Person">
+        DELETE FROM person WHERE id=#{id}
+    </delete>
+
+    <!--用户登录-->
+    <select id="login" resultType="Person">
+        SELECT * FROM person WHERE name=#{name} AND password=#{password}
+    </select>
+
+
+
+</mapper>

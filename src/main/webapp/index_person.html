@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="./static/jquery-3.3.1.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+<!--addAnewPerson-->
+<div class="addAnewPerson">
+
+    姓名：<input name="name" class="name" type="text"/>
+    密码：<input name="password" class="password" type="text"/>
+    电话：<input name="phone" class="phone" type="text"/>
+    邮箱:<input name="email" class="email" type="text"/>
+    状态:<input name="status" class="status" type="text"/>
+
+
+
+    <button id="addPersonBtn" onclick="addAnewPerson()">提交</button>
+</div>
+
+<!--查询所有用户-->
+<button id="findAllUserBtn" onclick="findAllUser()">查询所有</button>
+
+<!--修改某个用户-->
+<button id="updateUserBtn" onclick="updateUser()">修改用户</button>
+
+<!--删除某个用户-->
+<button id="deleteUser" onclick="deleteUser()">删除用户</button>
+
+<!--登录-->
+<button id="userLogin" onclick="login()">登录</button>
+
+
+<script>
+    var allUsers = [];
+
+
+    /*2.0-addAnewPerson*/
+    function addAnewPerson() {
+        var user = {
+            "name": $(".addAnewPerson .name").val(),
+            "password": $(".addAnewPerson .password").val(),
+            "phone": $(".addAnewPerson .phone").val(),
+            "email": $(".addAnewPerson .email").val(),
+            "status": Number($(".addAnewPerson .status").val()),
+        };
+        // var encodedUser = encodeURI(JSON.stringify(user));
+        // console.log(encodedUser);
+
+        $.ajax({
+            url: "person/addAnewPerson",
+            type: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(user),
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (res) {
+                console.log(res.responseText);
+            }
+
+        })
+    }
+
+    /*3.0-查询所有用户*/
+    function findAllUser() {
+
+        $.ajax({
+            url: "person/findAllUsers",
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                allUsers = data.data;
+            },
+            error: function (res) {
+                console.log(res.responseText);
+            }
+
+        })
+    }
+
+    /*4.0-修改某个用户*/
+    function updateUser() {
+        console.log(allUsers);
+        var newUser = {
+            id: allUsers[allUsers.length - 1].id,
+            name: "测试修改",
+            password: "测试修改",
+            phone: "测试修改",
+            email: "modifed@qq.com",
+            status: 6,
+        }
+
+        $.ajax({
+            url: "person/updateUser",
+            type: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(newUser),
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (res) {
+                console.log(res.responseText);
+            }
+
+        })
+    }
+
+    /*5.0-删除某个用户*/
+    function deleteUser() {
+        var deletedId = {
+            id: allUsers[allUsers.length - 1].id
+        };
+
+        $.ajax({
+            url: "person/deleteUser",
+            type: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(deletedId),
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+    }
+
+    /*6.0-登录*/
+    function login() {
+        var loginInfo = {
+            name: "66",
+            password: "66"
+        };
+
+        $.ajax({
+            url: "person/login",
+            type: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(loginInfo),
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+    }
+
+</script>
+</body>
+</html>
