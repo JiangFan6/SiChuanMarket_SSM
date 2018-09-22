@@ -13,8 +13,7 @@ public class Industry {
     private String profit_unit;
     private double employedPopulation;  //从业人数
     private String employedPopulation_unit;
-    private List<Company> topCompanies;  //代表企业
     private String statisticsDate;
-
+    private String topCompanies;  //代表企业
 
 }

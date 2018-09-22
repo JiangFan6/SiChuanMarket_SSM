@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为CityInfoDao接口方法提供sql语句配置 -->
+<mapper namespace="com.ssm.demo.dao.CityInfoMapperDao">
+
+    <!--添加一个城市-->
+    <insert id="addAnewCityInfo" parameterType="CityInfo">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO
+        cityinfo(city_id,city_name,city_areas,city_areas_unit,city_population,
+        city_population_unit,city_gov_address,city_scenic_spots,
+        city_airlines,city_airlines_unit,city_train,city_train_unit,
+        city_cars_counts,city_gdp_total,city_gdp_total_unit,
+        city_gdp_pp,city_gdp_pp_unit)
+        VALUES
+        (#{city_id},#{city_name},#{city_areas},#{city_areas_unit},
+        #{city_population},#{city_population_unit},#{city_gov_address},
+        #{city_scenic_spots},#{city_airlines},#{city_airlines_unit},
+        #{city_train},#{city_train_unit},#{city_cars_counts},
+        #{city_gdp_total},#{city_gdp_total_unit},
+        #{city_gdp_pp},#{city_gdp_pp_unit});
+    </insert>
+
+    <!--查询所有的城市信息-->
+    <select id="findAllCityInfo" resultType="CityInfo">
+        SELECT * FROM cityinfo
+    </select>
+
+
+    <!--修改某个城市信息-->
+    <update id="updateCityInfo" parameterType="CityInfo">
+        UPDATE  cityinfo SET
+        city_name=#{city_name},
+        city_gdp_total=#{city_gdp_total},
+        city_gdp_total_unit=#{city_gdp_total_unit},
+        city_gdp_pp=#{city_gdp_pp},
+        city_gdp_pp_unit=#{city_gdp_pp_unit},
+        city_areas=#{city_areas},
+        city_areas_unit=#{city_areas_unit},
+        city_population=#{city_population},
+        city_population_unit=#{city_population_unit},
+        city_gov_address=#{city_gov_address},
+        city_scenic_spots=#{city_scenic_spots},
+        city_airlines=#{city_airlines},
+        city_airlines_unit=#{city_airlines_unit},
+        city_train=#{city_train},
+        city_train_unit=#{city_train_unit},
+        city_cars_counts=#{city_cars_counts}
+
+        WHERE city_id=#{city_id}
+    </update>
+
+    <!--删除某个城市信息-->
+    <delete id="deleteCityInfo" parameterType="CityInfo">
+        DELETE FROM cityinfo WHERE city_id=#{city_id}
+    </delete>
+
+    <!--各城市GDP总量列表-city_gov_address-->
+    <select id="findTotalGDPList" resultType="CityGDPTotal">
+      SELECT
+      city_id,city_name,city_gdp_total,city_gdp_total_unit,
+      city_gdp_pp,city_gdp_pp_unit,city_population,city_population_unit
+      FROM cityinfo
+    </select>
+
+</mapper>

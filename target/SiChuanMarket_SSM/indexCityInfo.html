@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="./static/jquery-3.3.1.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+<!--addAnewCityInfo-->
+<div class="addAnewCityInfo">
+
+
+    城市名称：<input name="city_name" class="city_name" type="text"/><br/>
+    面积：<input name="city_areas" class="city_areas" type="text"/><br/>
+    面积单位：<input name="city_areas_unit" class="city_areas_unit" type="text"/><br/>
+    人口：<input name="city_population" class="city_population" type="text"/><br/>
+    人口单位：<input name="city_population_unit" class="city_population_unit" type="text"/><br/>
+    政府驻地：<input name="city_gov_address" class="city_gov_address" type="text"/><br/>
+    热门景点数：<input name="city_scenic_spots" class="city_scenic_spots" type="text"/><br/>
+    航班数：<input name="city_airlines" class="city_airlines" type="text"/><br/>
+    航班数单位：<input name="city_airlines_unit" class="city_airlines_unit" type="text"/><br/>
+    火车班次：<input name="city_train" class="city_train" type="text"/><br/>
+    火车班次单位：<input name="city_train_unit" class="city_train_unit" type="text"/><br/>
+    汽车保有量：<input name="city_cars_counts" class="city_cars_counts" type="text"/><br/>
+    地区生产总值：<input name="city_gdp_total" class="city_gdp_total" type="text"/><br/>
+    地区生产总值单位：<input name="city_gdp_total_unit" class="city_gdp_total_unit" type="text"/><br/>
+    人均生产总值：<input name="city_gdp_pp" class="city_gdp_pp" type="text"/><br/>
+    人均生产总值单位：<input name="city_gdp_pp_unit" class="city_gdp_pp_unit" type="text"/><br/>
+
+    <button id="addAnewCityInfoBtn" onclick="addAnewCityInfo()">提交</button>
+</div>
+
+<!--查询所有用户-->
+<button id="findAllCityInfoBtn" onclick="findAllCityInfo()">查询所有</button>
+
+<!--修改某个用户-->
+<button id="updateCityInfoBtn" onclick="updateCityInfo()">修改城市信息</button>
+
+<!--删除某个用户-->
+<button id="deleteUser" onclick="deleteCityInfo()">删除城市信息</button>
+
+<!--登录-->
+<button id="userLogin" onclick="login()">登录</button>
+
+
+<script>
+    var allCityInfo = [];
+
+
+    /*1.0-addAnewCityInfo*/
+    function addAnewCityInfo() {
+        var cityInfo = {
+            "city_name": $(".addAnewCityInfo .city_name").val(),
+            "city_areas": Number($(".addAnewCityInfo .city_areas").val()),
+            "city_areas_unit": $(".addAnewCityInfo .city_areas_unit").val(),
+            "city_population": Number($(".addAnewCityInfo .city_population").val()),
+            "city_population_unit": $(".addAnewCityInfo .city_population_unit").val(),
+            "city_gov_address": $(".addAnewCityInfo .city_gov_address").val(),
+            "city_scenic_spots": Number($(".addAnewCityInfo .city_scenic_spots").val()),
+            "city_airlines": Number($(".addAnewCityInfo .city_airlines").val()),
+            "city_airlines_unit": $(".addAnewCityInfo .city_airlines_unit").val(),
+            "city_train": Number($(".addAnewCityInfo .city_train").val()),
+            "city_train_unit": $(".addAnewCityInfo .city_train_unit").val(),
+            "city_cars_counts": Number($(".addAnewCityInfo .city_cars_counts").val()),
+            "city_gdp_total": Number($(".addAnewCityInfo .city_gdp_total").val()),
+            "city_gdp_total_unit": $(".addAnewCityInfo .city_gdp_total_unit").val(),
+            "city_gdp_pp": Number($(".addAnewCityInfo .city_gdp_pp").val()),
+            "city_gdp_pp_unit": $(".addAnewCityInfo .city_gdp_pp_unit").val(),
+        };
+        // var encodedUser = encodeURI(JSON.stringify(user));
+        console.log(cityInfo);
+
+        $.ajax({
+            url: "cityInfo/addAnewCityInfo",
+            type: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(cityInfo),
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (res) {
+                console.log(res.responseText);
+            }
+
+        })
+    }
+
+    /*2.0-删除某个城市信息*/
+    function deleteCityInfo() {
+        var deletedId = {
+            city_id: "ded0f234-9332-4e15-bce1-19b36442562f"
+        };
+
+        $.ajax({
+            url: "cityInfo/deleteCityInfo",
+            type: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(deletedId),
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+    }
+
+    /*3.0-修改某个城市信息*/
+    function updateCityInfo() {
+        var cityInfo = {
+            "city_name": $(".addAnewCityInfo .city_name").val(),
+            "city_areas": Number($(".addAnewCityInfo .city_areas").val()),
+            "city_areas_unit": $(".addAnewCityInfo .city_areas_unit").val(),
+            "city_population": Number($(".addAnewCityInfo .city_population").val()),
+            "city_population_unit": $(".addAnewCityInfo .city_population_unit").val(),
+            "city_gov_address": $(".addAnewCityInfo .city_gov_address").val(),
+            "city_scenic_spots": Number($(".addAnewCityInfo .city_scenic_spots").val()),
+            "city_airlines": Number($(".addAnewCityInfo .city_airlines").val()),
+            "city_airlines_unit": $(".addAnewCityInfo .city_airlines_unit").val(),
+            "city_train": Number($(".addAnewCityInfo .city_train").val()),
+            "city_train_unit": $(".addAnewCityInfo .city_train_unit").val(),
+            "city_cars_counts": Number($(".addAnewCityInfo .city_cars_counts").val()),
+            "city_gdp_total": Number($(".addAnewCityInfo .city_gdp_total").val()),
+            "city_gdp_total_unit": $(".addAnewCityInfo .city_gdp_total_unit").val(),
+            "city_gdp_pp": Number($(".addAnewCityInfo .city_gdp_pp").val()),
+            "city_gdp_pp_unit": $(".addAnewCityInfo .city_gdp_pp_unit").val(),
+        };
+        // var encodedUser = encodeURI(JSON.stringify(user));
+        console.log(cityInfo);
+        cityInfo.city_id="817872d9-717d-4d1b-8ebd-d7a2abf3750b";
+
+        $.ajax({
+            url: "cityInfo/updateCityInfo",
+            type: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(cityInfo),
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (res) {
+                console.log(res.responseText);
+            }
+
+        })
+    }
+
+    /*4.0-查询所有城市信息*/
+    function findAllCityInfo() {
+
+        $.ajax({
+            url: "cityInfo/findAllCityInfo",
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                allCityInfo = data.data;
+            },
+            error: function (res) {
+                console.log(res.responseText);
+            }
+
+        })
+    }
+
+
+</script>
+</body>
+</html>
