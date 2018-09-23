@@ -3,6 +3,7 @@ package com.ssm.demo.dao;
 
 import com.ssm.demo.entity.CityGDPTotal;
 import com.ssm.demo.entity.CityInfo;
+import com.ssm.demo.entity.CityList;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -19,5 +20,7 @@ public interface CityInfoMapperDao {
     List<CityInfo> findAllCityInfo();
 
     List<CityGDPTotal> findTotalGDPList();
+
+    List<CityList> findCityList();
 
 }

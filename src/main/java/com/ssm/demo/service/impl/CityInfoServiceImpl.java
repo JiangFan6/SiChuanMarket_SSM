@@ -3,6 +3,7 @@ package com.ssm.demo.service.impl;
 import com.ssm.demo.dao.CityInfoMapperDao;
 import com.ssm.demo.entity.CityGDPTotal;
 import com.ssm.demo.entity.CityInfo;
+import com.ssm.demo.entity.CityList;
 import com.ssm.demo.service.CityInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,5 +38,12 @@ public class CityInfoServiceImpl implements CityInfoService {
     @Override
     public List<CityGDPTotal> findTotalGDPList() {
         return cityInfoMapperDao.findTotalGDPList();
+    }
+
+    /*获取城市列表*/
+
+    @Override
+    public List<CityList> findCityList() {
+        return cityInfoMapperDao.findCityList();
     }
 }

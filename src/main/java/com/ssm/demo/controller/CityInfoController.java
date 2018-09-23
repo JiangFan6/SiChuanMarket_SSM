@@ -39,14 +39,14 @@ public class CityInfoController {
     }
 
     /*删除某个城市信息*/
-    @RequestMapping(value = "/deleteCityInfo",method = {RequestMethod.POST})
+    @RequestMapping(value = "/deleteCityInfo", method = {RequestMethod.POST})
     @ResponseBody
-    public Result deleteCityInfo(@RequestBody CityInfo cityInfo) throws Exception{
+    public Result deleteCityInfo(@RequestBody CityInfo cityInfo) throws Exception {
 
-        int service_result =cityInfoService.deleteCityInfo(cityInfo);
-        Result final_result=Result.error(CodeMsg.NOT_FIND_DATA);
-        if(0!=service_result){
-            final_result=Result.success("delete successfully");
+        int service_result = cityInfoService.deleteCityInfo(cityInfo);
+        Result final_result = Result.error(CodeMsg.NOT_FIND_DATA);
+        if (0 != service_result) {
+            final_result = Result.success("delete successfully");
         }
         return final_result;
     }
@@ -68,24 +68,24 @@ public class CityInfoController {
             throw new IllegalArgumentException(
                     "The   scale   must   be   a   positive   integer   or   zero");
         }
-        if(scale == 0){
+        if (scale == 0) {
             return new DecimalFormat("0").format(v);
         }
         String formatStr = "0.";
-        for(int i=0;i<scale;i++){
+        for (int i = 0; i < scale; i++) {
             formatStr = formatStr + "0";
         }
         return new DecimalFormat(formatStr).format(v);
     }
 
     /*查询所有的城市信息*/
-    @RequestMapping(value = "/findAllCityInfo",method = {RequestMethod.GET})
+    @RequestMapping(value = "/findAllCityInfo", method = {RequestMethod.GET})
     @ResponseBody
-    public Result findAllCityInfo( ) throws Exception{
+    public Result findAllCityInfo() throws Exception {
         List<CityInfo> service_result = cityInfoService.findAllCityInfo();
 
         Result final_result = Result.error(CodeMsg.SERVER_EXCEPTION);
-        if (0!=service_result.size() && null!=service_result) {
+        if (0 != service_result.size() && null != service_result) {
             final_result = Result.success(service_result);
         }
         return final_result;
@@ -93,13 +93,13 @@ public class CityInfoController {
 
 
     /*返回城市总GDP列表*/
-    @RequestMapping(value = "/findTotalGDPList",method = {RequestMethod.GET})
+    @RequestMapping(value = "/findTotalGDPList", method = {RequestMethod.GET})
     @ResponseBody
-    public Result findTotalGDPList() throws Exception{
+    public Result findTotalGDPList() throws Exception {
         Result final_result = Result.error(CodeMsg.SERVER_EXCEPTION);
 
         List<CityGDPTotal> service_result = cityInfoService.findTotalGDPList();
-        if (0!=service_result.size() && null!=service_result) {
+        if (0 != service_result.size() && null != service_result) {
             final_result = Result.success(service_result);
         }
 
@@ -112,6 +112,23 @@ public class CityInfoController {
 
 
         return final_result;
+    }
+
+    /*获取城市列表*/
+    @RequestMapping(value = "/findCityList", method = {RequestMethod.GET})
+    @ResponseBody
+    public ResponseData findCityList() throws Exception {
+        ResponseData final_responseData = ResponseData.ok();
+
+        List<CityList> service_result=cityInfoService.findCityList();
+
+        if(0!=service_result.size() && null !=service_result){
+            final_responseData.putDataValue("cityList",service_result);
+        }else{
+            final_responseData=ResponseData.notFound();
+        }
+
+        return final_responseData;
     }
 
 

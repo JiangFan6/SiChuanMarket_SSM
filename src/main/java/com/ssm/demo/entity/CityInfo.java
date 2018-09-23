@@ -4,6 +4,7 @@ public class CityInfo {
 
     private String city_id;
     private String city_name;
+    private String city_code;
     private double city_gdp_total;
     private String city_gdp_total_unit;
     private int city_gdp_pp;
@@ -20,7 +21,6 @@ public class CityInfo {
     private String city_train_unit;
     private int city_cars_counts;
 
-
     public String getCity_id() {
         return city_id;
     }
@@ -35,6 +35,14 @@ public class CityInfo {
 
     public void setCity_name(String city_name) {
         this.city_name = city_name;
+    }
+
+    public String getCity_code() {
+        return city_code;
+    }
+
+    public void setCity_code(String city_code) {
+        this.city_code = city_code;
     }
 
     public double getCity_gdp_total() {
@@ -157,13 +165,13 @@ public class CityInfo {
         this.city_cars_counts = city_cars_counts;
     }
 
-
     public CityInfo() {
     }
 
-    public CityInfo(String city_id, String city_name, double city_gdp_total, String city_gdp_total_unit, int city_gdp_pp, String city_gdp_pp_unit, double city_areas, String city_areas_unit, double city_population, String city_population_unit, String city_gov_address, int city_scenic_spots, int city_airlines, String city_airlines_unit, int city_train, String city_train_unit, int city_cars_counts) {
+    public CityInfo(String city_id, String city_name, String city_code, double city_gdp_total, String city_gdp_total_unit, int city_gdp_pp, String city_gdp_pp_unit, double city_areas, String city_areas_unit, double city_population, String city_population_unit, String city_gov_address, int city_scenic_spots, int city_airlines, String city_airlines_unit, int city_train, String city_train_unit, int city_cars_counts) {
         this.city_id = city_id;
         this.city_name = city_name;
+        this.city_code = city_code;
         this.city_gdp_total = city_gdp_total;
         this.city_gdp_total_unit = city_gdp_total_unit;
         this.city_gdp_pp = city_gdp_pp;
@@ -181,11 +189,13 @@ public class CityInfo {
         this.city_cars_counts = city_cars_counts;
     }
 
+
     @Override
     public String toString() {
         return "CityInfo{" +
                 "city_id='" + city_id + '\'' +
                 ", city_name='" + city_name + '\'' +
+                ", city_code='" + city_code + '\'' +
                 ", city_gdp_total=" + city_gdp_total +
                 ", city_gdp_total_unit='" + city_gdp_total_unit + '\'' +
                 ", city_gdp_pp=" + city_gdp_pp +
