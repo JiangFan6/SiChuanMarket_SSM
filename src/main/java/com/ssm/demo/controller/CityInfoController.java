@@ -118,7 +118,7 @@ public class CityInfoController {
         return final_result;
     }
 
-    /*获取城市列表*/
+    /*获取城市列表-四川省的市级单位*/
     @RequestMapping(value = "/findCityList", method = {RequestMethod.GET})
     @ResponseBody
     public ResponseData findCityList() throws Exception {

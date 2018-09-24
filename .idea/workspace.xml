@@ -7,14 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CityInfoMapperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CityInfoMapperDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CityInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CityInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CodeMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/CityInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/CityInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CityInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CityInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +23,8 @@
       <file leaf-file-name="CityInfoController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="54">
+              <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
               <folding>
                 <element signature="e#786#860#0" />
                 <element signature="method#roundByScale#0;class#CityInfoController#0" />
@@ -227,7 +220,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2179" />
     <option name="y" value="206" />
     <option name="width" value="1385" />
@@ -537,15 +530,15 @@
       <workItem from="1537450415926" duration="2321000" />
       <workItem from="1537591690147" duration="5585000" />
       <workItem from="1537700481958" duration="4318000" />
-      <workItem from="1537755759231" duration="5971000" />
+      <workItem from="1537755759231" duration="6078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115522000" />
+    <option name="totallyTimeSpent" value="115629000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="82" width="1616" height="876" extended-state="7" />
+    <frame x="1912" y="82" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1038,8 +1031,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="54">
+          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
           <folding>
             <element signature="e#786#860#0" />
             <element signature="method#roundByScale#0;class#CityInfoController#0" />
