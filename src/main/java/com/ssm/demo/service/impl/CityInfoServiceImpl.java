@@ -31,13 +31,13 @@ public class CityInfoServiceImpl implements CityInfoService {
     }
 
     @Override
-    public List<CityInfo> findAllCityInfo() {
-        return cityInfoMapperDao.findAllCityInfo();
+    public List<CityInfo> findAllCityInfo(String statistic_date) {
+        return cityInfoMapperDao.findAllCityInfo(statistic_date);
     }
 
     @Override
-    public List<CityGDPTotal> findTotalGDPList() {
-        return cityInfoMapperDao.findTotalGDPList();
+    public List<CityGDPTotal> findTotalGDPList(String statistic_date) {
+        return cityInfoMapperDao.findTotalGDPList(statistic_date);
     }
 
     /*获取城市列表*/

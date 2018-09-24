@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.text.DecimalFormat;
 import java.util.List;
 import java.util.UUID;
@@ -24,14 +25,14 @@ public class CityInfoController {
 
     Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
-    /*添加一个新用户*/
+    /*添加一个城市信息*/
     @RequestMapping(value = "/addAnewCityInfo", method = {RequestMethod.POST})
     @ResponseBody
     public Result addAnewCityInfo(@RequestBody CityInfo cityInfo) throws Exception {
         cityInfo.setCity_id(UUID.randomUUID().toString());
 
         int result = cityInfoService.addAnewCityInfo(cityInfo);
-        Result result1 = Result.error(CodeMsg.SERVER_EXCEPTION);
+        Result result1 = Result.error(CodeMsg.PARAMETER_ERROR);
         if (0 != result) {
             result1 = Result.success("add successfully");
         }
@@ -44,7 +45,7 @@ public class CityInfoController {
     public Result deleteCityInfo(@RequestBody CityInfo cityInfo) throws Exception {
 
         int service_result = cityInfoService.deleteCityInfo(cityInfo);
-        Result final_result = Result.error(CodeMsg.NOT_FIND_DATA);
+        Result final_result = Result.error(CodeMsg.PARAMETER_ERROR);
         if (0 != service_result) {
             final_result = Result.success("delete successfully");
         }
@@ -55,8 +56,9 @@ public class CityInfoController {
     @RequestMapping(value = "/updateCityInfo", method = {RequestMethod.POST})
     @ResponseBody
     public Result updateCityInfo(@RequestBody CityInfo cityInfo) throws Exception {
+
         int service_result = cityInfoService.updateCityInfo(cityInfo);
-        Result final_result = Result.error(CodeMsg.SERVER_EXCEPTION);
+        Result final_result = Result.error(CodeMsg.PARAMETER_ERROR);
         if (0 != service_result) {
             final_result = Result.success("update successfully");
         }
@@ -81,10 +83,12 @@ public class CityInfoController {
     /*查询所有的城市信息*/
     @RequestMapping(value = "/findAllCityInfo", method = {RequestMethod.GET})
     @ResponseBody
-    public Result findAllCityInfo() throws Exception {
-        List<CityInfo> service_result = cityInfoService.findAllCityInfo();
-
-        Result final_result = Result.error(CodeMsg.SERVER_EXCEPTION);
+    public Result findAllCityInfo(HttpServletRequest request) throws Exception {
+        String statistic_date = request.getParameter("statistic_date");
+        List<CityInfo> service_result = cityInfoService.findAllCityInfo(statistic_date);
+        System.out.println(request);
+        System.out.println(statistic_date);
+        Result final_result = Result.error(CodeMsg.NOT_FIND_DATA);
         if (0 != service_result.size() && null != service_result) {
             final_result = Result.success(service_result);
         }
@@ -95,10 +99,10 @@ public class CityInfoController {
     /*返回城市总GDP列表*/
     @RequestMapping(value = "/findTotalGDPList", method = {RequestMethod.GET})
     @ResponseBody
-    public Result findTotalGDPList() throws Exception {
-        Result final_result = Result.error(CodeMsg.SERVER_EXCEPTION);
-
-        List<CityGDPTotal> service_result = cityInfoService.findTotalGDPList();
+    public Result findTotalGDPList(HttpServletRequest request) throws Exception {
+        Result final_result = Result.error(CodeMsg.NOT_FIND_DATA);
+        String statistic_date=request.getParameter("statistic_date");
+        List<CityGDPTotal> service_result = cityInfoService.findTotalGDPList(statistic_date);
         if (0 != service_result.size() && null != service_result) {
             final_result = Result.success(service_result);
         }
@@ -120,12 +124,12 @@ public class CityInfoController {
     public ResponseData findCityList() throws Exception {
         ResponseData final_responseData = ResponseData.ok();
 
-        List<CityList> service_result=cityInfoService.findCityList();
+        List<CityList> service_result = cityInfoService.findCityList();
 
-        if(0!=service_result.size() && null !=service_result){
-            final_responseData.putDataValue("cityList",service_result);
-        }else{
-            final_responseData=ResponseData.notFound();
+        if (0 != service_result.size() && null != service_result) {
+            final_responseData.putDataValue("cityList", service_result);
+        } else {
+            final_responseData = ResponseData.notFound();
         }
 
         return final_responseData;

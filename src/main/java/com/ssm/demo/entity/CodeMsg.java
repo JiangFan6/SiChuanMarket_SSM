@@ -8,7 +8,7 @@ public class CodeMsg {
     public static CodeMsg SUCCESS = new CodeMsg(200,"success");
     public static CodeMsg SERVER_EXCEPTION = new CodeMsg(500100,"服务端异常");
 
-    public static CodeMsg PARAMETER_ISNULL = new CodeMsg(500101,"输入参数为空");
+    public static CodeMsg PARAMETER_ERROR = new CodeMsg(500101,"输入参数异常");
     // 业务异常
     public static CodeMsg USER_NOT_EXSIST = new CodeMsg(500102,"用户不存在");
     public static CodeMsg ONLINE_USER_OVER = new CodeMsg(500103,"在线用户数超出允许登录的最大用户限制。");

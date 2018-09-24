@@ -20,6 +20,7 @@ public class CityInfo {
     private int city_train;
     private String city_train_unit;
     private int city_cars_counts;
+    private String statistic_date;
 
     public String getCity_id() {
         return city_id;
@@ -165,10 +166,18 @@ public class CityInfo {
         this.city_cars_counts = city_cars_counts;
     }
 
+    public String getStatistic_date() {
+        return statistic_date;
+    }
+
+    public void setStatistic_date(String statistic_date) {
+        this.statistic_date = statistic_date;
+    }
+
     public CityInfo() {
     }
 
-    public CityInfo(String city_id, String city_name, String city_code, double city_gdp_total, String city_gdp_total_unit, int city_gdp_pp, String city_gdp_pp_unit, double city_areas, String city_areas_unit, double city_population, String city_population_unit, String city_gov_address, int city_scenic_spots, int city_airlines, String city_airlines_unit, int city_train, String city_train_unit, int city_cars_counts) {
+    public CityInfo(String city_id, String city_name, String city_code, double city_gdp_total, String city_gdp_total_unit, int city_gdp_pp, String city_gdp_pp_unit, double city_areas, String city_areas_unit, double city_population, String city_population_unit, String city_gov_address, int city_scenic_spots, int city_airlines, String city_airlines_unit, int city_train, String city_train_unit, int city_cars_counts, String statistic_date) {
         this.city_id = city_id;
         this.city_name = city_name;
         this.city_code = city_code;
@@ -187,6 +196,7 @@ public class CityInfo {
         this.city_train = city_train;
         this.city_train_unit = city_train_unit;
         this.city_cars_counts = city_cars_counts;
+        this.statistic_date = statistic_date;
     }
 
 
@@ -211,6 +221,7 @@ public class CityInfo {
                 ", city_train=" + city_train +
                 ", city_train_unit='" + city_train_unit + '\'' +
                 ", city_cars_counts=" + city_cars_counts +
+                ", statistic_date='" + statistic_date + '\'' +
                 '}';
     }
 }

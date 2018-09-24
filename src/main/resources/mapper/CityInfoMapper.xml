@@ -10,23 +10,23 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         INSERT INTO
-        cityinfo(city_id,city_name,city_areas,city_areas_unit,city_population,
+        cityinfo(city_id,city_name,city_code,city_areas,city_areas_unit,city_population,
         city_population_unit,city_gov_address,city_scenic_spots,
         city_airlines,city_airlines_unit,city_train,city_train_unit,
         city_cars_counts,city_gdp_total,city_gdp_total_unit,
-        city_gdp_pp,city_gdp_pp_unit)
+        city_gdp_pp,city_gdp_pp_unit,statistic_date)
         VALUES
-        (#{city_id},#{city_name},#{city_areas},#{city_areas_unit},
+        (#{city_id},#{city_name},#{city_code},#{city_areas},#{city_areas_unit},
         #{city_population},#{city_population_unit},#{city_gov_address},
         #{city_scenic_spots},#{city_airlines},#{city_airlines_unit},
         #{city_train},#{city_train_unit},#{city_cars_counts},
         #{city_gdp_total},#{city_gdp_total_unit},
-        #{city_gdp_pp},#{city_gdp_pp_unit});
+        #{city_gdp_pp},#{city_gdp_pp_unit},#{statistic_date});
     </insert>
 
     <!--查询所有的城市信息-->
-    <select id="findAllCityInfo" resultType="CityInfo">
-        SELECT * FROM cityinfo
+    <select id="findAllCityInfo" resultType="CityInfo" parameterType="String">
+        SELECT * FROM cityinfo WHERE statistic_date=#{statistic_date}
     </select>
 
 
@@ -48,7 +48,8 @@
         city_airlines_unit=#{city_airlines_unit},
         city_train=#{city_train},
         city_train_unit=#{city_train_unit},
-        city_cars_counts=#{city_cars_counts}
+        city_cars_counts=#{city_cars_counts},
+        statistic_date=#{statistic_date}
 
         WHERE city_id=#{city_id}
     </update>
@@ -59,11 +60,12 @@
     </delete>
 
     <!--各城市GDP总量列表-city_gov_address-->
-    <select id="findTotalGDPList" resultType="CityGDPTotal">
+    <select id="findTotalGDPList" resultType="CityGDPTotal" parameterType="String">
       SELECT
       city_id,city_name,city_gdp_total,city_gdp_total_unit,
       city_gdp_pp,city_gdp_pp_unit,city_population,city_population_unit
       FROM cityinfo
+      WHERE statistic_date=#{statistic_date}
     </select>
 
     <!--获取城市列表-->

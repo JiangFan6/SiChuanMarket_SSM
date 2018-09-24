@@ -14,9 +14,9 @@ public interface CityInfoService {
 
     int updateCityInfo(CityInfo cityInfo);
 
-    List<CityInfo> findAllCityInfo();
+    List<CityInfo> findAllCityInfo(String statistic_date);
 
-    List<CityGDPTotal> findTotalGDPList();
+    List<CityGDPTotal> findTotalGDPList(String statistic_date);
 
     List<CityList> findCityList();
 
