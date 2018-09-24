@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为CityInfoDao接口方法提供sql语句配置 -->
+<mapper namespace="com.ssm.demo.dao.IndustryInfoMapperDao">
+
+    <!--添加一个城市-->
+    <insert id="addAindustryInfo" parameterType="IndustryInfo">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO
+        industry_info(industryId,industryName,totalOutPut,totalOutPut_unit,productionCosts,productionCosts_unit
+        ,industryProfit,profit_unit,employedPopulation,employedPopulation_unit,statisticDate
+        ,topCompanies)
+        VALUES
+        (#{industryId},#{industryName},#{totalOutPut},#{totalOutPut_unit},#{productionCosts},#{productionCosts_unit}
+        ,#{industryProfit},#{profit_unit},#{employedPopulation},#{employedPopulation_unit},#{statisticDate}
+        ,#{topCompanies});
+    </insert>
+
+
+
+
+
+
+</mapper>
