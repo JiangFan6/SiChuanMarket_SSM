@@ -3,7 +3,7 @@ package com.ssm.demo.entity;
 import java.util.List;
 
 public class Industry {
-    private long id;
+    private String industryId;
     private String name;
     private double totalOutPut;  //总产值
     private String totalOutPut_unit;
@@ -13,7 +13,10 @@ public class Industry {
     private String profit_unit;
     private double employedPopulation;  //从业人数
     private String employedPopulation_unit;
-    private String statisticsDate;
+    private String statisticDate;
     private String topCompanies;  //代表企业
+
+
+
 
 }

@@ -10,7 +10,7 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         INSERT INTO
-        cityinfo(city_id,city_name,city_code,city_areas,city_areas_unit,city_population,
+        city_info(city_id,city_name,city_code,city_areas,city_areas_unit,city_population,
         city_population_unit,city_gov_address,city_scenic_spots,
         city_airlines,city_airlines_unit,city_train,city_train_unit,
         city_cars_counts,city_gdp_total,city_gdp_total_unit,
@@ -26,13 +26,13 @@
 
     <!--查询所有的城市信息-->
     <select id="findAllCityInfo" resultType="CityInfo" parameterType="String">
-        SELECT * FROM cityinfo WHERE statistic_date=#{statistic_date}
+        SELECT * FROM city_info WHERE statistic_date=#{statistic_date}
     </select>
 
 
     <!--修改某个城市信息-->
     <update id="updateCityInfo" parameterType="CityInfo">
-        UPDATE  cityinfo SET
+        UPDATE  city_info SET
         city_name=#{city_name},
         city_gdp_total=#{city_gdp_total},
         city_gdp_total_unit=#{city_gdp_total_unit},
@@ -56,7 +56,7 @@
 
     <!--删除某个城市信息-->
     <delete id="deleteCityInfo" parameterType="CityInfo">
-        DELETE FROM cityinfo WHERE city_id=#{city_id}
+        DELETE FROM city_info WHERE city_id=#{city_id}
     </delete>
 
     <!--各城市GDP总量列表-city_gov_address-->
@@ -64,7 +64,7 @@
       SELECT
       city_id,city_name,city_gdp_total,city_gdp_total_unit,
       city_gdp_pp,city_gdp_pp_unit,city_population,city_population_unit
-      FROM cityinfo
+      FROM city_info
       WHERE statistic_date=#{statistic_date}
     </select>
 
@@ -72,7 +72,7 @@
     <select id="findCityList" resultType="CityList">
         SELECT
         city_name,city_code
-        FROM citylist
+        FROM city_list
     </select>
 
 
