@@ -4,24 +4,50 @@
 <!-- 设置为CityInfoDao接口方法提供sql语句配置 -->
 <mapper namespace="com.ssm.demo.dao.IndustryInfoMapperDao">
 
-    <!--添加一个城市-->
+    <!--添加一条行业信息-->
     <insert id="addAindustryInfo" parameterType="IndustryInfo">
         <selectKey resultType="int" order="AFTER" keyProperty="id">
             SELECT LAST_INSERT_ID()
         </selectKey>
         INSERT INTO
-        industry_info(industryId,industryName,totalOutPut,totalOutPut_unit,productionCosts,productionCosts_unit
+        industry_info(industryId,industryCode,industryName,totalOutPut,totalOutPut_unit,productionCosts,productionCosts_unit
         ,industryProfit,profit_unit,employedPopulation,employedPopulation_unit,statisticDate
         ,topCompanies)
         VALUES
-        (#{industryId},#{industryName},#{totalOutPut},#{totalOutPut_unit},#{productionCosts},#{productionCosts_unit}
+        (#{industryId},#{industryCode},#{industryName},#{totalOutPut},#{totalOutPut_unit},#{productionCosts},#{productionCosts_unit}
         ,#{industryProfit},#{profit_unit},#{employedPopulation},#{employedPopulation_unit},#{statisticDate}
         ,#{topCompanies});
     </insert>
 
+    <!--删除一条行业信息-->
 
+    <delete id="deleteAindustryInfo" parameterType="String">
+        DELETE FROM industry_info WHERE industryId=#{industryId}
+    </delete>
 
+    <!--修改一条行业信息-->
+    <update id="updateAindustryInfo" parameterType="IndustryInfo">
+        UPDATE industry_info SET
+        industryCode=#{industryCode},
+        industryName=#{industryName},
+        totalOutPut=#{totalOutPut},
+        totalOutPut_unit=#{totalOutPut_unit},
+        productionCosts=#{productionCosts},
+        productionCosts_unit=#{productionCosts_unit},
+        industryProfit=#{industryProfit},
+        profit_unit=#{profit_unit},
+        employedPopulation=#{employedPopulation},
+        employedPopulation_unit=#{employedPopulation_unit},
+        statisticDate=#{statisticDate},
+        topCompanies=#{topCompanies}
+        WHERE   industryId=  #{industryId}
 
+    </update>
+
+    <!--查询某个行业数据-->
+    <select id="findIndustryInfoByCode" parameterType="IndustryInfo" resultType="IndustryInfo">
+        SELECT * FROM industry_info WHERE industryCode=#{industryCode} AND statisticDate=#{statisticDate}
+    </select>
 
 
 </mapper>

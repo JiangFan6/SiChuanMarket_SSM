@@ -4,6 +4,7 @@ import java.util.List;
 
 public class IndustryInfo {
     private String industryId;
+    private String industryCode;
     private String industryName;
     private double totalOutPut;  //总产值
     private String totalOutPut_unit;
@@ -22,6 +23,14 @@ public class IndustryInfo {
 
     public void setIndustryId(String industryId) {
         this.industryId = industryId;
+    }
+
+    public String getIndustryCode() {
+        return industryCode;
+    }
+
+    public void setIndustryCode(String industryCode) {
+        this.industryCode = industryCode;
     }
 
     public String getIndustryName() {
@@ -115,8 +124,9 @@ public class IndustryInfo {
     public IndustryInfo() {
     }
 
-    public IndustryInfo(String industryId, String industryName, double totalOutPut, String totalOutPut_unit, double productionCosts, String productionCosts_unit, double industryProfit, String profit_unit, double employedPopulation, String employedPopulation_unit, String statisticDate, String topCompanies) {
+    public IndustryInfo(String industryId, String industryCode, String industryName, double totalOutPut, String totalOutPut_unit, double productionCosts, String productionCosts_unit, double industryProfit, String profit_unit, double employedPopulation, String employedPopulation_unit, String statisticDate, String topCompanies) {
         this.industryId = industryId;
+        this.industryCode = industryCode;
         this.industryName = industryName;
         this.totalOutPut = totalOutPut;
         this.totalOutPut_unit = totalOutPut_unit;
@@ -134,6 +144,7 @@ public class IndustryInfo {
     public String toString() {
         return "IndustryInfo{" +
                 "industryId='" + industryId + '\'' +
+                ", industryCode='" + industryCode + '\'' +
                 ", industryName='" + industryName + '\'' +
                 ", totalOutPut=" + totalOutPut +
                 ", totalOutPut_unit='" + totalOutPut_unit + '\'' +

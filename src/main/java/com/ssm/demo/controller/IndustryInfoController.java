@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+import java.util.UUID;
+
 @Controller
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("/industryInfo")
@@ -24,11 +28,12 @@ public class IndustryInfoController {
     @ResponseBody
     public ResponseData addAindustryInfo(@RequestBody IndustryInfo industryInfo) throws Exception {
         System.out.println(industryInfo);
-        ResponseData responseData01 = ResponseData.ok();
+        industryInfo.setIndustryId(UUID.randomUUID().toString());
+        ResponseData res = ResponseData.ok();
 
         int service_res = industryInfoService.addAindustryInfo(industryInfo);
         if (0 == service_res) {
-            responseData01 = ResponseData.serverInternalError();
+            res = ResponseData.serverInternalError();
         }
 
         logger.trace("trace level");
@@ -37,7 +42,51 @@ public class IndustryInfoController {
         logger.error("error level");
         logger.fatal("fatal level");
 
-        return responseData01;
+        return res;
+    }
+
+    /*刪除一个行业信息*/
+    @RequestMapping(value = "/deleteAindustryInfo", method = {RequestMethod.GET})
+    @ResponseBody
+    public ResponseData deleteAindustryInfo(HttpServletRequest request) throws Exception {
+        String industryId = request.getParameter("industryId");
+        System.out.println(industryId);
+        ResponseData res = ResponseData.ok();
+
+        int service_res = industryInfoService.deleteAindustryInfo(industryId);
+        System.out.println(service_res);
+        if (0 == service_res) {
+            res = ResponseData.serverInternalError();
+        }
+        return res;
+    }
+
+    /*修改一条行业信息*/
+    @RequestMapping(value = "/updateAindustryInfo", method = {RequestMethod.POST})
+    @ResponseBody
+    public ResponseData updateAindustryInfo(@RequestBody IndustryInfo industryInfo) throws Exception {
+        ResponseData res = ResponseData.ok();
+
+        int service_res = industryInfoService.updateAindustryInfo(industryInfo);
+        System.out.println(service_res);
+        if (0 == service_res) {
+            res = ResponseData.serverInternalError();
+        }
+        return res;
+    }
+
+    /*查询某个行业信息*/
+    @RequestMapping(value = "/findIndustryInfoByCode", method = {RequestMethod.POST})
+    @ResponseBody
+    public ResponseData findIndustryInfoByCode(@RequestBody IndustryInfo industryInfo) throws Exception {
+        ResponseData res = ResponseData.ok();
+
+        List<IndustryInfo> service_res = industryInfoService.findIndustryInfoByCode(industryInfo);
+        System.out.println(service_res);
+        if (null != service_res) {
+            res.putDataValue("industryInfo", service_res);
+        }
+        return res;
     }
 
 
