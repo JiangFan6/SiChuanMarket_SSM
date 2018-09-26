@@ -3,6 +3,7 @@ package com.ssm.demo.controller;
 
 import com.ssm.demo.entity.*;
 import com.ssm.demo.service.CityInfoService;
+import com.ssm.demo.service.FileUploadService;
 import com.ssm.demo.service.PersonService;
 import javafx.scene.shape.VLineTo;
 import org.apache.logging.log4j.LogManager;
@@ -16,6 +17,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -23,11 +25,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
 
+import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
+
 @Controller
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("/files")
 
 public class FileUploadController {
+
+    @Autowired
+    private FileUploadService fileUploadService;
 
 
     /*接收来自前端的文件*/
@@ -68,4 +75,25 @@ public class FileUploadController {
     }
 
 
+    /*批量导入数据-excel*/
+    @RequestMapping(value = "/batchImport", method = {RequestMethod.POST})
+    public String batchImport(@RequestParam(value = "filename") MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        log.println("batchImport start!");
+        //判断文件是否为空
+        if (null == file) return null;
+
+        //获取文件名
+        String name = file.getOriginalFilename();
+
+        //再次判断文件大小是否为0，名称是否为Null
+        long size = file.getSize();
+        if (null == name || ("").equals(name) && 0 == size) return null;
+
+        //批量导入，参数：文件名，文件
+        boolean b=fileUploadService.batchImport(name,file);
+
+
+        return "Customer/addCustomer3";
+    }
 }
