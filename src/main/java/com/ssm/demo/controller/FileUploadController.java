@@ -77,9 +77,10 @@ public class FileUploadController {
 
     /*批量导入数据-excel*/
     @RequestMapping(value = "/batchImport", method = {RequestMethod.POST})
-    public String batchImport(@RequestParam(value = "filename") MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public ResponseData batchImport(@RequestParam(value = "filename") MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         log.println("batchImport start!");
+        ResponseData responseData=ResponseData.ok();
         //判断文件是否为空
         if (null == file) return null;
 
@@ -92,8 +93,9 @@ public class FileUploadController {
 
         //批量导入，参数：文件名，文件
         boolean b=fileUploadService.batchImport(name,file);
+        System.out.println(b);
 
 
-        return "Customer/addCustomer3";
+        return responseData;
     }
 }
