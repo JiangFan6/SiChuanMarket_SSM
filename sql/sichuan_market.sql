@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-02 22:24:03
+Date: 2018-10-02 23:21:40
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -127,7 +127,7 @@ CREATE TABLE `industry_info` (
   `statisticDate` varchar(255) DEFAULT NULL,
   `topCompanies` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=136 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of industry_info
@@ -169,6 +169,43 @@ INSERT INTO `industry_info` VALUES ('91', 'f407dd9d-7346-4414-862e-59f751f836c8'
 INSERT INTO `industry_info` VALUES ('92', 'dca8591a-5ed0-496f-96e1-3c09e00e2959', '201', '农业', '3710.97', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2016年', null);
 INSERT INTO `industry_info` VALUES ('96', '4b3d34c0-857a-4fc8-ad40-3edf59a8185f', '201', '农业', '105.41', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1981年', null);
 INSERT INTO `industry_info` VALUES ('98', '7114d4e1-091e-4e8b-bae7-5417171e564c', '201', '农业', '98.07', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1980年', null);
+INSERT INTO `industry_info` VALUES ('99', '5e4c29ea-9007-4c38-9ac6-68793632d834', '202', '林业', '4.21', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1980年', null);
+INSERT INTO `industry_info` VALUES ('100', '5b997f16-b2b9-418b-8d09-7f5e80765a4e', '202', '林业', '5.34', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1981年', null);
+INSERT INTO `industry_info` VALUES ('101', '2d186158-d68d-45e7-83f0-682cad1e02a4', '202', '林业', '5.81', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1982年', null);
+INSERT INTO `industry_info` VALUES ('102', 'f389cee3-574f-4a65-9341-4419cad191da', '202', '林业', '7.02', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1983年', null);
+INSERT INTO `industry_info` VALUES ('103', '8ccb087d-2db8-4ec5-9e71-134a3f93c17e', '202', '林业', '12.21', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1984年', null);
+INSERT INTO `industry_info` VALUES ('104', 'e9643271-f757-417c-9639-b19cceee04b8', '202', '林业', '13.09', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1985年', null);
+INSERT INTO `industry_info` VALUES ('105', '462725a9-a134-4fc1-ba2f-cae81522ea82', '202', '林业', '13.18', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1986年', null);
+INSERT INTO `industry_info` VALUES ('106', '80b42d59-e63e-47f7-9622-08c39afff6e5', '202', '林业', '13.66', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1987年', null);
+INSERT INTO `industry_info` VALUES ('107', '06073b36-aec9-4959-ae93-f55f8c4db2f4', '202', '林业', '15.99', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1988年', null);
+INSERT INTO `industry_info` VALUES ('108', 'befa6288-ee75-4b73-9329-d0c185a579bb', '202', '林业', '16.75', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1989年', null);
+INSERT INTO `industry_info` VALUES ('109', 'db28f358-e95d-4ecc-bee8-7cb5e0292e7b', '202', '林业', '18.51', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1990年', null);
+INSERT INTO `industry_info` VALUES ('110', '936d521e-005a-486f-9c5f-0aff2301b698', '202', '林业', '19.43', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1991年', null);
+INSERT INTO `industry_info` VALUES ('111', '8aa91ad8-cb51-4f63-9d47-4fcdb497a171', '202', '林业', '22.23', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1992年', null);
+INSERT INTO `industry_info` VALUES ('112', 'c4b087e0-04d0-4d76-a2a2-6c61fa79de55', '202', '林业', '24.90', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1993年', null);
+INSERT INTO `industry_info` VALUES ('113', '5bde8996-dd64-4457-b57c-1ddcd291d692', '202', '林业', '28.48', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1994年', null);
+INSERT INTO `industry_info` VALUES ('114', '919681d2-6180-4a69-965b-8f8e9a239b9e', '202', '林业', '34.32', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1995年', null);
+INSERT INTO `industry_info` VALUES ('115', '0ae21470-6cc5-4cb4-9f3b-5912158ead32', '202', '林业', '38.58', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1996年', null);
+INSERT INTO `industry_info` VALUES ('116', '6be209a2-bffe-4a2b-bcb7-307ccd24d4cc', '202', '林业', '41.31', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1997年', null);
+INSERT INTO `industry_info` VALUES ('117', '7c22f904-c4cc-4143-a035-303852d73657', '202', '林业', '45.87', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1998年', null);
+INSERT INTO `industry_info` VALUES ('118', '964ecf72-8491-4987-a940-b9177b4a4590', '202', '林业', '45.34', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1999年', null);
+INSERT INTO `industry_info` VALUES ('119', '288669b8-1e74-437d-91e0-6007db155940', '202', '林业', '49.13', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2000年', null);
+INSERT INTO `industry_info` VALUES ('120', '49687658-dda0-45a9-8f89-d02f53897515', '202', '林业', '50.85', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2001年', null);
+INSERT INTO `industry_info` VALUES ('121', 'd69833d1-c3d5-4fbb-b1fc-a26221dc27de', '202', '林业', '54.60', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2002年', null);
+INSERT INTO `industry_info` VALUES ('122', 'b5cc64e4-20b9-4c58-b8b6-cc5b1675c9d5', '202', '林业', '59.26', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2003年', null);
+INSERT INTO `industry_info` VALUES ('123', '6a97393c-4dbd-486c-a9ed-ade69099fdc4', '202', '林业', '62.65', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2004年', null);
+INSERT INTO `industry_info` VALUES ('124', 'd8127436-f5e2-4c2d-9bd1-213c734c43ac', '202', '林业', '69.94', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2005年', null);
+INSERT INTO `industry_info` VALUES ('125', 'dce2bf88-2268-4f71-ad1b-5ee11d58e329', '202', '林业', '76.75', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2006年', null);
+INSERT INTO `industry_info` VALUES ('126', '9b705015-8563-4d1e-8503-3a1a02bb0917', '202', '林业', '87.20', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2007年', null);
+INSERT INTO `industry_info` VALUES ('127', '01067806-113f-42f6-8a2e-ed79b5584417', '202', '林业', '105.32', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2008年', null);
+INSERT INTO `industry_info` VALUES ('128', '1b61fc14-9d31-4eb9-b799-a434a446e9cf', '202', '林业', '112.52', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2009年', null);
+INSERT INTO `industry_info` VALUES ('129', '86f1a2f9-cde8-4737-8ce9-9b70588b3f48', '202', '林业', '112.90', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2010年', null);
+INSERT INTO `industry_info` VALUES ('130', '124e9ac6-b8fa-4839-8755-9d08a3c06ef5', '202', '林业', '130.10', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2011年', null);
+INSERT INTO `industry_info` VALUES ('131', '6731b460-3140-4bc9-b6e7-ce4e2281d9b7', '202', '林业', '151.50', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2012年', null);
+INSERT INTO `industry_info` VALUES ('132', 'cd753665-cf39-40a4-b2ba-3542941ea667', '202', '林业', '179.43', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2013年', null);
+INSERT INTO `industry_info` VALUES ('133', 'bfda9412-573b-4f3e-8773-1a3c4053e0bc', '202', '林业', '196.00', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2014年', null);
+INSERT INTO `industry_info` VALUES ('134', 'f74417ca-9efa-4714-b920-42b72ebe6cc7', '202', '林业', '205.82', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2015年', null);
+INSERT INTO `industry_info` VALUES ('135', 'f8f88673-8605-4a14-b250-79bf24ca20f5', '202', '林业', '219.09', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2016年', null);
 
 -- ----------------------------
 -- Table structure for industry_list
