@@ -5,6 +5,7 @@ import com.ssm.demo.entity.*;
 import com.ssm.demo.service.CityInfoService;
 import com.ssm.demo.service.FileUploadService;
 import com.ssm.demo.service.PersonService;
+import com.ssm.demo.util.ReadExcel;
 import javafx.scene.shape.VLineTo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -77,10 +78,11 @@ public class FileUploadController {
 
     /*批量导入数据-excel*/
     @RequestMapping(value = "/batchImport", method = {RequestMethod.POST})
-    public ResponseData batchImport(@RequestParam(value = "filename") MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IOException {
+    @ResponseBody
+    public ResponseData batchImport(@RequestParam(value = "filename") MultipartFile file) throws IOException {
 
         log.println("batchImport start!");
-        ResponseData responseData=ResponseData.ok();
+        ResponseData responseData = ResponseData.customerError();
         //判断文件是否为空
         if (null == file) return null;
 
@@ -92,8 +94,26 @@ public class FileUploadController {
         if (null == name || ("").equals(name) && 0 == size) return null;
 
         //批量导入，参数：文件名，文件
-        boolean b=fileUploadService.batchImport(name,file);
-        System.out.println(b);
+        //创建处理excel
+        ReadExcel readExcel = new ReadExcel();
+
+        //解析excel,获取客户信息集合
+        List<IndustryInfo> industryInfoList = readExcel.getExcelInfo(name, file);
+
+        //迭代添加信息
+        int count_a = 0;
+        for (IndustryInfo industryInfo : industryInfoList) {
+
+            int b = fileUploadService.batchImport(industryInfo);
+            count_a += b;
+            System.out.println(b);
+        }
+        System.out.println(industryInfoList.size());
+        System.out.println(count_a);
+        if (industryInfoList.size() == count_a) {
+            System.out.println("全部OK");
+            responseData = ResponseData.ok();
+        }
 
 
         return responseData;

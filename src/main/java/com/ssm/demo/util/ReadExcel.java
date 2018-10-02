@@ -11,10 +11,7 @@ import java.util.UUID;
 
 import com.ssm.demo.entity.IndustryInfo;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -179,30 +176,38 @@ public class ReadExcel {
                 Cell cell = row.getCell(c);
                 if (null != cell) {
                     industryInfo.setIndustryId(UUID.randomUUID().toString());  //随机生成不重复的行业ID;
-                    if (c == 0) {//第一列不读
-                    } else if (c == 1) {
+                    if (c == 0) {
+                        //设置单元格类型
+                        cell.setCellType(CellType.STRING);
                         industryInfo.setIndustryCode(cell.getStringCellValue());//行业代码
-                    } else if (c == 2) {
+                    } else if (c == 1) {
+                        cell.setCellType(CellType.STRING);
                         industryInfo.setIndustryName(cell.getStringCellValue());//行业名称
-                    } else if (c == 3) {
+                    } else if (c == 2) {
                         industryInfo.setTotalOutPut(cell.getNumericCellValue());//行业总产值
-                    } else if (c == 4) {
+                    } else if (c == 3) {
+                        cell.setCellType(CellType.STRING);
                         industryInfo.setTotalOutPut_unit(cell.getStringCellValue());//行业总产值-单位
-                    } else if (c == 5) {
+                    } else if (c == 4) {
                         industryInfo.setProductionCosts(cell.getNumericCellValue());//生产成本
-                    } else if (c == 6) {
+                    } else if (c == 5) {
+                        cell.setCellType(CellType.STRING);
                         industryInfo.setProductionCosts_unit(cell.getStringCellValue());//生产成本-单位
-                    } else if (c == 7) {
+                    } else if (c == 6) {
                         industryInfo.setIndustryProfit(cell.getNumericCellValue());//行业利润
-                    } else if (c == 8) {
+                    } else if (c == 7) {
+                        cell.setCellType(CellType.STRING);
                         industryInfo.setProfit_unit(cell.getStringCellValue());//行业利润-单位
-                    } else if (c == 9) {
+                    } else if (c == 8) {
                         industryInfo.setEmployedPopulation(cell.getNumericCellValue());//从业人数
-                    } else if (c == 10) {
+                    } else if (c == 9) {
+                        cell.setCellType(CellType.STRING);
                         industryInfo.setEmployedPopulation_unit(cell.getStringCellValue());//从业人数-单位
-                    } else if (c == 11) {
+                    } else if (c == 10) {
+                        cell.setCellType(CellType.STRING);
                         industryInfo.setStatisticDate(cell.getStringCellValue());//统计时间
-                    } else if (c == 12) {
+                    } else if (c == 11) {
+                        cell.setCellType(CellType.STRING);
                         industryInfo.setTopCompanies(cell.getStringCellValue());//龙头企业
                     }
                 }
