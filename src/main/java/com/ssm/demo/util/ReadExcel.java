@@ -72,7 +72,7 @@ public class ReadExcel {
      * @return
      */
     public List<IndustryInfo> getExcelInfo(String fileName, MultipartFile Mfile) {
-
+        System.out.println(fileName);
         //把spring文件上传的MultipartFile转换成CommonsMultipartFile类型
         CommonsMultipartFile cf = (CommonsMultipartFile) Mfile; //获取本地存储路径
         File file = new File("D:\\fileupload");
