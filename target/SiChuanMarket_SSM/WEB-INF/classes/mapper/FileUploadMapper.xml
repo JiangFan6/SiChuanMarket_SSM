@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为CityInfoDao接口方法提供sql语句配置 -->
+<mapper namespace="com.ssm.demo.dao.FileUploadMapperDao">
+
+   <!-- /*批量导入前-检查是否有这个数据*/-->
+
+    <select id="checkRepeatIndustryInfo" parameterType="IndustryInfo" resultType="IndustryInfo">
+        SELECT * FROM industry_info WHERE industryCode=#{industryCode} AND statisticDate=#{statisticDate}
+    </select>
+
+
+</mapper>

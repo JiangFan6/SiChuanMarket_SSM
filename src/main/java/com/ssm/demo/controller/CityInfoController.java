@@ -86,8 +86,6 @@ public class CityInfoController {
     public Result findAllCityInfo(HttpServletRequest request) throws Exception {
         String statistic_date = request.getParameter("statistic_date");
         List<CityInfo> service_result = cityInfoService.findAllCityInfo(statistic_date);
-        System.out.println(request);
-        System.out.println(statistic_date);
         Result final_result = Result.error(CodeMsg.NOT_FIND_DATA);
         if (0 != service_result.size() && null != service_result) {
             final_result = Result.success(service_result);

@@ -4,6 +4,7 @@ package com.ssm.demo.controller;
 import com.ssm.demo.entity.*;
 import com.ssm.demo.service.CityInfoService;
 import com.ssm.demo.service.FileUploadService;
+import com.ssm.demo.service.IndustryInfoService;
 import com.ssm.demo.service.PersonService;
 import com.ssm.demo.util.ReadExcel;
 import javafx.scene.shape.VLineTo;
@@ -44,7 +45,6 @@ public class FileUploadController {
     public String fileUpload(HttpServletRequest request) throws IllegalStateException, IOException {
 
         long startTime = System.currentTimeMillis();
-        System.out.println(startTime);
 
         //将当前上下文初始化给  CommonsMutipartResolver （多部分解析器）
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(
@@ -56,21 +56,18 @@ public class FileUploadController {
             MultipartHttpServletRequest multiRequest = (MultipartHttpServletRequest) request;
             //获取multiRequest 中所有的文件名
             Iterator iter = multiRequest.getFileNames();
-            System.out.println(multiRequest);
 
             while (iter.hasNext()) {
                 //一次遍历所有文件
                 MultipartFile file = multiRequest.getFile(iter.next().toString());
                 if (file != null) {
                     String path = "D:/backupData/bigData/Java/javaCode/SiChuanMarket_DataPool/containerForUploadedFiles/" + file.getOriginalFilename();
-                    System.out.println(file);
                     //上传
                     file.transferTo(new File(path));
                 }
             }
         }
         long endTime = System.currentTimeMillis();
-        System.out.println("方法三的运行时间：" + String.valueOf(endTime - startTime) + "ms");
 
         return "upload file successfully";
     }
@@ -104,15 +101,25 @@ public class FileUploadController {
         int count_a = 0;
         for (IndustryInfo industryInfo : industryInfoList) {
 
-            int b = fileUploadService.batchImport(industryInfo);
-            count_a += b;
-            System.out.println(b);
+            IndustryInfo industryInfo01 = new IndustryInfo();
+            industryInfo01.setIndustryCode(industryInfo.getIndustryCode());
+            industryInfo01.setStatisticDate(industryInfo.getStatisticDate());
+
+            List<IndustryInfo> industryInfo02 = fileUploadService.checkRepeatIndustryInfo(industryInfo01);
+            if (0 == industryInfo02.size()) {
+                /*没有重复数据*/
+                int b = fileUploadService.batchImport(industryInfo);
+                count_a += b;
+            } else {
+                System.out.println("数据重复-不导入-03");
+            }
+
+
         }
-        System.out.println(industryInfoList.size());
-        System.out.println(count_a);
         if (industryInfoList.size() == count_a) {
-            System.out.println("全部OK");
             responseData = ResponseData.ok();
+        } else if (industryInfoList.size() > count_a && count_a > 0) {
+            responseData = ResponseData.partialOk();
         }
 
 

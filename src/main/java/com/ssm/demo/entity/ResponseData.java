@@ -35,6 +35,10 @@ public class ResponseData {
         return new ResponseData(200, "Ok");
     }
 
+    public static ResponseData partialOk() {
+        return new ResponseData(200, "Operation partial success");
+    }
+
     public static ResponseData notFound() {
         return new ResponseData(404, "Not Found");
     }

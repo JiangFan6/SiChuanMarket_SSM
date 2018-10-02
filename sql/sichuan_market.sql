@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-09-24 21:42:17
+Date: 2018-10-02 22:24:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -116,39 +116,59 @@ CREATE TABLE `industry_info` (
   `industryId` varchar(255) DEFAULT NULL,
   `industryCode` varchar(255) DEFAULT NULL,
   `industryName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `totalOutPut` double(255,0) DEFAULT NULL,
+  `totalOutPut` double(255,2) DEFAULT NULL,
   `totalOutPut_unit` varchar(255) DEFAULT NULL,
-  `productionCosts` double(255,0) DEFAULT NULL,
+  `productionCosts` double(255,2) DEFAULT NULL,
   `productionCosts_unit` varchar(255) DEFAULT NULL,
-  `industryProfit` double(255,0) DEFAULT NULL,
+  `industryProfit` double(255,2) DEFAULT NULL,
   `profit_unit` varchar(255) DEFAULT NULL,
-  `employedPopulation` double(255,0) DEFAULT NULL,
+  `employedPopulation` double(255,2) DEFAULT NULL,
   `employedPopulation_unit` varchar(255) DEFAULT NULL,
   `statisticDate` varchar(255) DEFAULT NULL,
   `topCompanies` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of industry_info
 -- ----------------------------
-INSERT INTO `industry_info` VALUES ('5', 'a35aef29-c55b-4c7b-ab07-f7e56224a2a1', '201', '农业', '102', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('6', '506b43eb-0797-4b4d-8a49-da52355a52cd', '201', '农业', '103', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('8', '8e8d28eb-fa46-4ae7-807a-3d71d578a12d', '201', '农业', '105', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2016年', '');
-INSERT INTO `industry_info` VALUES ('9', '1621b8fe-ecec-472e-b9b7-2ac19eae0d1b', '201', '农业', '101', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('10', '1f630ae9-a73d-454d-b893-e2ce81cf938a', '201', '农业', '104', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('11', '405a26ae-6276-4a03-82d0-64fec86c01eb', '201', '农业', '105', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('12', '2e47b58c-d55c-47df-b638-bdfe54534734', '201', '农业', '106', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('13', 'd01d7ac8-0e65-4c74-bbf9-2c589d5ca0ad', '201', '农业', '107', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('14', '7b99ea64-39de-4604-bfec-c2f4b7ed23a7', '201', '农业', '108', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('15', '5edca0f8-d004-4e52-93c3-818761b1c36d', '201', '农业', '109', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('16', '97270d66-f43f-4c94-adda-370b9a064b07', '201', '农业', '110', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2017年', '');
-INSERT INTO `industry_info` VALUES ('17', '450bcc51-8b90-47a2-bf11-eb36aff595ec', '201', '农业', '200', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2016年', '');
-INSERT INTO `industry_info` VALUES ('18', 'fd36098b-bd02-4bea-ac42-e7cf7d624db8', '201', '农业', '201', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2016年', '');
-INSERT INTO `industry_info` VALUES ('19', '2154b219-0e32-4ed4-95d3-e1789c258407', '201', '农业', '202', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2016年', '');
-INSERT INTO `industry_info` VALUES ('20', 'c01c8f8c-e87f-4ede-904c-87a3dede4cee', '201', '农业', '203', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2016年', '');
-INSERT INTO `industry_info` VALUES ('21', 'ae2a731c-657a-4555-ae1f-2b2c6916ca7c', '201', '农业', '204', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2016年', '');
-INSERT INTO `industry_info` VALUES ('22', '48f90ad0-66c5-46f8-b8ae-ce5c0aba6fbd', '201', '农业', '205', '亿元', '50', '亿元', '50', '亿元', '100', '万人', '2016年', '');
+INSERT INTO `industry_info` VALUES ('58', 'e628ec32-c5e0-4509-968f-94bdbd1fca54', '201', '农业', '133.84', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1982年', null);
+INSERT INTO `industry_info` VALUES ('59', 'fd1e8949-ebfa-4783-922e-cc4de26ebcfd', '201', '农业', '142.76', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1983年', null);
+INSERT INTO `industry_info` VALUES ('60', 'ffea3dd0-044b-4081-9a84-42dc65f38cbc', '201', '农业', '151.54', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1984年', null);
+INSERT INTO `industry_info` VALUES ('61', '860bfb59-d883-422f-bcca-52f84f90676f', '201', '农业', '161.14', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1985年', null);
+INSERT INTO `industry_info` VALUES ('62', 'ba58ca9f-2645-44e5-b1b1-0339694a1c8d', '201', '农业', '168.46', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1986年', null);
+INSERT INTO `industry_info` VALUES ('63', '3f822331-04a4-4707-b343-b839b21f5b49', '201', '农业', '187.84', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1987年', null);
+INSERT INTO `industry_info` VALUES ('64', 'cc23e051-5e2f-472b-bb39-8f28835a41df', '201', '农业', '213.69', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1988年', null);
+INSERT INTO `industry_info` VALUES ('65', 'ab2c0a00-b156-47dc-b0ae-68131d0687c8', '201', '农业', '238.04', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1989年', null);
+INSERT INTO `industry_info` VALUES ('66', 'f6ce048d-3c9b-4d2f-8ae9-6c1a6879703c', '201', '农业', '301.46', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1990年', null);
+INSERT INTO `industry_info` VALUES ('67', '9d13216f-43f2-43a1-baa2-8a8dee345c89', '201', '农业', '317.43', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1991年', null);
+INSERT INTO `industry_info` VALUES ('68', 'ae734ceb-9853-4293-b2ef-e45c68543947', '201', '农业', '344.52', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1992年', null);
+INSERT INTO `industry_info` VALUES ('69', 'd9c86bde-6c9e-4a36-8be3-4d22a71f9854', '201', '农业', '389.21', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1993年', null);
+INSERT INTO `industry_info` VALUES ('70', '9aeb00de-af91-4e80-9b33-e127d8772cf0', '201', '农业', '521.00', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1994年', null);
+INSERT INTO `industry_info` VALUES ('71', '0d478aa8-8aa0-4929-b1e3-d00c7e153a74', '201', '农业', '645.17', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1995年', null);
+INSERT INTO `industry_info` VALUES ('72', '2e5af51a-4217-472a-9a6e-08bf473c587e', '201', '农业', '750.07', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1996年', null);
+INSERT INTO `industry_info` VALUES ('73', '4243d49a-f2bc-4585-9c42-75cd0664f50b', '201', '农业', '798.22', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1997年', null);
+INSERT INTO `industry_info` VALUES ('74', '05eac3fa-15c8-409d-94ee-db2c1a416cf8', '201', '农业', '823.72', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1998年', null);
+INSERT INTO `industry_info` VALUES ('75', '882526bd-0b2e-498e-967b-b3683777d392', '201', '农业', '792.80', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1999年', null);
+INSERT INTO `industry_info` VALUES ('76', '292ca8f5-c4ae-457a-8136-a49c57347772', '201', '农业', '785.37', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2000年', null);
+INSERT INTO `industry_info` VALUES ('77', '452e8cb1-f23b-4ab8-9261-cb730785f96a', '201', '农业', '769.95', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2001年', null);
+INSERT INTO `industry_info` VALUES ('78', 'f4b8d75c-fb95-4af0-8180-dfa47544a5c1', '201', '农业', '807.43', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2002年', null);
+INSERT INTO `industry_info` VALUES ('79', '86ed3fd2-f20b-4726-8756-3c5de0dd8320', '201', '农业', '804.70', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2003年', null);
+INSERT INTO `industry_info` VALUES ('80', '00fb8a3f-e5fa-4f68-82d6-6438b6ef1abc', '201', '农业', '987.70', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2004年', null);
+INSERT INTO `industry_info` VALUES ('81', 'd4547d3f-5ea2-41c5-bc6f-33ce499e4c28', '201', '农业', '1037.20', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2005年', null);
+INSERT INTO `industry_info` VALUES ('82', 'bff3ea5e-98bd-4961-a916-98af4e79b770', '201', '农业', '1075.08', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2006年', null);
+INSERT INTO `industry_info` VALUES ('83', '14c022fe-b6bc-48fa-8f45-12e8a75b9143', '201', '农业', '1316.60', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2007年', null);
+INSERT INTO `industry_info` VALUES ('84', '862fe063-3b68-4188-8ab1-c7216e42243f', '201', '农业', '1710.80', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2008年', null);
+INSERT INTO `industry_info` VALUES ('85', 'f05bc595-439c-4035-9d5d-4996736533eb', '201', '农业', '1806.06', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2009年', null);
+INSERT INTO `industry_info` VALUES ('86', '70d63f44-721a-4b98-bb2c-5b3674c4a2ac', '201', '农业', '2069.33', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2010年', null);
+INSERT INTO `industry_info` VALUES ('87', '99a16624-0b48-44ca-8d45-1bbe7cb2fcb4', '201', '农业', '2454.26', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2011年', null);
+INSERT INTO `industry_info` VALUES ('88', '1dad100e-b66f-470f-93a2-ad9b177cb2bc', '201', '农业', '2764.90', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2012年', null);
+INSERT INTO `industry_info` VALUES ('89', 'bfbaa18d-afdc-4afb-931d-350a1b6d22d0', '201', '农业', '2903.48', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2013年', null);
+INSERT INTO `industry_info` VALUES ('90', 'e74fdfdf-ba35-47d6-87d0-e438bce6f65d', '201', '农业', '3078.61', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2014年', null);
+INSERT INTO `industry_info` VALUES ('91', 'f407dd9d-7346-4414-862e-59f751f836c8', '201', '农业', '3335.51', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2015年', null);
+INSERT INTO `industry_info` VALUES ('92', 'dca8591a-5ed0-496f-96e1-3c09e00e2959', '201', '农业', '3710.97', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2016年', null);
+INSERT INTO `industry_info` VALUES ('96', '4b3d34c0-857a-4fc8-ad40-3edf59a8185f', '201', '农业', '105.41', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1981年', null);
+INSERT INTO `industry_info` VALUES ('98', '7114d4e1-091e-4e8b-bae7-5417171e564c', '201', '农业', '98.07', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1980年', null);
 
 -- ----------------------------
 -- Table structure for industry_list

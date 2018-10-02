@@ -97,7 +97,6 @@ public class PersonController {
             //给用户jwt加密生成token
             String serviceJWT = JWT.sign(serviceResult, 60 * 1000 * 60 * 2);
             //封装成对象返回给客户端
-            System.out.println(serviceJWT);
             Token token = new Token();
             token.setToken(serviceJWT);
             result1 = Result.success(token);

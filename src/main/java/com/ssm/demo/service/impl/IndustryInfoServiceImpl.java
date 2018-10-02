@@ -34,4 +34,6 @@ public class IndustryInfoServiceImpl implements IndustryInfoService {
     public List<IndustryInfo> findIndustryInfoByCode(IndustryInfo industryInfo) {
         return industryInfoMapperDao.findIndustryInfoByCode(industryInfo);
     }
+
+
 }

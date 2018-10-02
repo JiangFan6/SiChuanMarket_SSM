@@ -17,4 +17,6 @@ public interface IndustryInfoMapperDao {
 
     List<IndustryInfo> findIndustryInfoByCode(IndustryInfo industryInfo);
 
+
+
 }

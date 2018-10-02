@@ -27,7 +27,6 @@ public class IndustryInfoController {
     @RequestMapping(value = "/addAindustryInfo", method = {RequestMethod.POST})
     @ResponseBody
     public ResponseData addAindustryInfo(@RequestBody IndustryInfo industryInfo) throws Exception {
-        System.out.println(industryInfo);
         industryInfo.setIndustryId(UUID.randomUUID().toString());
         ResponseData res = ResponseData.ok();
 
@@ -50,11 +49,9 @@ public class IndustryInfoController {
     @ResponseBody
     public ResponseData deleteAindustryInfo(HttpServletRequest request) throws Exception {
         String industryId = request.getParameter("industryId");
-        System.out.println(industryId);
         ResponseData res = ResponseData.ok();
 
         int service_res = industryInfoService.deleteAindustryInfo(industryId);
-        System.out.println(service_res);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
         }
@@ -68,7 +65,6 @@ public class IndustryInfoController {
         ResponseData res = ResponseData.ok();
 
         int service_res = industryInfoService.updateAindustryInfo(industryInfo);
-        System.out.println(service_res);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
         }
@@ -82,7 +78,6 @@ public class IndustryInfoController {
         ResponseData res = ResponseData.ok();
 
         List<IndustryInfo> service_res = industryInfoService.findIndustryInfoByCode(industryInfo);
-        System.out.println(service_res);
         if (null != service_res) {
             res.putDataValue("industryInfo", service_res);
         }

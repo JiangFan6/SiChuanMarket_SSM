@@ -14,5 +14,4 @@ public interface IndustryInfoService {
 
     List<IndustryInfo> findIndustryInfoByCode(IndustryInfo industryInfo);
 
-
 }
