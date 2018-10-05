@@ -46,7 +46,7 @@
 
     <!--查询某个行业数据-->
     <select id="findIndustryInfoByCode" parameterType="IndustryInfo" resultType="IndustryInfo">
-        SELECT * FROM industry_info WHERE industryCode=#{industryCode}
+        SELECT * FROM industry_info WHERE industryCode=#{industryCode} ORDER BY statisticDate ASC
     </select>
 
 
