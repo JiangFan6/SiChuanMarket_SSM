@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-05 17:46:07
+Date: 2018-10-05 22:05:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -127,7 +127,7 @@ CREATE TABLE `industry_info` (
   `statisticDate` varchar(255) DEFAULT NULL,
   `topCompanies` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=210 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=288 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of industry_info
@@ -280,6 +280,84 @@ INSERT INTO `industry_info` VALUES ('206', '5cd94c1f-6afd-4485-af3e-e9fa2d0bdb39
 INSERT INTO `industry_info` VALUES ('207', '1a2a6f19-78ba-43c6-bf3c-a16ff39055db', '204', '渔业', '192.35', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2014年', null);
 INSERT INTO `industry_info` VALUES ('208', 'f0956c1d-da20-45f3-bf01-dd5fa37c5dbf', '204', '渔业', '210.52', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2015年', null);
 INSERT INTO `industry_info` VALUES ('209', 'de6c70e9-0b57-4e1c-a454-267e6d4bbda6', '204', '渔业', '223.90', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2016年', null);
+INSERT INTO `industry_info` VALUES ('210', '5f9e2915-02bb-4476-b4d6-a4e7e80adad6', '221', '工业', '59.40', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1978年', null);
+INSERT INTO `industry_info` VALUES ('211', 'b5573f2d-ca8e-4b97-9997-740b8dc77530', '221', '工业', '65.43', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1979年', null);
+INSERT INTO `industry_info` VALUES ('212', '75810d8f-cd3e-453b-9a5b-ac03d2325f98', '221', '工业', '73.18', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1980年', null);
+INSERT INTO `industry_info` VALUES ('213', 'abc2e675-fc4a-4716-ad41-743e39e88c1b', '221', '工业', '74.58', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1981年', null);
+INSERT INTO `industry_info` VALUES ('214', '302aa361-268f-4249-ab7e-5b96b5db9747', '221', '工业', '82.49', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1982年', null);
+INSERT INTO `industry_info` VALUES ('215', '5c576883-b015-40fd-95a6-4a78efcbc82d', '221', '工业', '93.71', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1983年', null);
+INSERT INTO `industry_info` VALUES ('216', 'bd8e8219-8c3b-4d44-9fbf-4a9c8a6bc1de', '221', '工业', '105.97', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1984年', null);
+INSERT INTO `industry_info` VALUES ('217', 'ce3ba961-78a6-4718-8067-ba41bde3350d', '221', '工业', '127.13', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1985年', null);
+INSERT INTO `industry_info` VALUES ('218', '846cb805-dd5d-4ffa-9ed1-342b7b500ef1', '221', '工业', '138.12', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1986年', null);
+INSERT INTO `industry_info` VALUES ('219', 'bd6d2ff8-1dea-471f-88a7-15beed84c2c0', '221', '工业', '160.49', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1987年', null);
+INSERT INTO `industry_info` VALUES ('220', '76708297-8059-425e-bf5e-de0d78ac4372', '221', '工业', '206.44', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1988年', null);
+INSERT INTO `industry_info` VALUES ('221', '535e2876-725e-476d-9edc-f40e6418ad04', '221', '工业', '231.08', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1989年', null);
+INSERT INTO `industry_info` VALUES ('222', '41366300-1fe8-46df-abe4-a8ce717079a2', '221', '工业', '276.08', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1990年', null);
+INSERT INTO `industry_info` VALUES ('223', '3f24c061-91d7-4d9f-9a06-d68eddc16fdb', '221', '工业', '331.37', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1991年', null);
+INSERT INTO `industry_info` VALUES ('224', '20e16526-1f94-487c-9587-965ad48d76a6', '221', '工业', '378.67', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1992年', null);
+INSERT INTO `industry_info` VALUES ('225', '6ec6243a-532c-4e3f-8d1d-006385eb0f41', '221', '工业', '495.24', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1993年', null);
+INSERT INTO `industry_info` VALUES ('226', '5bbb3746-bb97-4422-a1d2-92da127a116c', '221', '工业', '667.85', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1994年', null);
+INSERT INTO `industry_info` VALUES ('227', 'd1abe22d-b8c4-4d83-910a-f56123d04070', '221', '工业', '833.17', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1995年', null);
+INSERT INTO `industry_info` VALUES ('228', '01954c42-c43c-411f-9351-cbb2e9b047b2', '221', '工业', '977.68', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1996年', null);
+INSERT INTO `industry_info` VALUES ('229', '4744f65b-a42f-40b3-a2e8-0e925c3e539c', '221', '工业', '1055.21', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1997年', null);
+INSERT INTO `industry_info` VALUES ('230', 'e96ad399-3bcf-4a46-b536-4682956ac329', '221', '工业', '1076.35', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1998年', null);
+INSERT INTO `industry_info` VALUES ('231', 'ce118abf-36e9-44cb-a6c9-25b249fc3116', '221', '工业', '1099.48', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1999年', null);
+INSERT INTO `industry_info` VALUES ('232', 'd61f77c5-1e7e-44b3-892c-2be131571647', '221', '工业', '1154.46', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2000年', null);
+INSERT INTO `industry_info` VALUES ('233', 'e95aaeff-4e11-4725-95af-b2939e491099', '221', '工业', '1253.19', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2001年', null);
+INSERT INTO `industry_info` VALUES ('234', '243c25a8-6e8a-4af6-a358-a2003ad5eec0', '221', '工业', '1372.64', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2002年', null);
+INSERT INTO `industry_info` VALUES ('235', '4cedbc73-076d-4691-98bf-5c7258243e97', '221', '工业', '1604.49', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2003年', null);
+INSERT INTO `industry_info` VALUES ('236', 'e8df9545-6f79-49b7-8621-b12333bc0cdb', '221', '工业', '2013.80', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2004年', null);
+INSERT INTO `industry_info` VALUES ('237', '03dc8170-2913-4062-bacb-699ea2baa91e', '221', '工业', '2527.08', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2005年', null);
+INSERT INTO `industry_info` VALUES ('238', '9f7921ee-2b4b-4d59-8363-a7be6125cb20', '221', '工业', '3144.67', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2006年', null);
+INSERT INTO `industry_info` VALUES ('239', 'f6c732dd-8534-4e76-82ee-3c97e4fe2871', '221', '工业', '3921.41', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2007年', null);
+INSERT INTO `industry_info` VALUES ('240', '9792e53a-2fef-4b24-912d-167b41bcb4da', '221', '工业', '4956.13', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2008年', null);
+INSERT INTO `industry_info` VALUES ('241', '07778aea-c1bb-41de-882b-1150558b9ca2', '221', '工业', '5140.31', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2009年', null);
+INSERT INTO `industry_info` VALUES ('242', 'bc1c6086-39cc-4544-ad30-b0cee62f7563', '221', '工业', '6727.42', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2010年', null);
+INSERT INTO `industry_info` VALUES ('243', '48a79f1a-3959-4278-8018-18c11a6e2370', '221', '工业', '8591.90', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2011年', null);
+INSERT INTO `industry_info` VALUES ('244', '196f446b-2dbd-4c68-9192-697e45247ab4', '221', '工业', '9551.01', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2012年', null);
+INSERT INTO `industry_info` VALUES ('245', 'ecf96e27-4c8e-443b-bd83-f76e79d1ee8d', '221', '工业', '10447.52', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2013年', null);
+INSERT INTO `industry_info` VALUES ('246', '58413fd2-55c0-4615-b0a0-80656ffcd0cf', '221', '工业', '10729.18', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2014年', null);
+INSERT INTO `industry_info` VALUES ('247', '9f61f3d2-f547-4bfc-bbaa-4fefb6749c96', '221', '工业', '11039.08', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2015年', null);
+INSERT INTO `industry_info` VALUES ('248', '2604275e-d27b-4368-94d8-3b14c5f621ec', '221', '工业', '11569.79', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2016年', null);
+INSERT INTO `industry_info` VALUES ('249', '219947c5-0b2a-4036-81ed-8fb274013fe0', '208', '建筑业', '6.15', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1978年', null);
+INSERT INTO `industry_info` VALUES ('250', '3127ccbc-edc0-4826-9bea-a04add683363', '208', '建筑业', '6.88', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1979年', null);
+INSERT INTO `industry_info` VALUES ('251', '24271be2-d7ca-4505-9551-24b0b9d7406b', '208', '建筑业', '7.87', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1980年', null);
+INSERT INTO `industry_info` VALUES ('252', '09c234a4-18c1-4494-b72b-0c671bd70cde', '208', '建筑业', '8.78', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1981年', null);
+INSERT INTO `industry_info` VALUES ('253', '2216839c-e48e-4a19-8722-2eb37fad2329', '208', '建筑业', '10.35', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1982年', null);
+INSERT INTO `industry_info` VALUES ('254', 'c1690366-3727-45bf-b010-622f30114335', '208', '建筑业', '11.98', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1983年', null);
+INSERT INTO `industry_info` VALUES ('255', 'e804e56c-5554-4606-ad70-6669371804aa', '208', '建筑业', '15.71', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1984年', null);
+INSERT INTO `industry_info` VALUES ('256', 'e941d06f-8334-4ba3-b3eb-817090b34512', '208', '建筑业', '20.98', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1985年', null);
+INSERT INTO `industry_info` VALUES ('257', '689979f9-0813-4b28-a5cc-a984fb00f2ce', '208', '建筑业', '22.50', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1986年', null);
+INSERT INTO `industry_info` VALUES ('258', '78d2568b-4604-492a-98af-ef20d0317c22', '208', '建筑业', '27.39', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1987年', null);
+INSERT INTO `industry_info` VALUES ('259', '152f4e03-9b72-4145-bb0b-f4bcf113db23', '208', '建筑业', '31.88', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1988年', null);
+INSERT INTO `industry_info` VALUES ('260', '7ba6ea48-daf0-4fe3-a453-b58f6aabb19f', '208', '建筑业', '32.36', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1989年', null);
+INSERT INTO `industry_info` VALUES ('261', '400471ed-46f8-4a71-b82d-9640732599aa', '208', '建筑业', '36.56', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1990年', null);
+INSERT INTO `industry_info` VALUES ('262', '56edb3c2-acc3-4023-b153-953d83e1a5ae', '208', '建筑业', '45.11', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1991年', null);
+INSERT INTO `industry_info` VALUES ('263', 'e7ff663b-53a2-4254-b03e-2bfcdbd7b0dc', '208', '建筑业', '62.90', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1992年', null);
+INSERT INTO `industry_info` VALUES ('264', '46fcc03f-b2c4-4464-8952-77169aeb66d7', '208', '建筑业', '85.14', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1993年', null);
+INSERT INTO `industry_info` VALUES ('265', 'e94e624a-16bc-417a-8657-7712fde6cb61', '208', '建筑业', '114.92', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1994年', null);
+INSERT INTO `industry_info` VALUES ('266', 'b9cdcd1b-b0f1-4527-b3dc-be875628144e', '208', '建筑业', '147.74', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1995年', null);
+INSERT INTO `industry_info` VALUES ('267', '84cebb9b-6e9b-48a4-8824-9eead8e6fefd', '208', '建筑业', '178.33', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1996年', null);
+INSERT INTO `industry_info` VALUES ('268', '1d42d7cd-9ec1-4729-8aae-e4435e9f94da', '208', '建筑业', '210.11', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1997年', null);
+INSERT INTO `industry_info` VALUES ('269', '7f4125f9-75b5-4500-8269-0a306cd5c6cd', '208', '建筑业', '247.66', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1998年', null);
+INSERT INTO `industry_info` VALUES ('270', 'c794db6e-6de8-4fb2-af03-b6b837477a07', '208', '建筑业', '250.15', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1999年', null);
+INSERT INTO `industry_info` VALUES ('271', 'a27b06cb-7389-4155-a900-cb963e24afc8', '208', '建筑业', '278.65', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2000年', null);
+INSERT INTO `industry_info` VALUES ('272', '679d59ab-5c11-4559-aa83-2c39ca4619d7', '208', '建筑业', '318.82', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2001年', null);
+INSERT INTO `industry_info` VALUES ('273', '29b66795-2471-421a-944b-db968ca69379', '208', '建筑业', '360.74', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2002年', null);
+INSERT INTO `industry_info` VALUES ('274', 'c768c7b6-f46f-4f5e-bbad-f391d4aecc7b', '208', '建筑业', '410.31', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2003年', null);
+INSERT INTO `industry_info` VALUES ('275', '458e9deb-0d16-429a-859f-bfeff108872f', '208', '建筑业', '475.60', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2004年', null);
+INSERT INTO `industry_info` VALUES ('276', '66c09ece-5182-4925-bdf9-a9df2b51fd35', '208', '建筑业', '540.15', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2005年', null);
+INSERT INTO `industry_info` VALUES ('277', '2a172ff1-1409-42f2-974b-165dac9b706b', '208', '建筑业', '630.47', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2006年', null);
+INSERT INTO `industry_info` VALUES ('278', 'b5ec5c65-e80a-45d9-a237-0534d4b5e54d', '208', '建筑业', '727.38', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2007年', null);
+INSERT INTO `industry_info` VALUES ('279', '7aed7fd6-7fe1-461a-8aea-992b9688472d', '208', '建筑业', '867.26', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2008年', null);
+INSERT INTO `industry_info` VALUES ('280', '048a34b3-c926-4a4a-8677-511c16ad63b1', '208', '建筑业', '1033.63', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2009年', null);
+INSERT INTO `industry_info` VALUES ('281', 'b371811d-d5f0-4869-92e5-ffa45e45b84a', '208', '建筑业', '1240.73', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2010年', null);
+INSERT INTO `industry_info` VALUES ('282', '1a324064-0b87-4235-999f-9cc8a08d8494', '208', '建筑业', '1538.08', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2011年', null);
+INSERT INTO `industry_info` VALUES ('283', '7f751a99-3f6d-4db8-89d3-b15205e01a6d', '208', '建筑业', '1782.75', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2012年', null);
+INSERT INTO `industry_info` VALUES ('284', '8aa886db-9ac9-47e9-bee8-beaac9eb537b', '208', '建筑业', '2038.17', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2013年', null);
+INSERT INTO `industry_info` VALUES ('285', '6a2525ae-dcf1-43df-a372-081161dc9e38', '208', '建筑业', '2225.44', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2014年', null);
+INSERT INTO `industry_info` VALUES ('286', '5dd7d18b-b6f9-48ab-bda7-1b0f3f678119', '208', '建筑业', '2321.38', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2015年', null);
+INSERT INTO `industry_info` VALUES ('287', '747c02fa-718f-4d96-badc-fefe0c14ad20', '208', '建筑业', '2472.96', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2016年', null);
 
 -- ----------------------------
 -- Table structure for industry_list
@@ -290,7 +368,7 @@ CREATE TABLE `industry_list` (
   `industryName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `industryCode` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of industry_list
@@ -315,6 +393,8 @@ INSERT INTO `industry_list` VALUES ('17', '教育', '217');
 INSERT INTO `industry_list` VALUES ('18', '卫生和社会工作', '218');
 INSERT INTO `industry_list` VALUES ('19', '文化、体育和娱乐业', '219');
 INSERT INTO `industry_list` VALUES ('20', '公共管理、社会保障', '220');
+INSERT INTO `industry_list` VALUES ('21', '工业', '221');
+INSERT INTO `industry_list` VALUES ('22', '其他', '222');
 
 -- ----------------------------
 -- Table structure for person
