@@ -99,6 +99,9 @@ public class PersonController {
             //封装成对象返回给客户端
             Token token = new Token();
             token.setToken(serviceJWT);
+            token.setName(serviceResult.getName());
+            token.setEmail(serviceResult.getEmail());
+            token.setPhone(serviceResult.getPhone());
             result1 = Result.success(token);
         }
         return result1;
