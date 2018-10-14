@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-13 18:10:35
+Date: 2018-10-14 12:35:42
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -106,6 +106,24 @@ INSERT INTO `city_list` VALUES ('18', '达州市', '108');
 INSERT INTO `city_list` VALUES ('19', '遂宁市', '113');
 INSERT INTO `city_list` VALUES ('20', '阿坝藏族羌族自治州', '120');
 INSERT INTO `city_list` VALUES ('21', '雅安市', '118');
+
+-- ----------------------------
+-- Table structure for company_info
+-- ----------------------------
+DROP TABLE IF EXISTS `company_info`;
+CREATE TABLE `company_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `company_id` varchar(255) NOT NULL,
+  `company_name` varchar(255) DEFAULT NULL,
+  `company_headcount` int(255) DEFAULT NULL,
+  `company_assets` float(255,0) DEFAULT NULL,
+  `company_established_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of company_info
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for industry_info

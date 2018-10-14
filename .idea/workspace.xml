@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="" />
+    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -217,10 +219,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1987" />
-    <option name="y" value="240" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="x" value="1695" />
+    <option name="y" value="259" />
+    <option name="width" value="1936" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -231,7 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,6 +249,36 @@
               <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
               <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -255,6 +286,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -459,19 +491,22 @@
       <workItem from="1538794360310" duration="711000" />
       <workItem from="1538816786140" duration="2248000" />
       <workItem from="1539419311510" duration="1279000" />
+      <workItem from="1539425424536" duration="1816000" />
+      <workItem from="1539480473452" duration="3376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162844000" />
+    <option name="totallyTimeSpent" value="168036000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="82" width="1616" height="876" extended-state="6" />
+    <frame x="1912" y="82" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32972136" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.19584955" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.19584955" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="4" />
       <window_info id="Capture Tool" order="0" />
@@ -489,10 +524,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" weight="0.43548387" />
+      <window_info active="true" anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" visible="true" weight="0.43548387" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.26653695" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.27561608" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
