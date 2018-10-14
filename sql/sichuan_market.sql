@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-14 12:35:42
+Date: 2018-10-14 22:29:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -117,7 +117,11 @@ CREATE TABLE `company_info` (
   `company_name` varchar(255) DEFAULT NULL,
   `company_headcount` int(255) DEFAULT NULL,
   `company_assets` float(255,0) DEFAULT NULL,
-  `company_established_time` datetime DEFAULT NULL,
+  `company_established_date` date DEFAULT NULL,
+  `company_address` varchar(255) DEFAULT NULL,
+  `company_legal_representative` varchar(255) DEFAULT NULL,
+  `company_type` varchar(255) DEFAULT NULL,
+  `company_registration_num` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -186,7 +190,7 @@ INSERT INTO `industry_info` VALUES ('90', 'e74fdfdf-ba35-47d6-87d0-e438bce6f65d'
 INSERT INTO `industry_info` VALUES ('91', 'f407dd9d-7346-4414-862e-59f751f836c8', '201', '农业', '3335.51', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2015年', null);
 INSERT INTO `industry_info` VALUES ('92', 'dca8591a-5ed0-496f-96e1-3c09e00e2959', '201', '农业', '3710.97', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '2016年', null);
 INSERT INTO `industry_info` VALUES ('96', '4b3d34c0-857a-4fc8-ad40-3edf59a8185f', '201', '农业', '105.41', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1981年', null);
-INSERT INTO `industry_info` VALUES ('98', '7114d4e1-091e-4e8b-bae7-5417171e564c', '201', '农业', '98.07', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1980年', null);
+INSERT INTO `industry_info` VALUES ('98', '7114d4e1-091e-4e8b-bae7-5417171e564c', '201', '农业', '98.07', '亿元', '66.00', '亿元', '0.00', '亿元', '0.00', '万人', '1980年', null);
 INSERT INTO `industry_info` VALUES ('99', '5e4c29ea-9007-4c38-9ac6-68793632d834', '202', '林业', '4.21', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1980年', null);
 INSERT INTO `industry_info` VALUES ('100', '5b997f16-b2b9-418b-8d09-7f5e80765a4e', '202', '林业', '5.34', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1981年', null);
 INSERT INTO `industry_info` VALUES ('101', '2d186158-d68d-45e7-83f0-682cad1e02a4', '202', '林业', '5.81', '亿元', '0.00', '亿元', '0.00', '亿元', '0.00', '万人', '1982年', null);
