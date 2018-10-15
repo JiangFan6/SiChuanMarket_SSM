@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-14 22:29:43
+Date: 2018-10-15 22:39:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -116,12 +116,13 @@ CREATE TABLE `company_info` (
   `company_id` varchar(255) NOT NULL,
   `company_name` varchar(255) DEFAULT NULL,
   `company_headcount` int(255) DEFAULT NULL,
-  `company_assets` float(255,0) DEFAULT NULL,
-  `company_established_date` date DEFAULT NULL,
+  `company_assets` double(255,2) DEFAULT NULL,
+  `company_establish_date` date DEFAULT NULL,
   `company_address` varchar(255) DEFAULT NULL,
-  `company_legal_representative` varchar(255) DEFAULT NULL,
+  `company_legal_repre` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `company_type` varchar(255) DEFAULT NULL,
   `company_registration_num` varchar(255) DEFAULT NULL,
+  `company_industry_id` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
