@@ -1,12 +1,13 @@
-package com.ssm.demo.service;
+package com.ssm.demo.dao;
 
-import com.ssm.demo.entity.Company;
+
 import com.ssm.demo.entity.CompanyInfo;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-public interface CompanyInfoService {
-
+@Repository
+public interface CompanyInfoMapperDao {
     int addACompanyInfo(CompanyInfo companyInfo);
 
     int deleteACompanyInfo(String companyId);
@@ -16,7 +17,5 @@ public interface CompanyInfoService {
     List<CompanyInfo> findComInfoByIndustryId(String industryId);
 
     CompanyInfo findCompanyInfoById(String companyId);
-
-
 
 }

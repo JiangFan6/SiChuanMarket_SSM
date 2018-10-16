@@ -1,5 +1,7 @@
 package com.ssm.demo.entity;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class CompanyInfo {
@@ -8,7 +10,7 @@ public class CompanyInfo {
     private String companyName;
     private int companyHeadCount;
     private double companyAssets;
-    private Date companyEstablishDate;
+    private SimpleDateFormat companyEstablishDate;
     private String companyAddress;
     private String companyLegalRepre;
     private String companyType;
@@ -47,11 +49,11 @@ public class CompanyInfo {
         this.companyAssets = companyAssets;
     }
 
-    public Date getCompanyEstablishDate() {
+    public SimpleDateFormat getCompanyEstablishDate() {
         return companyEstablishDate;
     }
 
-    public void setCompanyEstablishDate(Date companyEstablishDate) {
+    public void setCompanyEstablishDate(SimpleDateFormat companyEstablishDate) {
         this.companyEstablishDate = companyEstablishDate;
     }
 
@@ -95,10 +97,7 @@ public class CompanyInfo {
         this.companyIndustryId = companyIndustryId;
     }
 
-    public CompanyInfo() {
-    }
-
-    public CompanyInfo(String companyId, String companyName, int companyHeadCount, double companyAssets, Date companyEstablishDate, String companyAddress, String companyLegalRepre, String companyType, String companyRegistrationNum, String companyIndustryId) {
+    public CompanyInfo(String companyId, String companyName, int companyHeadCount, double companyAssets, SimpleDateFormat companyEstablishDate, String companyAddress, String companyLegalRepre, String companyType, String companyRegistrationNum, String companyIndustryId) {
         this.companyId = companyId;
         this.companyName = companyName;
         this.companyHeadCount = companyHeadCount;
@@ -109,6 +108,9 @@ public class CompanyInfo {
         this.companyType = companyType;
         this.companyRegistrationNum = companyRegistrationNum;
         this.companyIndustryId = companyIndustryId;
+    }
+
+    public CompanyInfo() {
     }
 
     @Override

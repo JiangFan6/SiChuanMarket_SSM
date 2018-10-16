@@ -1,8 +1,10 @@
 package com.ssm.demo.controller;
 
 
+import com.ssm.demo.entity.CompanyInfo;
 import com.ssm.demo.entity.IndustryInfo;
 import com.ssm.demo.entity.ResponseData;
+import com.ssm.demo.service.CompanyInfoService;
 import com.ssm.demo.service.IndustryInfoService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,6 +13,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -19,17 +24,26 @@ import java.util.UUID;
 @RequestMapping("/companyInfo")
 public class CompanyInfoController {
     @Autowired
-    private IndustryInfoService industryInfoService;
+    private CompanyInfoService companyInfoService;
     Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
-    /*添加一个行业信息*/
-    @RequestMapping(value = "/addAindustryInfo", method = {RequestMethod.POST})
-    @ResponseBody
-    public ResponseData addAindustryInfo(@RequestBody IndustryInfo industryInfo) throws Exception {
-        industryInfo.setIndustryId(UUID.randomUUID().toString());
-        ResponseData res = ResponseData.ok();
 
-        int service_res = industryInfoService.addAindustryInfo(industryInfo);
+/*    public static Date strToDate(String strDate) {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy年MM月dd日");
+        ParsePosition pos = new ParsePosition(0);
+        Date strtodate = formatter.parse(strDate, pos);
+        return strtodate;
+    }*/
+
+    /*添加一个行业信息*/
+    @RequestMapping(value = "/addACompanyInfo", method = {RequestMethod.POST})
+    @ResponseBody
+    public ResponseData addAindustryInfo(@RequestBody CompanyInfo companyInfo) throws Exception {
+
+        companyInfo.setCompanyId(UUID.randomUUID().toString());
+        ResponseData res = ResponseData.ok();
+        System.out.println(companyInfo);
+        int service_res = companyInfoService.addACompanyInfo(companyInfo);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
         }
@@ -42,8 +56,11 @@ public class CompanyInfoController {
 
         return res;
     }
+    /*
 
-    /*刪除一个行业信息*/
+     */
+    /*刪除一个行业信息*//*
+
     @RequestMapping(value = "/deleteAindustryInfo", method = {RequestMethod.GET})
     @ResponseBody
     public ResponseData deleteAindustryInfo(HttpServletRequest request) throws Exception {
@@ -57,7 +74,9 @@ public class CompanyInfoController {
         return res;
     }
 
-    /*修改一条行业信息*/
+    */
+    /*修改一条行业信息*//*
+
     @RequestMapping(value = "/updateAindustryInfo", method = {RequestMethod.POST})
     @ResponseBody
     public ResponseData updateAindustryInfo(@RequestBody IndustryInfo industryInfo) throws Exception {
@@ -70,7 +89,9 @@ public class CompanyInfoController {
         return res;
     }
 
-    /*查询某个行业信息*/
+    */
+    /*查询某个行业信息*//*
+
     @RequestMapping(value = "/findIndustryInfoByCode", method = {RequestMethod.POST})
     @ResponseBody
     public ResponseData findIndustryInfoByCode(@RequestBody IndustryInfo industryInfo) throws Exception {
@@ -82,6 +103,7 @@ public class CompanyInfoController {
         }
         return res;
     }
+*/
 
 
 }

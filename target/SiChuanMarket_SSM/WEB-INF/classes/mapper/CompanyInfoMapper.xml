@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为CityInfoDao接口方法提供sql语句配置 -->
+<mapper namespace="com.ssm.demo.dao.CompanyInfoMapperDao">
+
+    <!--添加一条行业信息-->
+    <insert id="addACompanyInfo" parameterType="CompanyInfo">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO
+        company_info(company_id,company_name,company_headcount,company_assets,company_establish_date
+        ,company_address,company_legal_repre,company_type,company_registration_num,company_industry_id)
+        VALUES
+        (#{company_id},#{company_name},#{company_headcount},#{company_assets},#{company_establish_date}
+        ,#{company_address},#{company_legal_repre},#{company_type},#{company_registration_num},#{company_industry_id});
+    </insert>
+
+    <!--    &lt;!&ndash;删除一条行业信息&ndash;&gt;
+
+        <delete id="deleteAindustryInfo" parameterType="String">
+            DELETE FROM industry_info WHERE industryId=#{industryId}
+        </delete>
+
+        &lt;!&ndash;修改一条行业信息&ndash;&gt;
+        <update id="updateAindustryInfo" parameterType="IndustryInfo">
+            UPDATE industry_info SET
+            industryCode=#{industryCode},
+            industryName=#{industryName},
+            totalOutPut=#{totalOutPut},
+            totalOutPut_unit=#{totalOutPut_unit},
+            productionCosts=#{productionCosts},
+            productionCosts_unit=#{productionCosts_unit},
+            industryProfit=#{industryProfit},
+            profit_unit=#{profit_unit},
+            employedPopulation=#{employedPopulation},
+            employedPopulation_unit=#{employedPopulation_unit},
+            statisticDate=#{statisticDate},
+            topCompanies=#{topCompanies}
+            WHERE   industryId=  #{industryId}
+
+        </update>
+
+        &lt;!&ndash;查询某个行业数据&ndash;&gt;
+        <select id="findIndustryInfoByCode" parameterType="IndustryInfo" resultType="IndustryInfo">
+            SELECT * FROM industry_info WHERE industryCode=#{industryCode} ORDER BY statisticDate ASC
+        </select>-->
+
+
+</mapper>
