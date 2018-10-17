@@ -10,12 +10,13 @@ public class CompanyInfo {
     private String companyName;
     private int companyHeadCount;
     private double companyAssets;
-    private SimpleDateFormat companyEstablishDate;
+    private Date companyEstablishDate;
     private String companyAddress;
     private String companyLegalRepre;
     private String companyType;
     private String companyRegistrationNum;
     private String companyIndustryId;
+    private String companyIndustryCode;
 
     public String getCompanyId() {
         return companyId;
@@ -49,11 +50,11 @@ public class CompanyInfo {
         this.companyAssets = companyAssets;
     }
 
-    public SimpleDateFormat getCompanyEstablishDate() {
+    public Date getCompanyEstablishDate() {
         return companyEstablishDate;
     }
 
-    public void setCompanyEstablishDate(SimpleDateFormat companyEstablishDate) {
+    public void setCompanyEstablishDate(Date companyEstablishDate) {
         this.companyEstablishDate = companyEstablishDate;
     }
 
@@ -97,7 +98,19 @@ public class CompanyInfo {
         this.companyIndustryId = companyIndustryId;
     }
 
-    public CompanyInfo(String companyId, String companyName, int companyHeadCount, double companyAssets, SimpleDateFormat companyEstablishDate, String companyAddress, String companyLegalRepre, String companyType, String companyRegistrationNum, String companyIndustryId) {
+    public String getCompanyIndustryCode() {
+        return companyIndustryCode;
+    }
+
+    public void setCompanyIndustryCode(String companyIndustryCode) {
+        this.companyIndustryCode = companyIndustryCode;
+    }
+
+    public CompanyInfo() {
+    }
+
+
+    public CompanyInfo(String companyId, String companyName, int companyHeadCount, double companyAssets, Date companyEstablishDate, String companyAddress, String companyLegalRepre, String companyType, String companyRegistrationNum, String companyIndustryId, String companyIndustryCode) {
         this.companyId = companyId;
         this.companyName = companyName;
         this.companyHeadCount = companyHeadCount;
@@ -108,9 +121,7 @@ public class CompanyInfo {
         this.companyType = companyType;
         this.companyRegistrationNum = companyRegistrationNum;
         this.companyIndustryId = companyIndustryId;
-    }
-
-    public CompanyInfo() {
+        this.companyIndustryCode = companyIndustryCode;
     }
 
     @Override
@@ -126,6 +137,7 @@ public class CompanyInfo {
                 ", companyType='" + companyType + '\'' +
                 ", companyRegistrationNum='" + companyRegistrationNum + '\'' +
                 ", companyIndustryId='" + companyIndustryId + '\'' +
+                ", companyIndustryCode='" + companyIndustryCode + '\'' +
                 '}';
     }
 }

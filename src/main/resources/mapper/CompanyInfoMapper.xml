@@ -4,48 +4,58 @@
 <!-- 设置为CityInfoDao接口方法提供sql语句配置 -->
 <mapper namespace="com.ssm.demo.dao.CompanyInfoMapperDao">
 
-    <!--添加一条行业信息-->
+    <!-- 添加一条行业信息-->
     <insert id="addACompanyInfo" parameterType="CompanyInfo">
         <selectKey resultType="int" order="AFTER" keyProperty="id">
             SELECT LAST_INSERT_ID()
         </selectKey>
         INSERT INTO
         company_info(company_id,company_name,company_headcount,company_assets,company_establish_date
-        ,company_address,company_legal_repre,company_type,company_registration_num,company_industry_id)
+        ,company_address,company_legal_repre,company_type,company_registration_num,company_industry_id
+        ,company_industry_code)
         VALUES
-        (#{company_id},#{company_name},#{company_headcount},#{company_assets},#{company_establish_date}
-        ,#{company_address},#{company_legal_repre},#{company_type},#{company_registration_num},#{company_industry_id});
+        (#{companyId},#{companyName},#{companyHeadCount},#{companyAssets},#{companyEstablishDate}
+        ,#{companyAddress},#{companyLegalRepre},#{companyType},#{companyRegistrationNum},#{companyIndustryId}
+        ,#{companyIndustryCode});
     </insert>
 
-    <!--    &lt;!&ndash;删除一条行业信息&ndash;&gt;
+    <!--刪除一条相关企业-->
 
-        <delete id="deleteAindustryInfo" parameterType="String">
-            DELETE FROM industry_info WHERE industryId=#{industryId}
+    <delete id="deleteACompanyInfo" parameterType="String">
+            DELETE FROM company_info WHERE company_id=#{companyId}
         </delete>
 
-        &lt;!&ndash;修改一条行业信息&ndash;&gt;
-        <update id="updateAindustryInfo" parameterType="IndustryInfo">
-            UPDATE industry_info SET
-            industryCode=#{industryCode},
-            industryName=#{industryName},
-            totalOutPut=#{totalOutPut},
-            totalOutPut_unit=#{totalOutPut_unit},
-            productionCosts=#{productionCosts},
-            productionCosts_unit=#{productionCosts_unit},
-            industryProfit=#{industryProfit},
-            profit_unit=#{profit_unit},
-            employedPopulation=#{employedPopulation},
-            employedPopulation_unit=#{employedPopulation_unit},
-            statisticDate=#{statisticDate},
-            topCompanies=#{topCompanies}
-            WHERE   industryId=  #{industryId}
+    <!--修改一条企业信息-->
+    <update id="updateACompanyInfo" parameterType="CompanyInfo">
+            UPDATE company_info SET
+            company_name=#{industryName},
+            company_headcount=#{companyHeadCount},
+            company_assets=#{companyAssets},
+            company_establish_date=#{companyEstablishDate},
+            company_address=#{companyAddress},
+            company_legal_repre=#{companyLegalRepre},
+            company_type=#{companyType},
+            company_registration_num=#{companyRegistrationNum},
+            company_industry_id=#{companyIndustryId},
+            company_industry_code=#{companyIndustryCode},
+            WHERE   company_id=  #{companyId}
 
         </update>
 
-        &lt;!&ndash;查询某个行业数据&ndash;&gt;
-        <select id="findIndustryInfoByCode" parameterType="IndustryInfo" resultType="IndustryInfo">
-            SELECT * FROM industry_info WHERE industryCode=#{industryCode} ORDER BY statisticDate ASC
-        </select>-->
+    <!--查询某个企业信息-根据行业ID-->
+    <select id="findComInfoByIndustryId" parameterType="String" resultType="CompanyInfo">
+            SELECT * FROM company_info WHERE company_industry_id=#{companyIndustryId} ORDER BY company_establish_date ASC
+    </select>
+
+    <!--查询某个企业信息-根据行业Code-->
+    <select id="findComInfoByIndustryCode" parameterType="String" resultType="CompanyInfo">
+            SELECT * FROM company_info WHERE company_industry_code=#{companyIndustryCode}
+    </select>
+
+    <!--查询某个企业信息-根据企业ID-->
+    <select id="findCompanyInfoById" parameterType="String" resultType="CompanyInfo">
+            SELECT * FROM company_info WHERE company_id=#{companyId}
+    </select>
 
 
 </mapper>

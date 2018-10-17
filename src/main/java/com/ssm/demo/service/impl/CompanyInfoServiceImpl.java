@@ -35,6 +35,10 @@ public class CompanyInfoServiceImpl implements CompanyInfoService {
     public List<CompanyInfo> findComInfoByIndustryId(String industryId) {
         return companyInfoMapperDao.findComInfoByIndustryId(industryId);
     }
+    @Override
+    public List<CompanyInfo> findComInfoByIndustryCode(String companyIndustryCode) {
+        return companyInfoMapperDao.findComInfoByIndustryCode(companyIndustryCode);
+    }
 
     @Override
     public CompanyInfo findCompanyInfoById(String companyId) {

@@ -1,6 +1,7 @@
 package com.ssm.demo.controller;
 
 
+import com.ssm.demo.entity.Company;
 import com.ssm.demo.entity.CompanyInfo;
 import com.ssm.demo.entity.IndustryInfo;
 import com.ssm.demo.entity.ResponseData;
@@ -28,17 +29,10 @@ public class CompanyInfoController {
     Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
 
-/*    public static Date strToDate(String strDate) {
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy年MM月dd日");
-        ParsePosition pos = new ParsePosition(0);
-        Date strtodate = formatter.parse(strDate, pos);
-        return strtodate;
-    }*/
-
-    /*添加一个行业信息*/
+    /*添加一条行业信息*/
     @RequestMapping(value = "/addACompanyInfo", method = {RequestMethod.POST})
     @ResponseBody
-    public ResponseData addAindustryInfo(@RequestBody CompanyInfo companyInfo) throws Exception {
+    public ResponseData addACompanyInfo(@RequestBody CompanyInfo companyInfo) throws Exception {
 
         companyInfo.setCompanyId(UUID.randomUUID().toString());
         ResponseData res = ResponseData.ok();
@@ -56,54 +50,79 @@ public class CompanyInfoController {
 
         return res;
     }
-    /*
 
-     */
-    /*刪除一个行业信息*//*
-
-    @RequestMapping(value = "/deleteAindustryInfo", method = {RequestMethod.GET})
+    /*  刪除一条相关企业*/
+    @RequestMapping(value = "/deleteACompanyInfo", method = {RequestMethod.GET})
     @ResponseBody
-    public ResponseData deleteAindustryInfo(HttpServletRequest request) throws Exception {
-        String industryId = request.getParameter("industryId");
+    public ResponseData deleteACompanyInfo(HttpServletRequest request) throws Exception {
+        String companyId = request.getParameter("companyId");
         ResponseData res = ResponseData.ok();
 
-        int service_res = industryInfoService.deleteAindustryInfo(industryId);
+        int service_res = companyInfoService.deleteACompanyInfo(companyId);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
         }
         return res;
     }
 
-    */
-    /*修改一条行业信息*//*
-
-    @RequestMapping(value = "/updateAindustryInfo", method = {RequestMethod.POST})
+    /*修改一条企业信息*/
+    @RequestMapping(value = "/updateACompanyInfo", method = {RequestMethod.POST})
     @ResponseBody
-    public ResponseData updateAindustryInfo(@RequestBody IndustryInfo industryInfo) throws Exception {
+    public ResponseData updateACompanyInfo(@RequestBody CompanyInfo companyInfo) throws Exception {
         ResponseData res = ResponseData.ok();
 
-        int service_res = industryInfoService.updateAindustryInfo(industryInfo);
+        int service_res = companyInfoService.updateACompanyInfo(companyInfo);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
         }
         return res;
     }
 
-    */
-    /*查询某个行业信息*//*
 
-    @RequestMapping(value = "/findIndustryInfoByCode", method = {RequestMethod.POST})
+    /*查询某个企业信息-根据行业ID*/
+    @RequestMapping(value = "/findComInfoByIndustryId", method = {RequestMethod.POST})
     @ResponseBody
-    public ResponseData findIndustryInfoByCode(@RequestBody IndustryInfo industryInfo) throws Exception {
+    public ResponseData findComInfoByIndustryId(@RequestBody String industryId) throws Exception {
         ResponseData res = ResponseData.ok();
 
-        List<IndustryInfo> service_res = industryInfoService.findIndustryInfoByCode(industryInfo);
+        List<CompanyInfo> service_res = companyInfoService.findComInfoByIndustryId(industryId);
         if (null != service_res) {
             res.putDataValue("industryInfo", service_res);
         }
         return res;
     }
-*/
+
+    /*查询某个企业信息-根据行业code*/
+    @RequestMapping(value = "/findComInfoByIndustryCode", method = {RequestMethod.GET})
+    @ResponseBody
+    public ResponseData findComInfoByIndustryCode(HttpServletRequest request) throws Exception {
+        String companyIndustryCode=request.getParameter("companyIndustryCode");
+        ResponseData res = ResponseData.ok();
+        System.out.println(request);
+        System.out.println(companyIndustryCode);
+        List<CompanyInfo> service_res = companyInfoService.findComInfoByIndustryCode(companyIndustryCode);
+        for (CompanyInfo s1 : service_res) {
+            System.out.println(s1);
+        }
+
+        if (null != service_res) {
+            res.putDataValue("companyInfo", service_res);
+        }
+        return res;
+    }
+
+    /*查询某个企业信息-根据企业ID*/
+    @RequestMapping(value = "/findCompanyInfoById", method = {RequestMethod.POST})
+    @ResponseBody
+    public ResponseData findCompanyInfoById(@RequestBody String companyId) throws Exception {
+        ResponseData res = ResponseData.ok();
+
+        CompanyInfo service_res = companyInfoService.findCompanyInfoById(companyId);
+        if (null != service_res) {
+            res.putDataValue("industryInfo", service_res);
+        }
+        return res;
+    }
 
 
 }

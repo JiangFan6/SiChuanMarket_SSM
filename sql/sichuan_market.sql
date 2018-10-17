@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-15 22:39:04
+Date: 2018-10-17 22:28:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -117,18 +117,22 @@ CREATE TABLE `company_info` (
   `company_name` varchar(255) DEFAULT NULL,
   `company_headcount` int(255) DEFAULT NULL,
   `company_assets` double(255,2) DEFAULT NULL,
-  `company_establish_date` date DEFAULT NULL,
+  `company_establish_date` datetime(6) DEFAULT NULL,
   `company_address` varchar(255) DEFAULT NULL,
   `company_legal_repre` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `company_type` varchar(255) DEFAULT NULL,
   `company_registration_num` varchar(255) DEFAULT NULL,
   `company_industry_id` varchar(255) DEFAULT NULL,
+  `company_industry_code` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of company_info
 -- ----------------------------
+INSERT INTO `company_info` VALUES ('1', 'ae8e55d8-ca8d-41b4-9ee6-498e7b493725', '', '0', '0.00', '1997-01-09 08:00:00.000000', '', '', '', '', '666', null);
+INSERT INTO `company_info` VALUES ('2', '44272607-d758-4515-b6ef-fbb0dbfb1000', '', '0', '0.00', '2018-05-17 08:00:00.000000', '', '', '', '', '666', null);
+INSERT INTO `company_info` VALUES ('3', 'd31f7849-ab41-4d53-930a-d5b9d2724c5e', '新希望集团有限公司', '0', '80000.00', '1997-01-09 08:00:00.000000', '成都市武侯区人民南路4段45号', '刘永好', '31', '510000000029559', '666', '201');
 
 -- ----------------------------
 -- Table structure for industry_info

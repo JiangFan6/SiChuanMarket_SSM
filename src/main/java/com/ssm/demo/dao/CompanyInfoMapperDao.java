@@ -16,6 +16,8 @@ public interface CompanyInfoMapperDao {
 
     List<CompanyInfo> findComInfoByIndustryId(String industryId);
 
+    List<CompanyInfo> findComInfoByIndustryCode(String companyIndustryCode);
+
     CompanyInfo findCompanyInfoById(String companyId);
 
 }
