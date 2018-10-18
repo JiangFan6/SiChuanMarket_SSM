@@ -36,7 +36,6 @@ public class CompanyInfoController {
 
         companyInfo.setCompanyId(UUID.randomUUID().toString());
         ResponseData res = ResponseData.ok();
-        System.out.println(companyInfo);
         int service_res = companyInfoService.addACompanyInfo(companyInfo);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
@@ -96,15 +95,9 @@ public class CompanyInfoController {
     @RequestMapping(value = "/findComInfoByIndustryCode", method = {RequestMethod.GET})
     @ResponseBody
     public ResponseData findComInfoByIndustryCode(HttpServletRequest request) throws Exception {
-        String companyIndustryCode=request.getParameter("companyIndustryCode");
+        String companyIndustryCode = request.getParameter("companyIndustryCode");
         ResponseData res = ResponseData.ok();
-        System.out.println(request);
-        System.out.println(companyIndustryCode);
         List<CompanyInfo> service_res = companyInfoService.findComInfoByIndustryCode(companyIndustryCode);
-        for (CompanyInfo s1 : service_res) {
-            System.out.println(s1);
-        }
-
         if (null != service_res) {
             res.putDataValue("companyInfo", service_res);
         }

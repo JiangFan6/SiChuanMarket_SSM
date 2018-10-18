@@ -14,9 +14,9 @@
         ,company_address,company_legal_repre,company_type,company_registration_num,company_industry_id
         ,company_industry_code)
         VALUES
-        (#{companyId},#{companyName},#{companyHeadCount},#{companyAssets},#{companyEstablishDate}
+        (#{companyId},#{companyName},#{companyHeadcount},#{companyAssets},#{companyEstablishDate}
         ,#{companyAddress},#{companyLegalRepre},#{companyType},#{companyRegistrationNum},#{companyIndustryId}
-        ,#{companyIndustryCode});
+        ,#{companyIndustryCode})
     </insert>
 
     <!--刪除一条相关企业-->
@@ -27,29 +27,35 @@
 
     <!--修改一条企业信息-->
     <update id="updateACompanyInfo" parameterType="CompanyInfo">
-            UPDATE company_info SET
-            company_name=#{industryName},
-            company_headcount=#{companyHeadCount},
-            company_assets=#{companyAssets},
-            company_establish_date=#{companyEstablishDate},
-            company_address=#{companyAddress},
-            company_legal_repre=#{companyLegalRepre},
-            company_type=#{companyType},
-            company_registration_num=#{companyRegistrationNum},
-            company_industry_id=#{companyIndustryId},
-            company_industry_code=#{companyIndustryCode},
+            UPDATE company_info
+            SET     company_name=#{companyName},
+                    company_headcount=#{companyHeadcount},
+                    company_assets=#{companyAssets},
+                    company_establish_date=#{companyEstablishDate},
+                    company_address=#{companyAddress},
+                    company_legal_repre=#{companyLegalRepre},
+                    company_type=#{companyType},
+                    company_registration_num=#{companyRegistrationNum},
+                    company_industry_id=#{companyIndustryId},
+                    company_industry_code=#{companyIndustryCode}
             WHERE   company_id=  #{companyId}
 
         </update>
 
     <!--查询某个企业信息-根据行业ID-->
     <select id="findComInfoByIndustryId" parameterType="String" resultType="CompanyInfo">
-            SELECT * FROM company_info WHERE company_industry_id=#{companyIndustryId} ORDER BY company_establish_date ASC
+            SELECT *
+            FROM company_info
+            WHERE company_industry_id=#{companyIndustryId}
+            ORDER BY company_establish_date
+            ASC
     </select>
 
     <!--查询某个企业信息-根据行业Code-->
     <select id="findComInfoByIndustryCode" parameterType="String" resultType="CompanyInfo">
-            SELECT * FROM company_info WHERE company_industry_code=#{companyIndustryCode}
+            SELECT *
+            FROM company_info
+            WHERE company_industry_code=#{companyIndustryCode}
     </select>
 
     <!--查询某个企业信息-根据企业ID-->

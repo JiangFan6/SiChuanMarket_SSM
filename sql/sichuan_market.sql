@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-17 22:28:58
+Date: 2018-10-18 22:34:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -125,14 +125,13 @@ CREATE TABLE `company_info` (
   `company_industry_id` varchar(255) DEFAULT NULL,
   `company_industry_code` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of company_info
 -- ----------------------------
-INSERT INTO `company_info` VALUES ('1', 'ae8e55d8-ca8d-41b4-9ee6-498e7b493725', '', '0', '0.00', '1997-01-09 08:00:00.000000', '', '', '', '', '666', null);
-INSERT INTO `company_info` VALUES ('2', '44272607-d758-4515-b6ef-fbb0dbfb1000', '', '0', '0.00', '2018-05-17 08:00:00.000000', '', '', '', '', '666', null);
-INSERT INTO `company_info` VALUES ('3', 'd31f7849-ab41-4d53-930a-d5b9d2724c5e', '新希望集团有限公司', '0', '80000.00', '1997-01-09 08:00:00.000000', '成都市武侯区人民南路4段45号', '刘永好', '31', '510000000029559', '666', '201');
+INSERT INTO `company_info` VALUES ('3', 'd31f7849-ab41-4d53-930a-d5b9d2724c5e', '新希望集团有限公司', '50000', '80000.00', '1997-01-09 08:00:00.000000', '成都市武侯区人民南路4段45号', '刘永好', '31', '510000000029559', '666', '201');
+INSERT INTO `company_info` VALUES ('4', 'a3779df8-3023-4f98-a981-32f407db7423', '四川万鸿农业开发有限公司', '0', '817.00', '2011-03-04 00:00:00.000000', '绵阳市游仙区忠兴镇通兴村3组24号', '王红', '31', '510704000021095', '666', '201');
 
 -- ----------------------------
 -- Table structure for industry_info

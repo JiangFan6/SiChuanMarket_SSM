@@ -1,15 +1,19 @@
 package com.ssm.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class CompanyInfo {
 
+
     private String companyId;
     private String companyName;
-    private int companyHeadCount;
+    private int companyHeadcount;
     private double companyAssets;
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
     private Date companyEstablishDate;
     private String companyAddress;
     private String companyLegalRepre;
@@ -34,12 +38,12 @@ public class CompanyInfo {
         this.companyName = companyName;
     }
 
-    public int getCompanyHeadCount() {
-        return companyHeadCount;
+    public int getCompanyHeadcount() {
+        return companyHeadcount;
     }
 
-    public void setCompanyHeadCount(int companyHeadCount) {
-        this.companyHeadCount = companyHeadCount;
+    public void setCompanyHeadcount(int companyHeadcount) {
+        this.companyHeadcount = companyHeadcount;
     }
 
     public double getCompanyAssets() {
@@ -109,11 +113,10 @@ public class CompanyInfo {
     public CompanyInfo() {
     }
 
-
-    public CompanyInfo(String companyId, String companyName, int companyHeadCount, double companyAssets, Date companyEstablishDate, String companyAddress, String companyLegalRepre, String companyType, String companyRegistrationNum, String companyIndustryId, String companyIndustryCode) {
+    public CompanyInfo(String companyId, String companyName, int companyHeadcount, double companyAssets, Date companyEstablishDate, String companyAddress, String companyLegalRepre, String companyType, String companyRegistrationNum, String companyIndustryId, String companyIndustryCode) {
         this.companyId = companyId;
         this.companyName = companyName;
-        this.companyHeadCount = companyHeadCount;
+        this.companyHeadcount = companyHeadcount;
         this.companyAssets = companyAssets;
         this.companyEstablishDate = companyEstablishDate;
         this.companyAddress = companyAddress;
@@ -129,7 +132,7 @@ public class CompanyInfo {
         return "CompanyInfo{" +
                 "companyId='" + companyId + '\'' +
                 ", companyName='" + companyName + '\'' +
-                ", companyHeadCount=" + companyHeadCount +
+                ", companyHeadcount=" + companyHeadcount +
                 ", companyAssets=" + companyAssets +
                 ", companyEstablishDate=" + companyEstablishDate +
                 ", companyAddress='" + companyAddress + '\'' +

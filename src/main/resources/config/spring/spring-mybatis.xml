@@ -36,6 +36,14 @@
         <property name="typeAliasesPackage" value="com.ssm.demo.entity"/>
         <!-- 扫描sql配置文件:mapper需要的xml文件 -->
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+
+        <!-- 可在mybatis配置文件中设置-下划线转驼峰 -->
+        <property name="configuration">
+            <bean class="org.apache.ibatis.session.Configuration">
+                <property name="mapUnderscoreToCamelCase" value="true"/>
+            </bean>
+        </property>
+
     </bean>
 
     <!-- 配置扫描Dao接口包，动态实现Dao接口，注入到spring容器中 -->
@@ -51,6 +59,9 @@
         <!-- 注入数据库连接池 -->
         <property name="dataSource" ref="dataSource"/>
     </bean>
+
+
+
 
     <!-- 配置基于注解的声明式事务 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
