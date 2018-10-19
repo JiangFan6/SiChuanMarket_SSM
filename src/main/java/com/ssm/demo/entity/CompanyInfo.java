@@ -1,6 +1,7 @@
 package com.ssm.demo.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
@@ -13,7 +14,11 @@ public class CompanyInfo {
     private String companyName;
     private int companyHeadcount;
     private double companyAssets;
-    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
+
+
+//    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+//    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+
     private Date companyEstablishDate;
     private String companyAddress;
     private String companyLegalRepre;
