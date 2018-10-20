@@ -29,7 +29,7 @@ public class CityInfoController {
     @RequestMapping(value = "/addAnewCityInfo", method = {RequestMethod.POST})
     @ResponseBody
     public Result addAnewCityInfo(@RequestBody CityInfo cityInfo) throws Exception {
-        cityInfo.setCity_id(UUID.randomUUID().toString());
+        cityInfo.setCityId(UUID.randomUUID().toString());
 
         int result = cityInfoService.addAnewCityInfo(cityInfo);
         Result result1 = Result.error(CodeMsg.PARAMETER_ERROR);
@@ -84,8 +84,8 @@ public class CityInfoController {
     @RequestMapping(value = "/findAllCityInfo", method = {RequestMethod.GET})
     @ResponseBody
     public Result findAllCityInfo(HttpServletRequest request) throws Exception {
-        String statistic_date = request.getParameter("statistic_date");
-        List<CityInfo> service_result = cityInfoService.findAllCityInfo(statistic_date);
+        String statisticDate = request.getParameter("statisticDate");
+        List<CityInfo> service_result = cityInfoService.findAllCityInfo(statisticDate);
         Result final_result = Result.error(CodeMsg.NOT_FIND_DATA);
         if (0 != service_result.size() && null != service_result) {
             final_result = Result.success(service_result);
@@ -99,8 +99,8 @@ public class CityInfoController {
     @ResponseBody
     public Result findTotalGDPList(HttpServletRequest request) throws Exception {
         Result final_result = Result.error(CodeMsg.NOT_FIND_DATA);
-        String statistic_date=request.getParameter("statistic_date");
-        List<CityGDPTotal> service_result = cityInfoService.findTotalGDPList(statistic_date);
+        String statisticDate=request.getParameter("statisticDate");
+        List<CityGDPTotal> service_result = cityInfoService.findTotalGDPList(statisticDate);
         if (0 != service_result.size() && null != service_result) {
             final_result = Result.success(service_result);
         }

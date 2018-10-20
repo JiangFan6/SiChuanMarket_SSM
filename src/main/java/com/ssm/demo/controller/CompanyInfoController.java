@@ -36,6 +36,7 @@ public class CompanyInfoController {
 
         companyInfo.setCompanyId(UUID.randomUUID().toString());
         ResponseData res = ResponseData.ok();
+        System.out.println(companyInfo);
         int service_res = companyInfoService.addACompanyInfo(companyInfo);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();

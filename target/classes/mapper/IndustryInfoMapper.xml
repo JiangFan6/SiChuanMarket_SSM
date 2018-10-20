@@ -10,9 +10,9 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         INSERT INTO
-        industry_info(industryId,industryCode,industryName,totalOutPut,totalOutPut_unit,productionCosts,productionCosts_unit
-        ,industryProfit,profit_unit,employedPopulation,employedPopulation_unit,statisticDate
-        ,topCompanies)
+        industry_info(industry_id,industry_code,industry_name,total_output,total_output_unit,production_costs,production_costs_unit
+        ,industry_profit,profit_unit,employed_population,employed_population_unit,statistic_date
+        ,top_tompanies)
         VALUES
         (#{industryId},#{industryCode},#{industryName},#{totalOutPut},#{totalOutPut_unit},#{productionCosts},#{productionCosts_unit}
         ,#{industryProfit},#{profit_unit},#{employedPopulation},#{employedPopulation_unit},#{statisticDate}
@@ -22,31 +22,31 @@
     <!--删除一条行业信息-->
 
     <delete id="deleteAindustryInfo" parameterType="String">
-        DELETE FROM industry_info WHERE industryId=#{industryId}
+        DELETE FROM industry_info WHERE industry_id=#{industryId}
     </delete>
 
     <!--修改一条行业信息-->
     <update id="updateAindustryInfo" parameterType="IndustryInfo">
         UPDATE industry_info SET
-        industryCode=#{industryCode},
-        industryName=#{industryName},
-        totalOutPut=#{totalOutPut},
-        totalOutPut_unit=#{totalOutPut_unit},
-        productionCosts=#{productionCosts},
-        productionCosts_unit=#{productionCosts_unit},
-        industryProfit=#{industryProfit},
+        industry_code=#{industryCode},
+        industry_name=#{industryName},
+        total_output=#{totalOutPut},
+        total_output_unit=#{totalOutPut_unit},
+        production_costs=#{productionCosts},
+        production_costs_unit=#{productionCosts_unit},
+        industry_profit=#{industryProfit},
         profit_unit=#{profit_unit},
-        employedPopulation=#{employedPopulation},
-        employedPopulation_unit=#{employedPopulation_unit},
-        statisticDate=#{statisticDate},
-        topCompanies=#{topCompanies}
-        WHERE   industryId=  #{industryId}
+        employed_population=#{employedPopulation},
+        employed_population_unit=#{employedPopulation_unit},
+        statistic_date=#{statisticDate},
+        top_tompanies=#{topCompanies}
+        WHERE   industry_id=  #{industryId}
 
     </update>
 
     <!--查询某个行业数据-->
     <select id="findIndustryInfoByCode" parameterType="IndustryInfo" resultType="IndustryInfo">
-        SELECT * FROM industry_info WHERE industryCode=#{industryCode} ORDER BY statisticDate ASC
+        SELECT * FROM industry_info WHERE industry_code=#{industryCode} ORDER BY statistic_date ASC
     </select>
 
 

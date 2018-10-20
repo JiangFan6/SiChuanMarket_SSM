@@ -56,6 +56,8 @@
             SELECT *
             FROM company_info
             WHERE company_industry_code=#{companyIndustryCode}
+            ORDER BY company_name
+            ASC
     </select>
 
     <!--查询某个企业信息-根据企业ID-->

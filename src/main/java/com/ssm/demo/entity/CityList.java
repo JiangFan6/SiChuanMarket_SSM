@@ -2,39 +2,38 @@ package com.ssm.demo.entity;
 
 public class CityList {
 
-    private String city_name;
-    private String city_code;
+    private String cityName;
+    private String cityCode;
 
-    public String getCity_name() {
-        return city_name;
+    public String getCityName() {
+        return cityName;
     }
 
-    public void setCity_name(String city_name) {
-        this.city_name = city_name;
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 
-    public String getCity_code() {
-        return city_code;
+    public String getCityCode() {
+        return cityCode;
     }
 
-    public void setCity_code(String city_code) {
-        this.city_code = city_code;
+    public void setCityCode(String cityCode) {
+        this.cityCode = cityCode;
     }
 
     public CityList() {
-
     }
 
-    public CityList(String city_name, String city_code) {
-        this.city_name = city_name;
-        this.city_code = city_code;
+    public CityList(String cityName, String cityCode) {
+        this.cityName = cityName;
+        this.cityCode = cityCode;
     }
 
     @Override
     public String toString() {
         return "CityList{" +
-                "city_name='" + city_name + '\'' +
-                ", city_code='" + city_code + '\'' +
+                "cityName='" + cityName + '\'' +
+                ", cityCode='" + cityCode + '\'' +
                 '}';
     }
 }

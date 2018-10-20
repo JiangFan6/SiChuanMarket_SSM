@@ -2,16 +2,18 @@ package com.ssm.demo.entity;
 
 public class Company {
 
+/*
     private long id;
     private String name;
     private double totalOutPut;  //总产值
-    private String totalOutPut_unit;
+    private String totalOutPutUnit;
     private double productionCosts;  //生产成本
-    private String productionCosts_unit;
+    private String productionCostsUnit;
     private double profit;  //行业利润
-    private String profit_unit;
+    private String profitUnit;
     private double employedPopulation;  //从业人数
-    private String employedPopulation_unit;
+    private String employedPopulationUnit;
     private String statisticsDate;
+*/
 
 }

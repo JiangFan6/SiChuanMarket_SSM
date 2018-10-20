@@ -186,22 +186,22 @@ public class ReadExcel {
                         industryInfo.setTotalOutPut(cell.getNumericCellValue());//行业总产值
                     } else if (c == 3) {
                         cell.setCellType(CellType.STRING);
-                        industryInfo.setTotalOutPut_unit(cell.getStringCellValue());//行业总产值-单位
+                        industryInfo.setTotalOutPutUnit(cell.getStringCellValue());//行业总产值-单位
                     } else if (c == 4) {
                         industryInfo.setProductionCosts(cell.getNumericCellValue());//生产成本
                     } else if (c == 5) {
                         cell.setCellType(CellType.STRING);
-                        industryInfo.setProductionCosts_unit(cell.getStringCellValue());//生产成本-单位
+                        industryInfo.setProductionCostsUnit(cell.getStringCellValue());//生产成本-单位
                     } else if (c == 6) {
                         industryInfo.setIndustryProfit(cell.getNumericCellValue());//行业利润
                     } else if (c == 7) {
                         cell.setCellType(CellType.STRING);
-                        industryInfo.setProfit_unit(cell.getStringCellValue());//行业利润-单位
+                        industryInfo.setProfitUnit(cell.getStringCellValue());//行业利润-单位
                     } else if (c == 8) {
                         industryInfo.setEmployedPopulation(cell.getNumericCellValue());//从业人数
                     } else if (c == 9) {
                         cell.setCellType(CellType.STRING);
-                        industryInfo.setEmployedPopulation_unit(cell.getStringCellValue());//从业人数-单位
+                        industryInfo.setEmployedPopulationUnit(cell.getStringCellValue());//从业人数-单位
                     } else if (c == 10) {
                         cell.setCellType(CellType.STRING);
                         industryInfo.setStatisticDate(cell.getStringCellValue());//统计时间

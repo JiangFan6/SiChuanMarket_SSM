@@ -2,226 +2,227 @@ package com.ssm.demo.entity;
 
 public class CityInfo {
 
-    private String city_id;
-    private String city_name;
-    private String city_code;
-    private double city_gdp_total;
-    private String city_gdp_total_unit;
-    private int city_gdp_pp;
-    private String city_gdp_pp_unit;
-    private double city_areas;
-    private String city_areas_unit;
-    private double city_population;
-    private String city_population_unit;
-    private String city_gov_address;
-    private int city_scenic_spots;
-    private int city_airlines;
-    private String  city_airlines_unit;
-    private int city_train;
-    private String city_train_unit;
-    private int city_cars_counts;
-    private String statistic_date;
+    private String cityId;
+    private String cityName;
+    private String cityCode;
+    private double cityGdpTotal;
+    private String cityGdpTotalUnit;
+    private int cityGdpPp;
+    private String cityGdpPpUnit;
+    private double cityAreas;
+    private String cityAreasUnit;
+    private double cityPopulation;
+    private String cityPopulationUnit;
+    private String cityGovAddress;
+    private int cityScenicSpots;
+    private int cityAirlines;
+    private String  cityAirlinesUnit;
+    private int cityTrain;
+    private String cityTrainUnit;
+    private int cityCarsCounts;
+    private String statisticDate;
 
-    public String getCity_id() {
-        return city_id;
+    public String getCityId() {
+        return cityId;
     }
 
-    public void setCity_id(String city_id) {
-        this.city_id = city_id;
+    public void setCityId(String cityId) {
+        this.cityId = cityId;
     }
 
-    public String getCity_name() {
-        return city_name;
+    public String getCityName() {
+        return cityName;
     }
 
-    public void setCity_name(String city_name) {
-        this.city_name = city_name;
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 
-    public String getCity_code() {
-        return city_code;
+    public String getCityCode() {
+        return cityCode;
     }
 
-    public void setCity_code(String city_code) {
-        this.city_code = city_code;
+    public void setCityCode(String cityCode) {
+        this.cityCode = cityCode;
     }
 
-    public double getCity_gdp_total() {
-        return city_gdp_total;
+    public double getCityGdpTotal() {
+        return cityGdpTotal;
     }
 
-    public void setCity_gdp_total(double city_gdp_total) {
-        this.city_gdp_total = city_gdp_total;
+    public void setCityGdpTotal(double cityGdpTotal) {
+        this.cityGdpTotal = cityGdpTotal;
     }
 
-    public String getCity_gdp_total_unit() {
-        return city_gdp_total_unit;
+    public String getCityGdpTotalUnit() {
+        return cityGdpTotalUnit;
     }
 
-    public void setCity_gdp_total_unit(String city_gdp_total_unit) {
-        this.city_gdp_total_unit = city_gdp_total_unit;
+    public void setCityGdpTotalUnit(String cityGdpTotalUnit) {
+        this.cityGdpTotalUnit = cityGdpTotalUnit;
     }
 
-    public int getCity_gdp_pp() {
-        return city_gdp_pp;
+    public int getCityGdpPp() {
+        return cityGdpPp;
     }
 
-    public void setCity_gdp_pp(int city_gdp_pp) {
-        this.city_gdp_pp = city_gdp_pp;
+    public void setCityGdpPp(int cityGdpPp) {
+        this.cityGdpPp = cityGdpPp;
     }
 
-    public String getCity_gdp_pp_unit() {
-        return city_gdp_pp_unit;
+    public String getCityGdpPpUnit() {
+        return cityGdpPpUnit;
     }
 
-    public void setCity_gdp_pp_unit(String city_gdp_pp_unit) {
-        this.city_gdp_pp_unit = city_gdp_pp_unit;
+    public void setCityGdpPpUnit(String cityGdpPpUnit) {
+        this.cityGdpPpUnit = cityGdpPpUnit;
     }
 
-    public double getCity_areas() {
-        return city_areas;
+    public double getCityAreas() {
+        return cityAreas;
     }
 
-    public void setCity_areas(double city_areas) {
-        this.city_areas = city_areas;
+    public void setCityAreas(double cityAreas) {
+        this.cityAreas = cityAreas;
     }
 
-    public String getCity_areas_unit() {
-        return city_areas_unit;
+    public String getCityAreasUnit() {
+        return cityAreasUnit;
     }
 
-    public void setCity_areas_unit(String city_areas_unit) {
-        this.city_areas_unit = city_areas_unit;
+    public void setCityAreasUnit(String cityAreasUnit) {
+        this.cityAreasUnit = cityAreasUnit;
     }
 
-    public double getCity_population() {
-        return city_population;
+    public double getCityPopulation() {
+        return cityPopulation;
     }
 
-    public void setCity_population(double city_population) {
-        this.city_population = city_population;
+    public void setCityPopulation(double cityPopulation) {
+        this.cityPopulation = cityPopulation;
     }
 
-    public String getCity_population_unit() {
-        return city_population_unit;
+    public String getCityPopulationUnit() {
+        return cityPopulationUnit;
     }
 
-    public void setCity_population_unit(String city_population_unit) {
-        this.city_population_unit = city_population_unit;
+    public void setCityPopulationUnit(String cityPopulationUnit) {
+        this.cityPopulationUnit = cityPopulationUnit;
     }
 
-    public String getCity_gov_address() {
-        return city_gov_address;
+    public String getCityGovAddress() {
+        return cityGovAddress;
     }
 
-    public void setCity_gov_address(String city_gov_address) {
-        this.city_gov_address = city_gov_address;
+    public void setCityGovAddress(String cityGovAddress) {
+        this.cityGovAddress = cityGovAddress;
     }
 
-    public int getCity_scenic_spots() {
-        return city_scenic_spots;
+    public int getCityScenicSpots() {
+        return cityScenicSpots;
     }
 
-    public void setCity_scenic_spots(int city_scenic_spots) {
-        this.city_scenic_spots = city_scenic_spots;
+    public void setCityScenicSpots(int cityScenicSpots) {
+        this.cityScenicSpots = cityScenicSpots;
     }
 
-    public int getCity_airlines() {
-        return city_airlines;
+    public int getCityAirlines() {
+        return cityAirlines;
     }
 
-    public void setCity_airlines(int city_airlines) {
-        this.city_airlines = city_airlines;
+    public void setCityAirlines(int cityAirlines) {
+        this.cityAirlines = cityAirlines;
     }
 
-    public String getCity_airlines_unit() {
-        return city_airlines_unit;
+    public String getCityAirlinesUnit() {
+        return cityAirlinesUnit;
     }
 
-    public void setCity_airlines_unit(String city_airlines_unit) {
-        this.city_airlines_unit = city_airlines_unit;
+    public void setCityAirlinesUnit(String cityAirlinesUnit) {
+        this.cityAirlinesUnit = cityAirlinesUnit;
     }
 
-    public int getCity_train() {
-        return city_train;
+    public int getCityTrain() {
+        return cityTrain;
     }
 
-    public void setCity_train(int city_train) {
-        this.city_train = city_train;
+    public void setCityTrain(int cityTrain) {
+        this.cityTrain = cityTrain;
     }
 
-    public String getCity_train_unit() {
-        return city_train_unit;
+    public String getCityTrainUnit() {
+        return cityTrainUnit;
     }
 
-    public void setCity_train_unit(String city_train_unit) {
-        this.city_train_unit = city_train_unit;
+    public void setCityTrainUnit(String cityTrainUnit) {
+        this.cityTrainUnit = cityTrainUnit;
     }
 
-    public int getCity_cars_counts() {
-        return city_cars_counts;
+    public int getCityCarsCounts() {
+        return cityCarsCounts;
     }
 
-    public void setCity_cars_counts(int city_cars_counts) {
-        this.city_cars_counts = city_cars_counts;
+    public void setCityCarsCounts(int cityCarsCounts) {
+        this.cityCarsCounts = cityCarsCounts;
     }
 
-    public String getStatistic_date() {
-        return statistic_date;
+    public String getStatisticDate() {
+        return statisticDate;
     }
 
-    public void setStatistic_date(String statistic_date) {
-        this.statistic_date = statistic_date;
+    public void setStatisticDate(String statisticDate) {
+        this.statisticDate = statisticDate;
     }
+
 
     public CityInfo() {
     }
 
-    public CityInfo(String city_id, String city_name, String city_code, double city_gdp_total, String city_gdp_total_unit, int city_gdp_pp, String city_gdp_pp_unit, double city_areas, String city_areas_unit, double city_population, String city_population_unit, String city_gov_address, int city_scenic_spots, int city_airlines, String city_airlines_unit, int city_train, String city_train_unit, int city_cars_counts, String statistic_date) {
-        this.city_id = city_id;
-        this.city_name = city_name;
-        this.city_code = city_code;
-        this.city_gdp_total = city_gdp_total;
-        this.city_gdp_total_unit = city_gdp_total_unit;
-        this.city_gdp_pp = city_gdp_pp;
-        this.city_gdp_pp_unit = city_gdp_pp_unit;
-        this.city_areas = city_areas;
-        this.city_areas_unit = city_areas_unit;
-        this.city_population = city_population;
-        this.city_population_unit = city_population_unit;
-        this.city_gov_address = city_gov_address;
-        this.city_scenic_spots = city_scenic_spots;
-        this.city_airlines = city_airlines;
-        this.city_airlines_unit = city_airlines_unit;
-        this.city_train = city_train;
-        this.city_train_unit = city_train_unit;
-        this.city_cars_counts = city_cars_counts;
-        this.statistic_date = statistic_date;
+    public CityInfo(String cityId, String cityName, String cityCode, double cityGdpTotal, String cityGdpTotalUnit, int cityGdpPp, String cityGdpPpUnit, double cityAreas, String cityAreasUnit, double cityPopulation, String cityPopulationUnit, String cityGovAddress, int cityScenicSpots, int cityAirlines, String cityAirlinesUnit, int cityTrain, String cityTrainUnit, int cityCarsCounts, String statisticDate) {
+        this.cityId = cityId;
+        this.cityName = cityName;
+        this.cityCode = cityCode;
+        this.cityGdpTotal = cityGdpTotal;
+        this.cityGdpTotalUnit = cityGdpTotalUnit;
+        this.cityGdpPp = cityGdpPp;
+        this.cityGdpPpUnit = cityGdpPpUnit;
+        this.cityAreas = cityAreas;
+        this.cityAreasUnit = cityAreasUnit;
+        this.cityPopulation = cityPopulation;
+        this.cityPopulationUnit = cityPopulationUnit;
+        this.cityGovAddress = cityGovAddress;
+        this.cityScenicSpots = cityScenicSpots;
+        this.cityAirlines = cityAirlines;
+        this.cityAirlinesUnit = cityAirlinesUnit;
+        this.cityTrain = cityTrain;
+        this.cityTrainUnit = cityTrainUnit;
+        this.cityCarsCounts = cityCarsCounts;
+        this.statisticDate = statisticDate;
     }
 
 
     @Override
     public String toString() {
         return "CityInfo{" +
-                "city_id='" + city_id + '\'' +
-                ", city_name='" + city_name + '\'' +
-                ", city_code='" + city_code + '\'' +
-                ", city_gdp_total=" + city_gdp_total +
-                ", city_gdp_total_unit='" + city_gdp_total_unit + '\'' +
-                ", city_gdp_pp=" + city_gdp_pp +
-                ", city_gdp_pp_unit='" + city_gdp_pp_unit + '\'' +
-                ", city_areas=" + city_areas +
-                ", city_areas_unit='" + city_areas_unit + '\'' +
-                ", city_population=" + city_population +
-                ", city_population_unit='" + city_population_unit + '\'' +
-                ", city_gov_address='" + city_gov_address + '\'' +
-                ", city_scenic_spots=" + city_scenic_spots +
-                ", city_airlines=" + city_airlines +
-                ", city_airlines_unit='" + city_airlines_unit + '\'' +
-                ", city_train=" + city_train +
-                ", city_train_unit='" + city_train_unit + '\'' +
-                ", city_cars_counts=" + city_cars_counts +
-                ", statistic_date='" + statistic_date + '\'' +
+                "cityId='" + cityId + '\'' +
+                ", cityName='" + cityName + '\'' +
+                ", cityCode='" + cityCode + '\'' +
+                ", cityGdpTotal=" + cityGdpTotal +
+                ", cityGdpTotalUnit='" + cityGdpTotalUnit + '\'' +
+                ", cityGdpPp=" + cityGdpPp +
+                ", cityGdpPpUnit='" + cityGdpPpUnit + '\'' +
+                ", cityAreas=" + cityAreas +
+                ", cityAreasUnit='" + cityAreasUnit + '\'' +
+                ", cityPopulation=" + cityPopulation +
+                ", cityPopulationUnit='" + cityPopulationUnit + '\'' +
+                ", cityGovAddress='" + cityGovAddress + '\'' +
+                ", cityScenicSpots=" + cityScenicSpots +
+                ", cityAirlines=" + cityAirlines +
+                ", cityAirlinesUnit='" + cityAirlinesUnit + '\'' +
+                ", cityTrain=" + cityTrain +
+                ", cityTrainUnit='" + cityTrainUnit + '\'' +
+                ", cityCarsCounts=" + cityCarsCounts +
+                ", statisticDate='" + statisticDate + '\'' +
                 '}';
     }
 }

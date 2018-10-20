@@ -14,11 +14,7 @@ public class CompanyInfo {
     private String companyName;
     private int companyHeadcount;
     private double companyAssets;
-
-
-//    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
-//    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
-
+    //    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date companyEstablishDate;
     private String companyAddress;
     private String companyLegalRepre;

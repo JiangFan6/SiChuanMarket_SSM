@@ -2,104 +2,105 @@ package com.ssm.demo.entity;
 
 public class CityGDPTotal {
 
-    private String city_id;
-    private String city_name;
-    private double city_gdp_total;
-    private String city_gdp_total_unit;
-    private int city_gdp_pp;
-    private String city_gdp_pp_unit;
-    private double city_population;
-    private String city_population_unit;
+    private String cityId;
+    private String cityName;
+    private double cityGdpTotal;
+    private String cityGdpTotalUnit;
+    private int cityGdpPp;
+    private String cityGdpPpUnit;
+    private double cityPopulation;
+    private String cityPopulationUnit;
 
-    public String getCity_id() {
-        return city_id;
+    public String getCityId() {
+        return cityId;
     }
 
-    public void setCity_id(String city_id) {
-        this.city_id = city_id;
+    public void setCityId(String cityId) {
+        this.cityId = cityId;
     }
 
-    public String getCity_name() {
-        return city_name;
+    public String getCityName() {
+        return cityName;
     }
 
-    public void setCity_name(String city_name) {
-        this.city_name = city_name;
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 
-    public double getCity_gdp_total() {
-        return city_gdp_total;
+    public double getCityGdpTotal() {
+        return cityGdpTotal;
     }
 
-    public void setCity_gdp_total(double city_gdp_total) {
-        this.city_gdp_total = city_gdp_total;
+    public void setCityGdpTotal(double cityGdpTotal) {
+        this.cityGdpTotal = cityGdpTotal;
     }
 
-    public String getCity_gdp_total_unit() {
-        return city_gdp_total_unit;
+    public String getCityGdpTotalUnit() {
+        return cityGdpTotalUnit;
     }
 
-    public void setCity_gdp_total_unit(String city_gdp_total_unit) {
-        this.city_gdp_total_unit = city_gdp_total_unit;
+    public void setCityGdpTotalUnit(String cityGdpTotalUnit) {
+        this.cityGdpTotalUnit = cityGdpTotalUnit;
     }
 
-    public int getCity_gdp_pp() {
-        return city_gdp_pp;
+    public int getCityGdpPp() {
+        return cityGdpPp;
     }
 
-    public void setCity_gdp_pp(int city_gdp_pp) {
-        this.city_gdp_pp = city_gdp_pp;
+    public void setCityGdpPp(int cityGdpPp) {
+        this.cityGdpPp = cityGdpPp;
     }
 
-    public String getCity_gdp_pp_unit() {
-        return city_gdp_pp_unit;
+    public String getCityGdpPpUnit() {
+        return cityGdpPpUnit;
     }
 
-    public void setCity_gdp_pp_unit(String city_gdp_pp_unit) {
-        this.city_gdp_pp_unit = city_gdp_pp_unit;
+    public void setCityGdpPpUnit(String cityGdpPpUnit) {
+        this.cityGdpPpUnit = cityGdpPpUnit;
     }
 
-    public double getCity_population() {
-        return city_population;
+    public double getCityPopulation() {
+        return cityPopulation;
     }
 
-    public void setCity_population(double city_population) {
-        this.city_population = city_population;
+    public void setCityPopulation(double cityPopulation) {
+        this.cityPopulation = cityPopulation;
     }
 
-    public String getCity_population_unit() {
-        return city_population_unit;
+    public String getCityPopulationUnit() {
+        return cityPopulationUnit;
     }
 
-    public void setCity_population_unit(String city_population_unit) {
-        this.city_population_unit = city_population_unit;
+    public void setCityPopulationUnit(String cityPopulationUnit) {
+        this.cityPopulationUnit = cityPopulationUnit;
     }
 
     public CityGDPTotal() {
     }
 
-    public CityGDPTotal(String city_id, String city_name, double city_gdp_total, String city_gdp_total_unit, int city_gdp_pp, String city_gdp_pp_unit, double city_population, String city_population_unit) {
-        this.city_id = city_id;
-        this.city_name = city_name;
-        this.city_gdp_total = city_gdp_total;
-        this.city_gdp_total_unit = city_gdp_total_unit;
-        this.city_gdp_pp = city_gdp_pp;
-        this.city_gdp_pp_unit = city_gdp_pp_unit;
-        this.city_population = city_population;
-        this.city_population_unit = city_population_unit;
+    public CityGDPTotal(String cityId, String cityName, double cityGdpTotal, String cityGdpTotalUnit, int cityGdpPp, String cityGdpPpUnit, double cityPopulation, String cityPopulationUnit) {
+        this.cityId = cityId;
+        this.cityName = cityName;
+        this.cityGdpTotal = cityGdpTotal;
+        this.cityGdpTotalUnit = cityGdpTotalUnit;
+        this.cityGdpPp = cityGdpPp;
+        this.cityGdpPpUnit = cityGdpPpUnit;
+        this.cityPopulation = cityPopulation;
+        this.cityPopulationUnit = cityPopulationUnit;
     }
+
 
     @Override
     public String toString() {
         return "CityGDPTotal{" +
-                "city_id='" + city_id + '\'' +
-                ", city_name='" + city_name + '\'' +
-                ", city_gdp_total=" + city_gdp_total +
-                ", city_gdp_total_unit='" + city_gdp_total_unit + '\'' +
-                ", city_gdp_pp=" + city_gdp_pp +
-                ", city_gdp_pp_unit='" + city_gdp_pp_unit + '\'' +
-                ", city_population=" + city_population +
-                ", city_population_unit='" + city_population_unit + '\'' +
+                "cityId='" + cityId + '\'' +
+                ", cityName='" + cityName + '\'' +
+                ", cityGdpTotal=" + cityGdpTotal +
+                ", cityGdpTotalUnit='" + cityGdpTotalUnit + '\'' +
+                ", cityGdpPp=" + cityGdpPp +
+                ", cityGdpPpUnit='" + cityGdpPpUnit + '\'' +
+                ", cityPopulation=" + cityPopulation +
+                ", cityPopulationUnit='" + cityPopulationUnit + '\'' +
                 '}';
     }
 }

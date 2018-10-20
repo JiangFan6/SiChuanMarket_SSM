@@ -7,13 +7,13 @@ public class IndustryInfo {
     private String industryCode;
     private String industryName;
     private double totalOutPut;  //总产值
-    private String totalOutPut_unit;
+    private String totalOutPutUnit;
     private double productionCosts;  //生产成本
-    private String productionCosts_unit;
+    private String productionCostsUnit;
     private double industryProfit;  //行业利润
-    private String profit_unit;
+    private String profitUnit;
     private double employedPopulation;  //从业人数
-    private String employedPopulation_unit;
+    private String employedPopulationUnit;
     private String statisticDate;
     private String topCompanies;  //代表企业
 
@@ -49,12 +49,12 @@ public class IndustryInfo {
         this.totalOutPut = totalOutPut;
     }
 
-    public String getTotalOutPut_unit() {
-        return totalOutPut_unit;
+    public String getTotalOutPutUnit() {
+        return totalOutPutUnit;
     }
 
-    public void setTotalOutPut_unit(String totalOutPut_unit) {
-        this.totalOutPut_unit = totalOutPut_unit;
+    public void setTotalOutPutUnit(String totalOutPutUnit) {
+        this.totalOutPutUnit = totalOutPutUnit;
     }
 
     public double getProductionCosts() {
@@ -65,12 +65,12 @@ public class IndustryInfo {
         this.productionCosts = productionCosts;
     }
 
-    public String getProductionCosts_unit() {
-        return productionCosts_unit;
+    public String getProductionCostsUnit() {
+        return productionCostsUnit;
     }
 
-    public void setProductionCosts_unit(String productionCosts_unit) {
-        this.productionCosts_unit = productionCosts_unit;
+    public void setProductionCostsUnit(String productionCostsUnit) {
+        this.productionCostsUnit = productionCostsUnit;
     }
 
     public double getIndustryProfit() {
@@ -81,12 +81,12 @@ public class IndustryInfo {
         this.industryProfit = industryProfit;
     }
 
-    public String getProfit_unit() {
-        return profit_unit;
+    public String getProfitUnit() {
+        return profitUnit;
     }
 
-    public void setProfit_unit(String profit_unit) {
-        this.profit_unit = profit_unit;
+    public void setProfitUnit(String profitUnit) {
+        this.profitUnit = profitUnit;
     }
 
     public double getEmployedPopulation() {
@@ -97,12 +97,12 @@ public class IndustryInfo {
         this.employedPopulation = employedPopulation;
     }
 
-    public String getEmployedPopulation_unit() {
-        return employedPopulation_unit;
+    public String getEmployedPopulationUnit() {
+        return employedPopulationUnit;
     }
 
-    public void setEmployedPopulation_unit(String employedPopulation_unit) {
-        this.employedPopulation_unit = employedPopulation_unit;
+    public void setEmployedPopulationUnit(String employedPopulationUnit) {
+        this.employedPopulationUnit = employedPopulationUnit;
     }
 
     public String getStatisticDate() {
@@ -124,18 +124,18 @@ public class IndustryInfo {
     public IndustryInfo() {
     }
 
-    public IndustryInfo(String industryId, String industryCode, String industryName, double totalOutPut, String totalOutPut_unit, double productionCosts, String productionCosts_unit, double industryProfit, String profit_unit, double employedPopulation, String employedPopulation_unit, String statisticDate, String topCompanies) {
+    public IndustryInfo(String industryId, String industryCode, String industryName, double totalOutPut, String totalOutPutUnit, double productionCosts, String productionCostsUnit, double industryProfit, String profitUnit, double employedPopulation, String employedPopulationUnit, String statisticDate, String topCompanies) {
         this.industryId = industryId;
         this.industryCode = industryCode;
         this.industryName = industryName;
         this.totalOutPut = totalOutPut;
-        this.totalOutPut_unit = totalOutPut_unit;
+        this.totalOutPutUnit = totalOutPutUnit;
         this.productionCosts = productionCosts;
-        this.productionCosts_unit = productionCosts_unit;
+        this.productionCostsUnit = productionCostsUnit;
         this.industryProfit = industryProfit;
-        this.profit_unit = profit_unit;
+        this.profitUnit = profitUnit;
         this.employedPopulation = employedPopulation;
-        this.employedPopulation_unit = employedPopulation_unit;
+        this.employedPopulationUnit = employedPopulationUnit;
         this.statisticDate = statisticDate;
         this.topCompanies = topCompanies;
     }
@@ -147,13 +147,13 @@ public class IndustryInfo {
                 ", industryCode='" + industryCode + '\'' +
                 ", industryName='" + industryName + '\'' +
                 ", totalOutPut=" + totalOutPut +
-                ", totalOutPut_unit='" + totalOutPut_unit + '\'' +
+                ", totalOutPutUnit='" + totalOutPutUnit + '\'' +
                 ", productionCosts=" + productionCosts +
-                ", productionCosts_unit='" + productionCosts_unit + '\'' +
+                ", productionCostsUnit='" + productionCostsUnit + '\'' +
                 ", industryProfit=" + industryProfit +
-                ", profit_unit='" + profit_unit + '\'' +
+                ", profitUnit='" + profitUnit + '\'' +
                 ", employedPopulation=" + employedPopulation +
-                ", employedPopulation_unit='" + employedPopulation_unit + '\'' +
+                ", employedPopulationUnit='" + employedPopulationUnit + '\'' +
                 ", statisticDate='" + statisticDate + '\'' +
                 ", topCompanies='" + topCompanies + '\'' +
                 '}';
