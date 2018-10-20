@@ -33,10 +33,8 @@ public class CompanyInfoController {
     @RequestMapping(value = "/addACompanyInfo", method = {RequestMethod.POST})
     @ResponseBody
     public ResponseData addACompanyInfo(@RequestBody CompanyInfo companyInfo) throws Exception {
-
         companyInfo.setCompanyId(UUID.randomUUID().toString());
         ResponseData res = ResponseData.ok();
-        System.out.println(companyInfo);
         int service_res = companyInfoService.addACompanyInfo(companyInfo);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
