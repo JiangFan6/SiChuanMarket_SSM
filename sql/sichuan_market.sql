@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-18 22:34:55
+Date: 2018-10-20 22:51:11
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -112,7 +112,7 @@ INSERT INTO `city_list` VALUES ('21', '雅安市', '118');
 -- ----------------------------
 DROP TABLE IF EXISTS `company_info`;
 CREATE TABLE `company_info` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(255) NOT NULL AUTO_INCREMENT,
   `company_id` varchar(255) NOT NULL,
   `company_name` varchar(255) DEFAULT NULL,
   `company_headcount` int(255) DEFAULT NULL,
@@ -125,13 +125,37 @@ CREATE TABLE `company_info` (
   `company_industry_id` varchar(255) DEFAULT NULL,
   `company_industry_code` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of company_info
 -- ----------------------------
 INSERT INTO `company_info` VALUES ('3', 'd31f7849-ab41-4d53-930a-d5b9d2724c5e', '新希望集团有限公司', '50000', '80000.00', '1997-01-09 08:00:00.000000', '成都市武侯区人民南路4段45号', '刘永好', '31', '510000000029559', '666', '201');
 INSERT INTO `company_info` VALUES ('4', 'a3779df8-3023-4f98-a981-32f407db7423', '四川万鸿农业开发有限公司', '0', '817.00', '2011-03-04 00:00:00.000000', '绵阳市游仙区忠兴镇通兴村3组24号', '王红', '31', '510704000021095', '666', '201');
+INSERT INTO `company_info` VALUES ('6', '6309a44a-f91d-40d1-b0c4-a3512d7a41ba', '四川麦歌农业开发有限公司', '0', '5000.00', '2006-10-11 00:00:00.000000', '成都市武侯区鹭岛路5号', '王进', '31', '510107000059051', '666', '201');
+INSERT INTO `company_info` VALUES ('7', 'fd25ac9f-f5c8-4c89-8891-cf95de9c2b1e', '四川农大高科农业有限责任公司', '0', '14917.29', '2001-06-30 00:00:00.000000', '绵阳市经开区松垭镇一号路', '李帮', '31', '510708000000665', '666', '201');
+INSERT INTO `company_info` VALUES ('8', '64f4209b-fa05-4e2b-8b3d-3952d921a101', '四川华胜农业股份有限公司', '6', '5700.00', '2012-04-13 00:00:00.000000', '四川省绵竹市江苏工业园镇江路2号', '白峰', '32', '510600000068866', '666', '201');
+INSERT INTO `company_info` VALUES ('9', 'cfe21e8e-3890-475b-bfba-a2a53e3aa960', '四川省锐嘉食品工业有限公司', '0', '500.00', '2015-06-12 00:00:00.000000', '四川省巴中市通江县工业园区', '丁维扬', '31', '511921000021283', '666', '201');
+INSERT INTO `company_info` VALUES ('10', '50cc6dba-cbcc-4ed0-9ee8-6645e49d3957', '成都卖油郎食品有限公司', '0', '50.00', '2013-11-20 00:00:00.000000', '成都市温江区成都海峡两岸科技产业开发园蓉台大道南段8号', '郭保民', '31', '510123000089978', '666', '201');
+INSERT INTO `company_info` VALUES ('11', 'cb391970-705f-4dc3-b489-544ab554a0bd', '四川林友农业开发有限公司', '0', '50.00', '2018-04-24 00:00:00.000000', '四川省绵阳市经开区塘汛镇中心村三社', '谢敏', '31', '91510700MA67Q5HM8L', '666', '201');
+INSERT INTO `company_info` VALUES ('12', '9aabedd8-b1e0-49f8-8030-fe48fe7b5fe0', '宜宾高原农业集团有限公司', '0', '20000.00', '2014-03-24 00:00:00.000000', '四川省宜宾市翠屏区金坪镇金堂村', '王乾友', '31', '511521000029632', '666', '201');
+INSERT INTO `company_info` VALUES ('13', '719fae38-4b9a-49e3-96ae-6f60c6686798', '高县雾岭茶叶有限公司', '0', '120.00', '2014-04-11 00:00:00.000000', '高县可久镇高岭村解放组', '李湘成', '31', '915115250974358510', '666', '201');
+
+-- ----------------------------
+-- Table structure for industry_company
+-- ----------------------------
+DROP TABLE IF EXISTS `industry_company`;
+CREATE TABLE `industry_company` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `industryId` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `company_id` varchar(255) NOT NULL,
+  `company_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of industry_company
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for industry_info
@@ -139,19 +163,19 @@ INSERT INTO `company_info` VALUES ('4', 'a3779df8-3023-4f98-a981-32f407db7423', 
 DROP TABLE IF EXISTS `industry_info`;
 CREATE TABLE `industry_info` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
-  `industryId` varchar(255) DEFAULT NULL,
-  `industryCode` varchar(255) DEFAULT NULL,
-  `industryName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `totalOutPut` double(255,2) DEFAULT NULL,
-  `totalOutPut_unit` varchar(255) DEFAULT NULL,
-  `productionCosts` double(255,2) DEFAULT NULL,
-  `productionCosts_unit` varchar(255) DEFAULT NULL,
-  `industryProfit` double(255,2) DEFAULT NULL,
+  `industry_id` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `industry_code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `industry_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `total_output` double(255,2) DEFAULT NULL,
+  `total_output_unit` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `production_costs` double(255,2) DEFAULT NULL,
+  `production_costs_unit` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `industry_profit` double(255,2) DEFAULT NULL,
   `profit_unit` varchar(255) DEFAULT NULL,
-  `employedPopulation` double(255,2) DEFAULT NULL,
-  `employedPopulation_unit` varchar(255) DEFAULT NULL,
-  `statisticDate` varchar(255) DEFAULT NULL,
-  `topCompanies` varchar(255) DEFAULT NULL,
+  `employed_population` double(255,2) DEFAULT NULL,
+  `employed_population_unit` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `statistic_date` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `top_tompanies` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=522 DEFAULT CHARSET=utf8;
 
@@ -625,8 +649,8 @@ INSERT INTO `industry_info` VALUES ('521', 'd349e62b-b660-454e-ad91-3c9071a7973e
 DROP TABLE IF EXISTS `industry_list`;
 CREATE TABLE `industry_list` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
-  `industryName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `industryCode` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `industry_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `industry_code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
