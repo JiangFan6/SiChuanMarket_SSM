@@ -1,7 +1,8 @@
 
 package com.ssm.demo.util;
 
-import java.io.IOException;
+/*
+//import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -42,3 +43,19 @@ public class CustomObjectMapper  extends ObjectMapper {
 
 }
 
+*/
+
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
+import java.text.SimpleDateFormat;
+
+public class CustomObjectMapper extends ObjectMapper{
+    public CustomObjectMapper(){
+        this.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS,false);
+        /*自定义日期格式*/
+        SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy年MM月dd日"); //"yyyy-MM-dd HH:mm:ss"
+        this.setDateFormat(dateFormat);
+    }
+}
