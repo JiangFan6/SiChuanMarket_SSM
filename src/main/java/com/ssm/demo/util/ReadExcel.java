@@ -211,8 +211,8 @@ public class ReadExcel {
                         Date cellDate = sdf.parse(stringDate);
                         industryInfo.setStatisticDate(cellDate);//统计时间
                     } else if (c == 11) {
-                        cell.setCellType(CellType.STRING);
-                        industryInfo.setTopCompanies(cell.getStringCellValue());//龙头企业
+//                        cell.setCellType(CellType.STRING);
+//                        industryInfo.setTopCompanies(cell.getStringCellValue());//龙头企业
                     }
                 }
             }

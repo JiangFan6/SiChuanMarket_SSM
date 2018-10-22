@@ -19,7 +19,7 @@ public class IndustryInfo {
     private String employedPopulationUnit;
     @JsonFormat(pattern = "yyyy年")
     private Date statisticDate;
-    private String topCompanies;  //代表企业
+    private List<IndustryCompany> topCompanies;  //代表企业
 
     public String getIndustryId() {
         return industryId;
@@ -117,18 +117,18 @@ public class IndustryInfo {
         this.statisticDate = statisticDate;
     }
 
-    public String getTopCompanies() {
+    public List<IndustryCompany> getTopCompanies() {
         return topCompanies;
     }
 
-    public void setTopCompanies(String topCompanies) {
+    public void setTopCompanies(List<IndustryCompany> topCompanies) {
         this.topCompanies = topCompanies;
     }
 
     public IndustryInfo() {
     }
 
-    public IndustryInfo(String industryId, String industryCode, String industryName, double totalOutPut, String totalOutPutUnit, double productionCosts, String productionCostsUnit, double industryProfit, String profitUnit, double employedPopulation, String employedPopulationUnit, Date statisticDate, String topCompanies) {
+    public IndustryInfo(String industryId, String industryCode, String industryName, double totalOutPut, String totalOutPutUnit, double productionCosts, String productionCostsUnit, double industryProfit, String profitUnit, double employedPopulation, String employedPopulationUnit, Date statisticDate, List<IndustryCompany> topCompanies) {
         this.industryId = industryId;
         this.industryCode = industryCode;
         this.industryName = industryName;
@@ -143,7 +143,6 @@ public class IndustryInfo {
         this.statisticDate = statisticDate;
         this.topCompanies = topCompanies;
     }
-
 
     @Override
     public String toString() {
@@ -160,7 +159,7 @@ public class IndustryInfo {
                 ", employedPopulation=" + employedPopulation +
                 ", employedPopulationUnit='" + employedPopulationUnit + '\'' +
                 ", statisticDate=" + statisticDate +
-                ", topCompanies='" + topCompanies + '\'' +
+                ", topCompanies=" + topCompanies +
                 '}';
     }
 }

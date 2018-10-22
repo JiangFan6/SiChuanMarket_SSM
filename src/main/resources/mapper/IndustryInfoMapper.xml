@@ -26,6 +26,7 @@
     </delete>
 
     <!--修改一条行业信息-->
+    <!--  top_tompanies=#{topCompanies}-->
     <update id="updateAindustryInfo" parameterType="IndustryInfo">
         UPDATE industry_info SET
         industry_code=#{industryCode},
@@ -38,18 +39,36 @@
         profit_unit=#{profitUnit},
         employed_population=#{employedPopulation},
         employed_population_unit=#{employedPopulationUnit},
-        statistic_date=#{statisticDate},
-        top_tompanies=#{topCompanies}
+        statistic_date=#{statisticDate}
         WHERE   industry_id=  #{industryId}
 
     </update>
+
 
     <!--查询某个行业数据-->
     <select id="findIndustryInfoByCode" parameterType="IndustryInfo" resultType="IndustryInfo">
         SELECT * FROM industry_info WHERE industry_code=#{industryCode} ORDER BY statistic_date ASC
     </select>
 
+    <!--添加一条_行业和企业的对应关系-->
+    <insert id="addIndustryCompany" parameterType="IndustryCompany">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
 
+        INSERT INTO
+        industry_company(industry_id,industry_name,statistic_date,company_id,company_name)
+        VALUES
+        (#{industryId},#{industryName},#{statisticDate},#{companyId},#{companyName})
+
+    </insert>
+
+    <!--通过行业ID查询相关企业-->
+    <select id="findIndustryCompanyById" parameterType="String" resultType="IndustryCompany">
+        SELECT *
+        FROM industry_company
+        WHERE industry_id=#{industryId}
+    </select>
 
 
 </mapper>

@@ -1,6 +1,7 @@
 package com.ssm.demo.dao;
 
 
+import com.ssm.demo.entity.IndustryCompany;
 import com.ssm.demo.entity.IndustryInfo;
 import org.springframework.stereotype.Repository;
 
@@ -17,6 +18,12 @@ public interface IndustryInfoMapperDao {
 
     List<IndustryInfo> findIndustryInfoByCode(IndustryInfo industryInfo);
 
+
+    /*添加一条对应关系*/
+    int addIndustryCompany(IndustryCompany industryCompany);
+
+    /*通过行业ID查询相关企业*/
+    List<IndustryCompany> findIndustryCompanyById(String industryId);
 
 
 }

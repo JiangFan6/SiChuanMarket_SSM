@@ -1,6 +1,7 @@
 package com.ssm.demo.controller;
 
 
+import com.ssm.demo.entity.IndustryCompany;
 import com.ssm.demo.entity.IndustryInfo;
 import com.ssm.demo.entity.ResponseData;
 import com.ssm.demo.service.IndustryInfoService;
@@ -66,8 +67,28 @@ public class IndustryInfoController {
     public ResponseData updateAindustryInfo(@RequestBody IndustryInfo industryInfo) throws Exception {
         ResponseData res = ResponseData.ok();
 
+        List<IndustryCompany> industryCompanyList = industryInfo.getTopCompanies();
+        int initAddNum = 0;
+        int indusComListSize = industryCompanyList.size();
+        System.out.println("indusComListSize");
+        System.out.println(indusComListSize);
+
+        /*添加行业和企业的对应关系*/
+        for (IndustryCompany industryCompany : industryCompanyList) {
+            industryCompany.setIndustryId(industryInfo.getIndustryId());
+            industryCompany.setIndustryName(industryInfo.getIndustryName());
+            industryCompany.setStatisticDate(industryInfo.getStatisticDate());
+            int addIndusCom = industryInfoService.addIndustryCompany(industryCompany);
+            initAddNum += addIndusCom;
+        }
+
+        industryInfo.setTopCompanies(null);
+
         int service_res = industryInfoService.updateAindustryInfo(industryInfo);
-        if (0 == service_res) {
+        System.out.println("initAddNum");
+        System.out.println(initAddNum);
+
+        if (0 == service_res && initAddNum != indusComListSize) {
             res = ResponseData.serverInternalError();
         }
         return res;
@@ -80,6 +101,13 @@ public class IndustryInfoController {
         ResponseData res = ResponseData.ok();
 
         List<IndustryInfo> service_res = industryInfoService.findIndustryInfoByCode(industryInfo);
+        for (IndustryInfo industryInfo1 : service_res) {
+            List<IndustryCompany> industryCompanyList = industryInfoService.findIndustryCompanyById(industryInfo1.getIndustryId());
+            industryInfo1.setTopCompanies(industryCompanyList);
+            System.out.println(industryInfo1);
+        }
+
+
         if (null != service_res) {
             res.putDataValue("industryInfo", service_res);
         }
