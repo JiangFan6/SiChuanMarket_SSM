@@ -25,5 +25,8 @@ public interface IndustryInfoMapperDao {
     /*通过行业ID查询相关企业*/
     List<IndustryCompany> findIndustryCompanyById(String industryId);
 
+    /*清空某个industryId对应的所有对应关系*/
+    int emptyRelationsByIndustryId(String industryId);
+
 
 }

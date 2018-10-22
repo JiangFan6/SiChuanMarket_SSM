@@ -70,10 +70,12 @@ public class IndustryInfoController {
         List<IndustryCompany> industryCompanyList = industryInfo.getTopCompanies();
         int initAddNum = 0;
         int indusComListSize = industryCompanyList.size();
-        System.out.println("indusComListSize");
-        System.out.println(indusComListSize);
+        /*先-清空某个industryId对应的所有对应关系*/
+        int emptyRelations = industryInfoService.emptyRelationsByIndustryId(industryInfo.getIndustryId());
+        System.out.println("清空某个industryId对应的所有对应关系");
+        System.out.println(emptyRelations);
 
-        /*添加行业和企业的对应关系*/
+        /*然後-添加行业和企业的对应关系*/
         for (IndustryCompany industryCompany : industryCompanyList) {
             industryCompany.setIndustryId(industryInfo.getIndustryId());
             industryCompany.setIndustryName(industryInfo.getIndustryName());
@@ -85,10 +87,12 @@ public class IndustryInfoController {
         industryInfo.setTopCompanies(null);
 
         int service_res = industryInfoService.updateAindustryInfo(industryInfo);
-        System.out.println("initAddNum");
+        System.out.println("service_res");
+        System.out.println(service_res);
         System.out.println(initAddNum);
+        System.out.println(indusComListSize);
 
-        if (0 == service_res && initAddNum != indusComListSize) {
+        if (0 == service_res || initAddNum != indusComListSize) {
             res = ResponseData.serverInternalError();
         }
         return res;
@@ -101,12 +105,11 @@ public class IndustryInfoController {
         ResponseData res = ResponseData.ok();
 
         List<IndustryInfo> service_res = industryInfoService.findIndustryInfoByCode(industryInfo);
+        /*查询相关企业*/
         for (IndustryInfo industryInfo1 : service_res) {
             List<IndustryCompany> industryCompanyList = industryInfoService.findIndustryCompanyById(industryInfo1.getIndustryId());
             industryInfo1.setTopCompanies(industryCompanyList);
-            System.out.println(industryInfo1);
         }
-
 
         if (null != service_res) {
             res.putDataValue("industryInfo", service_res);

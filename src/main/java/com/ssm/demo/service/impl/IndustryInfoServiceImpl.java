@@ -49,4 +49,11 @@ public class IndustryInfoServiceImpl implements IndustryInfoService {
     public List<IndustryCompany> findIndustryCompanyById(String industryId) {
         return industryInfoMapperDao.findIndustryCompanyById(industryId);
     }
+
+
+    /*清空某个industryId对应的所有对应关系*/
+    @Override
+    public int emptyRelationsByIndustryId(String industryId) {
+        return industryInfoMapperDao.emptyRelationsByIndustryId(industryId);
+    }
 }

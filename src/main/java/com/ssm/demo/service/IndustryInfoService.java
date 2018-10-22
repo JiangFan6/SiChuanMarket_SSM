@@ -19,5 +19,7 @@ public interface IndustryInfoService {
 
     List<IndustryCompany> findIndustryCompanyById(String industryId); //通过行业ID查询相关企业
 
+    int emptyRelationsByIndustryId(String industryId);  //清空某个industryId对应的所有对应关系
+
 
 }

@@ -17,7 +17,7 @@ public class IndustryInfo {
     private String profitUnit;
     private double employedPopulation;  //从业人数
     private String employedPopulationUnit;
-    @JsonFormat(pattern = "yyyy年")
+    @JsonFormat(pattern = "yyyy年", timezone = "GMT+8")
     private Date statisticDate;
     private List<IndustryCompany> topCompanies;  //代表企业
 

@@ -70,5 +70,11 @@
         WHERE industry_id=#{industryId}
     </select>
 
+    <!--清空某个industryId对应的所有对应关系-->
+    <delete id="emptyRelationsByIndustryId" parameterType="String">
+        DELETE FROM industry_company
+        WHERE industry_id=#{industryId}
+    </delete>
+
 
 </mapper>
