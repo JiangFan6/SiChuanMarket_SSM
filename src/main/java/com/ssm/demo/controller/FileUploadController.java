@@ -97,6 +97,10 @@ public class FileUploadController {
         //解析excel,获取客户信息集合
         List<IndustryInfo> industryInfoList = readExcel.getExcelInfo(name, file);
 
+        for(IndustryInfo industryInfo:industryInfoList){
+            System.out.println(industryInfo);
+        }
+
         //迭代添加信息
         int count_a = 0;
         for (IndustryInfo industryInfo : industryInfoList) {

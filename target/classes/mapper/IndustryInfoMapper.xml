@@ -14,8 +14,8 @@
         ,industry_profit,profit_unit,employed_population,employed_population_unit,statistic_date
         ,top_tompanies)
         VALUES
-        (#{industryId},#{industryCode},#{industryName},#{totalOutPut},#{totalOutPut_unit},#{productionCosts},#{productionCosts_unit}
-        ,#{industryProfit},#{profit_unit},#{employedPopulation},#{employedPopulation_unit},#{statisticDate}
+        (#{industryId},#{industryCode},#{industryName},#{totalOutPut},#{totalOutPutUnit},#{productionCosts},#{productionCostsUnit}
+        ,#{industryProfit},#{profitUnit},#{employedPopulation},#{employedPopulationUnit},#{statisticDate}
         ,#{topCompanies});
     </insert>
 
@@ -31,13 +31,13 @@
         industry_code=#{industryCode},
         industry_name=#{industryName},
         total_output=#{totalOutPut},
-        total_output_unit=#{totalOutPut_unit},
+        total_output_unit=#{totalOutPutUnit},
         production_costs=#{productionCosts},
-        production_costs_unit=#{productionCosts_unit},
+        production_costs_unit=#{productionCostsUnit},
         industry_profit=#{industryProfit},
-        profit_unit=#{profit_unit},
+        profit_unit=#{profitUnit},
         employed_population=#{employedPopulation},
-        employed_population_unit=#{employedPopulation_unit},
+        employed_population_unit=#{employedPopulationUnit},
         statistic_date=#{statisticDate},
         top_tompanies=#{topCompanies}
         WHERE   industry_id=  #{industryId}

@@ -21,6 +21,9 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 //import com.jun.service.CustomerService;
 //import com.jun.vo.Customer;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 public class ReadExcel {
     //总行数
     private int totalRows = 0;
@@ -125,7 +128,7 @@ public class ReadExcel {
      * @return
      * @throws IOException
      */
-    public List<IndustryInfo> getExcelInfo(InputStream is, boolean isExcel2003) {
+    public List<IndustryInfo> getExcelInfo(InputStream is, boolean isExcel2003) throws ParseException {
         List<IndustryInfo> customerList = null;
         try {
             /** 根据版本选择创建Workbook的方式 */
@@ -150,7 +153,7 @@ public class ReadExcel {
      * @param wb
      * @return
      */
-    private List<IndustryInfo> readExcelValue(Workbook wb) {
+    private List<IndustryInfo> readExcelValue(Workbook wb) throws ParseException {
         //得到第一个shell
         Sheet sheet = wb.getSheetAt(0);
 
@@ -203,8 +206,10 @@ public class ReadExcel {
                         cell.setCellType(CellType.STRING);
                         industryInfo.setEmployedPopulationUnit(cell.getStringCellValue());//从业人数-单位
                     } else if (c == 10) {
-                        cell.setCellType(CellType.STRING);
-                        industryInfo.setStatisticDate(cell.getStringCellValue());//统计时间
+                        String stringDate = cell.getStringCellValue();
+                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年");
+                        Date cellDate = sdf.parse(stringDate);
+                        industryInfo.setStatisticDate(cellDate);//统计时间
                     } else if (c == 11) {
                         cell.setCellType(CellType.STRING);
                         industryInfo.setTopCompanies(cell.getStringCellValue());//龙头企业

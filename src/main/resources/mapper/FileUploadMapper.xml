@@ -7,7 +7,7 @@
    <!-- /*批量导入前-检查是否有这个数据*/-->
 
     <select id="checkRepeatIndustryInfo" parameterType="IndustryInfo" resultType="IndustryInfo">
-        SELECT * FROM industry_info WHERE industryCode=#{industryCode} AND statisticDate=#{statisticDate}
+        SELECT * FROM industry_info WHERE industry_code=#{industryCode} AND statistic_date=#{statisticDate}
     </select>
 
 

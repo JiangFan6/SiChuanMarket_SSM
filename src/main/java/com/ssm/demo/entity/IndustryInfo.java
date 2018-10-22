@@ -1,5 +1,8 @@
 package com.ssm.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.util.Date;
 import java.util.List;
 
 public class IndustryInfo {
@@ -14,7 +17,8 @@ public class IndustryInfo {
     private String profitUnit;
     private double employedPopulation;  //从业人数
     private String employedPopulationUnit;
-    private String statisticDate;
+    @JsonFormat(pattern = "yyyy年")
+    private Date statisticDate;
     private String topCompanies;  //代表企业
 
     public String getIndustryId() {
@@ -105,11 +109,11 @@ public class IndustryInfo {
         this.employedPopulationUnit = employedPopulationUnit;
     }
 
-    public String getStatisticDate() {
+    public Date getStatisticDate() {
         return statisticDate;
     }
 
-    public void setStatisticDate(String statisticDate) {
+    public void setStatisticDate(Date statisticDate) {
         this.statisticDate = statisticDate;
     }
 
@@ -124,7 +128,7 @@ public class IndustryInfo {
     public IndustryInfo() {
     }
 
-    public IndustryInfo(String industryId, String industryCode, String industryName, double totalOutPut, String totalOutPutUnit, double productionCosts, String productionCostsUnit, double industryProfit, String profitUnit, double employedPopulation, String employedPopulationUnit, String statisticDate, String topCompanies) {
+    public IndustryInfo(String industryId, String industryCode, String industryName, double totalOutPut, String totalOutPutUnit, double productionCosts, String productionCostsUnit, double industryProfit, String profitUnit, double employedPopulation, String employedPopulationUnit, Date statisticDate, String topCompanies) {
         this.industryId = industryId;
         this.industryCode = industryCode;
         this.industryName = industryName;
@@ -140,6 +144,7 @@ public class IndustryInfo {
         this.topCompanies = topCompanies;
     }
 
+
     @Override
     public String toString() {
         return "IndustryInfo{" +
@@ -154,7 +159,7 @@ public class IndustryInfo {
                 ", profitUnit='" + profitUnit + '\'' +
                 ", employedPopulation=" + employedPopulation +
                 ", employedPopulationUnit='" + employedPopulationUnit + '\'' +
-                ", statisticDate='" + statisticDate + '\'' +
+                ", statisticDate=" + statisticDate +
                 ", topCompanies='" + topCompanies + '\'' +
                 '}';
     }

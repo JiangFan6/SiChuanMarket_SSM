@@ -51,11 +51,12 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.text.SimpleDateFormat;
 
-public class CustomObjectMapper extends ObjectMapper{
-    public CustomObjectMapper(){
-        this.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS,false);
+public class CustomObjectMapper extends ObjectMapper {
+    public CustomObjectMapper() {
+        this.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
         /*自定义日期格式*/
         SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy年MM月dd日"); //"yyyy-MM-dd HH:mm:ss"
+//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy年"); //"yyyy-MM-dd HH:mm:ss"
         this.setDateFormat(dateFormat);
     }
 }
