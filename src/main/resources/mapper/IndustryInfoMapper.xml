@@ -10,13 +10,13 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         INSERT INTO
-        industry_info(industry_id,industry_code,industry_name,total_output,total_output_unit,production_costs,production_costs_unit
-        ,industry_profit,profit_unit,employed_population,employed_population_unit,statistic_date
-        ,top_tompanies)
+        industry_info(industry_id,industry_code,industry_name,total_output
+        ,total_output_unit,production_costs ,production_costs_unit ,industry_profit
+        ,profit_unit,employed_population,employed_population_unit,statistic_date)
         VALUES
-        (#{industryId},#{industryCode},#{industryName},#{totalOutPut},#{totalOutPutUnit},#{productionCosts},#{productionCostsUnit}
-        ,#{industryProfit},#{profitUnit},#{employedPopulation},#{employedPopulationUnit},#{statisticDate}
-        ,#{topCompanies});
+        (#{industryId},#{industryCode},#{industryName},#{totalOutPut},#{totalOutPutUnit}
+        ,#{productionCosts} ,#{productionCostsUnit} ,#{industryProfit}
+        ,#{profitUnit},#{employedPopulation},#{employedPopulationUnit},#{statisticDate})
     </insert>
 
     <!--删除一条行业信息-->

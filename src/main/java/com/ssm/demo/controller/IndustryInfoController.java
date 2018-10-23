@@ -33,17 +33,15 @@ public class IndustryInfoController {
         industryInfo.setIndustryId(UUID.randomUUID().toString());
         ResponseData res = ResponseData.ok();
 
-        int service_res = industryInfoService.addAindustryInfo(industryInfo);
+        System.out.println(industryInfo);
+
+        IndustryInfo industryInfoAdd = this.setIndustryCompany(industryInfo); //先-设置行业和企业的对应关系
+
+        System.out.println(industryInfoAdd);
+        int service_res = industryInfoService.addAindustryInfo(industryInfoAdd);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
         }
-
-        logger.trace("trace level");
-        logger.debug("debug level");
-        logger.info("info level");
-        logger.error("error level");
-        logger.fatal("fatal level");
-
         return res;
     }
 
@@ -54,6 +52,12 @@ public class IndustryInfoController {
         String industryId = request.getParameter("industryId");
         ResponseData res = ResponseData.ok();
 
+        /*先-清空某个industryId对应的所有对应关系*/
+        int emptyRelations = industryInfoService.emptyRelationsByIndustryId(industryId);
+        System.out.println("清空某个industryId对应的所有对应关系-02");
+        System.out.println(emptyRelations);
+
+        /*删除对应的行业信息*/
         int service_res = industryInfoService.deleteAindustryInfo(industryId);
         if (0 == service_res) {
             res = ResponseData.serverInternalError();
@@ -67,32 +71,13 @@ public class IndustryInfoController {
     public ResponseData updateAindustryInfo(@RequestBody IndustryInfo industryInfo) throws Exception {
         ResponseData res = ResponseData.ok();
 
-        List<IndustryCompany> industryCompanyList = industryInfo.getTopCompanies();
-        int initAddNum = 0;
-        int indusComListSize = industryCompanyList.size();
-        /*先-清空某个industryId对应的所有对应关系*/
-        int emptyRelations = industryInfoService.emptyRelationsByIndustryId(industryInfo.getIndustryId());
-        System.out.println("清空某个industryId对应的所有对应关系");
-        System.out.println(emptyRelations);
+        IndustryInfo industryInfoUpdate = this.setIndustryCompany(industryInfo); //先-设置行业和企业的对应关系
 
-        /*然後-添加行业和企业的对应关系*/
-        for (IndustryCompany industryCompany : industryCompanyList) {
-            industryCompany.setIndustryId(industryInfo.getIndustryId());
-            industryCompany.setIndustryName(industryInfo.getIndustryName());
-            industryCompany.setStatisticDate(industryInfo.getStatisticDate());
-            int addIndusCom = industryInfoService.addIndustryCompany(industryCompany);
-            initAddNum += addIndusCom;
-        }
-
-        industryInfo.setTopCompanies(null);
-
-        int service_res = industryInfoService.updateAindustryInfo(industryInfo);
+        int service_res = industryInfoService.updateAindustryInfo(industryInfoUpdate);
         System.out.println("service_res");
         System.out.println(service_res);
-        System.out.println(initAddNum);
-        System.out.println(indusComListSize);
 
-        if (0 == service_res || initAddNum != indusComListSize) {
+        if (0 == service_res) {
             res = ResponseData.serverInternalError();
         }
         return res;
@@ -115,6 +100,37 @@ public class IndustryInfoController {
             res.putDataValue("industryInfo", service_res);
         }
         return res;
+    }
+
+
+    /*设置行业和企业的对应关系*/
+    private IndustryInfo setIndustryCompany(IndustryInfo industryInfo) throws Exception {
+
+        List<IndustryCompany> industryCompanyList = industryInfo.getTopCompanies();
+        int initAddNum = 0;
+        int indusComListSize = industryCompanyList.size();
+        /*先-清空某个industryId对应的所有对应关系*/
+        int emptyRelations = industryInfoService.emptyRelationsByIndustryId(industryInfo.getIndustryId());
+        System.out.println("清空某个industryId对应的所有对应关系");
+        System.out.println(emptyRelations);
+
+        /*然後-添加行业和企业的对应关系*/
+        for (IndustryCompany industryCompany : industryCompanyList) {
+            industryCompany.setIndustryId(industryInfo.getIndustryId());
+            industryCompany.setIndustryName(industryInfo.getIndustryName());
+            industryCompany.setStatisticDate(industryInfo.getStatisticDate());
+            int addIndusCom = industryInfoService.addIndustryCompany(industryCompany);
+            initAddNum += addIndusCom;
+        }
+
+
+        if (initAddNum != indusComListSize) {
+            industryInfo = null;
+        } else {
+            industryInfo.setTopCompanies(null);  //相关企业对应关系添加成功后，字段置空
+        }
+
+        return industryInfo;
     }
 
 
