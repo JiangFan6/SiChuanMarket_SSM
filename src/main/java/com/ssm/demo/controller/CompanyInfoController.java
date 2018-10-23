@@ -104,14 +104,19 @@ public class CompanyInfoController {
     }
 
     /*查询某个企业信息-根据企业ID*/
-    @RequestMapping(value = "/findCompanyInfoById", method = {RequestMethod.POST})
+    @RequestMapping(value = "/findCompanyInfoById", method = {RequestMethod.GET})
     @ResponseBody
-    public ResponseData findCompanyInfoById(@RequestBody String companyId) throws Exception {
+    public ResponseData findCompanyInfoById(HttpServletRequest request) throws Exception {
+        String companyId = request.getParameter("companyId");
         ResponseData res = ResponseData.ok();
-
+        System.out.println("companyId");
+        System.out.println(companyId);
         CompanyInfo service_res = companyInfoService.findCompanyInfoById(companyId);
+        System.out.println("service_res");
+        System.out.println(service_res);
+
         if (null != service_res) {
-            res.putDataValue("industryInfo", service_res);
+            res.putDataValue("companyInfo", service_res);
         }
         return res;
     }

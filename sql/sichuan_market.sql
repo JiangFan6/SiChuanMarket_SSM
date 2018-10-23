@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-23 11:48:31
+Date: 2018-10-23 22:37:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -153,12 +153,11 @@ CREATE TABLE `industry_company` (
   `company_id` varchar(255) NOT NULL,
   `company_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=235 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=245 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of industry_company
 -- ----------------------------
-INSERT INTO `industry_company` VALUES ('226', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', 'a3779df8-3023-4f98-a981-32f407db7423', '四川万鸿农业开发有限公司');
 INSERT INTO `industry_company` VALUES ('227', 'e4403ecd-414c-4125-b5a9-d50cdef5325e', '农业', '1981-01-01 00:00:00.000000', 'a3779df8-3023-4f98-a981-32f407db7423', '四川万鸿农业开发有限公司');
 INSERT INTO `industry_company` VALUES ('228', 'e4403ecd-414c-4125-b5a9-d50cdef5325e', '农业', '1981-01-01 00:00:00.000000', 'fd25ac9f-f5c8-4c89-8891-cf95de9c2b1e', '四川农大高科农业有限责任公司');
 INSERT INTO `industry_company` VALUES ('229', '81b6e1ee-5f90-4832-b93f-c2ac2a0e5c2a', '农业', '1982-01-01 00:00:00.000000', 'a3779df8-3023-4f98-a981-32f407db7423', '四川万鸿农业开发有限公司');
@@ -167,6 +166,16 @@ INSERT INTO `industry_company` VALUES ('231', '81b6e1ee-5f90-4832-b93f-c2ac2a0e5
 INSERT INTO `industry_company` VALUES ('232', '0a2c3709-2ef8-4956-8bf1-65dfa8e3ab6c', '农业', '1983-01-01 00:00:00.000000', 'cb391970-705f-4dc3-b489-544ab554a0bd', '四川林友农业开发有限公司');
 INSERT INTO `industry_company` VALUES ('233', '0a2c3709-2ef8-4956-8bf1-65dfa8e3ab6c', '农业', '1983-01-01 00:00:00.000000', 'cfe21e8e-3890-475b-bfba-a2a53e3aa960', '四川省锐嘉食品工业有限公司');
 INSERT INTO `industry_company` VALUES ('234', '882363cc-622c-40ef-9b26-bb9f5c64572e', '农业', '1984-01-01 00:00:00.000000', '6309a44a-f91d-40d1-b0c4-a3512d7a41ba', '四川麦歌农业开发有限公司');
+INSERT INTO `industry_company` VALUES ('235', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', 'a3779df8-3023-4f98-a981-32f407db7423', '四川万鸿农业开发有限公司');
+INSERT INTO `industry_company` VALUES ('236', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', 'fd25ac9f-f5c8-4c89-8891-cf95de9c2b1e', '四川农大高科农业有限责任公司');
+INSERT INTO `industry_company` VALUES ('237', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', '64f4209b-fa05-4e2b-8b3d-3952d921a101', '四川华胜农业股份有限公司');
+INSERT INTO `industry_company` VALUES ('238', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', 'cb391970-705f-4dc3-b489-544ab554a0bd', '四川林友农业开发有限公司');
+INSERT INTO `industry_company` VALUES ('239', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', 'cfe21e8e-3890-475b-bfba-a2a53e3aa960', '四川省锐嘉食品工业有限公司');
+INSERT INTO `industry_company` VALUES ('240', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', '50cc6dba-cbcc-4ed0-9ee8-6645e49d3957', '成都卖油郎食品有限公司');
+INSERT INTO `industry_company` VALUES ('241', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', '9aabedd8-b1e0-49f8-8030-fe48fe7b5fe0', '宜宾高原农业集团有限公司');
+INSERT INTO `industry_company` VALUES ('242', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', '6309a44a-f91d-40d1-b0c4-a3512d7a41ba', '四川麦歌农业开发有限公司');
+INSERT INTO `industry_company` VALUES ('243', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', 'd31f7849-ab41-4d53-930a-d5b9d2724c5e', '新希望集团有限公司');
+INSERT INTO `industry_company` VALUES ('244', 'd2028158-9f74-451a-bd8f-3d67b6103e03', '农业', '1980-01-01 00:00:00.000000', '719fae38-4b9a-49e3-96ae-6f60c6686798', '高县雾岭茶叶有限公司');
 
 -- ----------------------------
 -- Table structure for industry_info

@@ -42,7 +42,7 @@
 
         </update>
 
-    <!--查询某个企业信息-根据行业ID-->
+    <!--查询企业信息-根据行业ID-->
     <select id="findComInfoByIndustryId" parameterType="String" resultType="CompanyInfo">
             SELECT *
             FROM company_info
@@ -51,7 +51,7 @@
             ASC
     </select>
 
-    <!--查询某个企业信息-根据行业Code-->
+    <!--查询企业信息-根据行业Code-->
     <select id="findComInfoByIndustryCode" parameterType="String" resultType="CompanyInfo">
             SELECT *
             FROM company_info
@@ -62,7 +62,9 @@
 
     <!--查询某个企业信息-根据企业ID-->
     <select id="findCompanyInfoById" parameterType="String" resultType="CompanyInfo">
-            SELECT * FROM company_info WHERE company_id=#{companyId}
+            SELECT *
+            FROM company_info
+            WHERE company_id=#{companyId}
     </select>
 
 
