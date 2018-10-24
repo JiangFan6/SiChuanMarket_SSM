@@ -8,9 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/sichuan_market.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sichuan_market.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CompanyInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CompanyInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CompanyInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CompanyInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CompanyInfoController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CompanyInfoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CompanyInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
@@ -32,10 +30,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CityInfoMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="IndustryInfoMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/IndustryInfoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-559">
+            <state relative-caret-position="330">
               <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
@@ -44,7 +51,7 @@
       <file leaf-file-name="CompanyInfoMapperDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CompanyInfoMapperDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="374">
               <caret line="20" column="35" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="35" />
             </state>
           </provider>
@@ -53,8 +60,8 @@
       <file leaf-file-name="CompanyInfoMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CompanyInfoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+            <state relative-caret-position="1474">
+              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -74,27 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>industryInfoMapperDao</find>
-      <find>responseData</find>
-      <find>token</find>
-      <find>companyHeadCount</find>
-      <find>jackson</find>
-      <find>mvc</find>
-      <find>acmJacksonConverter</find>
-      <find>acmObjectMapper</find>
-      <find>industryId</find>
-      <find>industryName</find>
-      <find>totalOutPut</find>
-      <find>productionCosts</find>
-      <find>industryProfit</find>
-      <find>employedPopulation</find>
-      <find>topCompanies</find>
-      <find>industryCode</find>
-      <find>industry_list</find>
-      <find>_unit</find>
-      <find>500105</find>
-      <find>statistic_date</find>
-      <find>_</find>
       <find>System.out.println(companyInfo);</find>
       <find>System.out</find>
       <find>ReadExcel</find>
@@ -104,6 +90,27 @@
       <find>industry_compnay</find>
       <find>System.out.println</find>
       <find>statisticDate</find>
+      <find>city_id</find>
+      <find>city_name</find>
+      <find>city_code</find>
+      <find>city_areas</find>
+      <find>cityAreas_unit</find>
+      <find>city_population</find>
+      <find>cityPopulation_unit</find>
+      <find>city_gov_address</find>
+      <find>city_scenic_spots</find>
+      <find>cityAirlines</find>
+      <find>city_airlines</find>
+      <find>cityAirlines_unit</find>
+      <find>city_train</find>
+      <find>cityTrain_unit</find>
+      <find>city_cars_counts</find>
+      <find>cityGdpTotal</find>
+      <find>city_gdp_total</find>
+      <find>cityGdpTotal_unit</find>
+      <find>city_gdp_pp</find>
+      <find>cityGdpPp_unit</find>
+      <find>statistic_date</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -132,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CityInfoMapperDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CityInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CodeMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Industry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/IndustryMapperDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/WDWUtil.java" />
@@ -169,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/IndustryInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CompanyInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CompanyInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" />
       </list>
     </option>
   </component>
@@ -217,7 +224,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1960" />
     <option name="y" value="419" />
     <option name="width" value="1936" />
@@ -232,7 +239,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,49 +265,6 @@
               <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -309,25 +275,10 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -547,15 +498,15 @@
       <workItem from="1540208461673" duration="6686000" />
       <workItem from="1540256411594" duration="4701000" />
       <workItem from="1540296791313" duration="2579000" />
+      <workItem from="1540381658244" duration="1629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252939000" />
+    <option name="totallyTimeSpent" value="254568000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="82" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="82" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -578,10 +529,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" weight="0.4516129" />
+      <window_info active="true" anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" visible="true" weight="0.46187684" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.15629053" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.20298314" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -720,13 +671,6 @@
           <folding>
             <element signature="n#build#0;n#project#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -936,22 +880,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CompanyInfoMapperDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="374">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/IndustryInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-559">
+        <state relative-caret-position="330">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CompanyInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        <state relative-caret-position="1474">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -959,6 +903,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="115" column="40" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
         </state>
       </provider>
     </entry>

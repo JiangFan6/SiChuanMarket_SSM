@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-10-23 22:37:43
+Date: 2018-10-24 20:48:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,7 +41,7 @@ CREATE TABLE `city_info` (
   `city_cars_counts` int(255) DEFAULT NULL,
   `statistic_date` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of city_info
@@ -70,6 +70,13 @@ INSERT INTO `city_info` VALUES ('21', 'ffe77aec-18a6-415f-92f4-96f12f197825', '�
 INSERT INTO `city_info` VALUES ('22', '43dccc6e-e4ec-4803-b22e-d65ad931e914', '成都市', '101', '6661.00', '亿元', '6662', '元', '6663.00', '平方千米', '6664.00', '万人', '6665', '6666', '0', '条', '0', '6667', '0', '2016年');
 INSERT INTO `city_info` VALUES ('23', '44a2b98b-7d42-4425-9d87-1c0d872061c6', '成都市', '101', '55.00', '亿元', '55', '元', '55.00', '平方千米', '55.00', '万人', '55', '55', '0', '条', '0', '', '0', '2015年');
 INSERT INTO `city_info` VALUES ('24', '9db0ab98-ff0c-45f1-b7bc-ff99042c2168', '绵阳市', '102', '66.00', '亿元', '66', '元', '66.00', '平方千米', '66.00', '万人', '66', '66', '0', '条', '0', '', '0', '2016年');
+INSERT INTO `city_info` VALUES ('25', 'bdcd1156-5349-41db-86d4-1ac70d201ae7', '达州市', '108', '66.00', '亿元', '0', '元', '0.00', '平方千米', '0.00', '万人', '', '0', '0', '条', '0', '', '0', '2014年');
+INSERT INTO `city_info` VALUES ('26', 'd06f6737-1c05-4a73-a5fc-e1faa3befe19', '雅安市', '118', '66.00', '亿元', '0', '元', '0.00', '平方千米', '0.00', '万人', '', '0', '0', '条', '0', '', '0', '2008年');
+INSERT INTO `city_info` VALUES ('27', 'c0aa7997-c15a-4164-a8be-fa31f45fa5b9', '阿坝藏族羌族自治州', '120', '66.00', '亿元', '0', '元', '0.00', '平方千米', '0.00', '万人', '', '0', '0', '条', '0', '', '0', '2009年');
+INSERT INTO `city_info` VALUES ('28', '6e9de068-bfdc-4247-81b3-93dabedcec04', '遂宁市', '113', '66.00', '亿元', '0', '元', '0.00', '平方千米', '0.00', '万人', '', '0', '0', '条', '0', '', '0', '2010年');
+INSERT INTO `city_info` VALUES ('29', 'ab100b0c-14cd-4b24-8e66-b2d83f84cecc', '资阳市', '116', '66.00', '亿元', '0', '元', '0.00', '平方千米', '0.00', '万人', '', '0', '0', '条', '0', '', '0', '2011年');
+INSERT INTO `city_info` VALUES ('30', '36ef9b7b-05ee-4420-a7ef-1009db7cc77d', '自贡市', '111', '66.00', '亿元', '0', '元', '0.00', '平方千米', '0.00', '万人', '', '0', '0', '条', '0', '', '0', '2012年');
+INSERT INTO `city_info` VALUES ('31', '389622ba-2fab-4850-abe8-f6573f056ad6', '甘孜藏族自治州', '121', '66.00', '亿元', '0', '元', '0.00', '平方千米', '0.00', '万人', '', '0', '0', '条', '0', '', '0', '2013年');
 
 -- ----------------------------
 -- Table structure for city_list
