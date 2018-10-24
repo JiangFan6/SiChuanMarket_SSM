@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -224,9 +221,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1960" />
-    <option name="y" value="419" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1496" />
+    <option name="y" value="176" />
     <option name="width" value="1936" />
     <option name="height" value="1046" />
   </component>
@@ -498,15 +495,15 @@
       <workItem from="1540208461673" duration="6686000" />
       <workItem from="1540256411594" duration="4701000" />
       <workItem from="1540296791313" duration="2579000" />
-      <workItem from="1540381658244" duration="1629000" />
+      <workItem from="1540381658244" duration="2018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254568000" />
+    <option name="totallyTimeSpent" value="254957000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="82" width="1616" height="876" extended-state="7" />
+    <frame x="1496" y="176" width="1936" height="1046" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -529,10 +526,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" visible="true" weight="0.46187684" />
+      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" weight="0.3697183" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.20298314" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.16809882" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
