@@ -1,6 +1,5 @@
 package com.ssm.demo.service;
 
-import com.ssm.demo.entity.Company;
 import com.ssm.demo.entity.CompanyInfo;
 
 import java.util.List;
