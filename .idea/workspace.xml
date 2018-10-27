@@ -6,23 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/62474200f9d74ea3b5d441b1db92e4c4_th.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/videos/rBADsloB3CKAPqimAAK4hMNhALo004.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/controller/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/controller/FileUploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/entity/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/entity/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/FileUploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -214,7 +198,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1765" />
     <option name="y" value="169" />
     <option name="width" value="1920" />
@@ -472,15 +456,15 @@
       <workItem from="1540381658244" duration="2018000" />
       <workItem from="1540470131190" duration="1816000" />
       <workItem from="1540618686412" duration="613000" />
-      <workItem from="1540623671022" duration="10142000" />
+      <workItem from="1540623671022" duration="10290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267528000" />
+    <option name="totallyTimeSpent" value="267676000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="82" width="1616" height="876" extended-state="7" />
+    <frame x="1912" y="82" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -504,7 +488,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" visible="true" weight="0.3489736" />
+      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" weight="0.3489736" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.16536964" />
