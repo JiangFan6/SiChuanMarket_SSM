@@ -48,6 +48,8 @@ public class AdminLoginInterceptor implements HandlerInterceptor {
 
             Person person = JWT.unsign(header, Person.class);
             Person serviceResult = personService.login(person);
+            System.out.println(person);
+            System.out.println("用户信息-01");
             System.out.println(serviceResult);
 
             //判断是否成功  比如做验证之类的

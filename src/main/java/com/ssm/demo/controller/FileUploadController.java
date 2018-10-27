@@ -61,7 +61,11 @@ public class FileUploadController {
                 //一次遍历所有文件
                 MultipartFile file = multiRequest.getFile(iter.next().toString());
                 if (file != null) {
-                    String path = "D:/backupData/bigData/Java/javaCode/SiChuanMarket_DataPool/containerForUploadedFiles/" + file.getOriginalFilename();
+//                    String path = "D:/backupData/bigData/Java/javaCode/SiChuanMarket_DataPool/containerForUploadedFiles/" + file.getOriginalFilename();
+                    String basePath = request.getServletContext().getRealPath("static/images/");
+                    System.out.println(basePath);
+
+                    String path = basePath + file.getOriginalFilename();
                     //上传
                     file.transferTo(new File(path));
                 }

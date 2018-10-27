@@ -7,15 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/62474200f9d74ea3b5d441b1db92e4c4_th.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/videos/rBADsloB3CKAPqimAAK4hMNhALo004.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/controller/CompanyInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/controller/CompanyInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/entity/Company.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/CompanyInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/CompanyInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/Company.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/controller/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/controller/FileUploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/entity/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/entity/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/FileUploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,89 +34,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ProductInfo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java">
+      <file leaf-file-name="AdminLoginInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding>
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#957#958#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="215">
+              <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductDetails.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductDetails.java">
+      <file leaf-file-name="FileUploadController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="125">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Image.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Image.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding>
-                <element signature="e#127#128#0" expanded="true" />
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Video.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Video.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-              <folding>
-                <element signature="e#127#128#0" expanded="true" />
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#2716#2786#0" />
+                <element signature="method#batchImport#0;class#FileUploadController#0" />
               </folding>
             </state>
           </provider>
@@ -188,7 +128,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Industry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/IndustryMapperDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/WDWUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/FileUploadMapperDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/FileUploadService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ResponseData.java" />
@@ -212,7 +151,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/CustomObjectMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/industryCompany.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/ReadExcel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/IndustryInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/IndustryInfoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/IndustryInfoServiceImpl.java" />
@@ -226,6 +164,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Video.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java" />
       </list>
     </option>
   </component>
@@ -275,8 +215,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1918" />
-    <option name="y" value="275" />
+    <option name="x" value="1765" />
+    <option name="y" value="169" />
     <option name="width" value="1920" />
     <option name="height" value="1030" />
   </component>
@@ -302,51 +242,6 @@
               <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -365,26 +260,28 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ssm.demo.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\static\videos" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\static\images" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources\mapper" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\WEB-INF\static" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources\config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ssm.demo.controller" />
       <recent name="com.ssm.demo.service" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ssm.demo.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -575,15 +472,15 @@
       <workItem from="1540381658244" duration="2018000" />
       <workItem from="1540470131190" duration="1816000" />
       <workItem from="1540618686412" duration="613000" />
-      <workItem from="1540623671022" duration="2649000" />
+      <workItem from="1540623671022" duration="10142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260035000" />
+    <option name="totallyTimeSpent" value="267528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="82" width="1616" height="876" extended-state="6" />
+    <frame x="1912" y="82" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -607,12 +504,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" visible="true" weight="0.0601173" />
+      <window_info active="true" anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" visible="true" weight="0.3489736" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.2386511" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.16536964" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -620,7 +518,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -696,13 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="50" column="44" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -837,13 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
           <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
@@ -1029,6 +912,24 @@
             <element signature="e#1043#1044#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1163#1164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#2716#2786#0" />
+            <element signature="method#batchImport#0;class#FileUploadController#0" />
           </folding>
         </state>
       </provider>
