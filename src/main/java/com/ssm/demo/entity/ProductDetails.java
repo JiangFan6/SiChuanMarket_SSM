@@ -3,38 +3,49 @@ package com.ssm.demo.entity;
 import java.util.List;
 
 public class ProductDetails {
-    private List<Image> images;
-    private List<Video> videos;
+    private String fileTitle;
+    private String fileUrl;
+    private String fileTxt;
 
-    public List<Image> getImages() {
-        return images;
+    public String getFileTitle() {
+        return fileTitle;
     }
 
-    public void setImages(List<Image> images) {
-        this.images = images;
+    public void setFileTitle(String fileTitle) {
+        this.fileTitle = fileTitle;
     }
 
-    public List<Video> getVideos() {
-        return videos;
+    public String getFileUrl() {
+        return fileUrl;
     }
 
-    public void setVideos(List<Video> videos) {
-        this.videos = videos;
+    public void setFileUrl(String fileUrl) {
+        this.fileUrl = fileUrl;
+    }
+
+    public String getFileTxt() {
+        return fileTxt;
+    }
+
+    public void setFileTxt(String fileTxt) {
+        this.fileTxt = fileTxt;
     }
 
     public ProductDetails() {
     }
 
-    public ProductDetails(List<Image> images, List<Video> videos) {
-        this.images = images;
-        this.videos = videos;
+    public ProductDetails(String fileTitle, String fileUrl, String fileTxt) {
+        this.fileTitle = fileTitle;
+        this.fileUrl = fileUrl;
+        this.fileTxt = fileTxt;
     }
 
     @Override
     public String toString() {
         return "ProductDetails{" +
-                "images=" + images +
-                ", videos=" + videos +
+                "fileTitle='" + fileTitle + '\'' +
+                ", fileUrl='" + fileUrl + '\'' +
+                ", fileTxt='" + fileTxt + '\'' +
                 '}';
     }
 }

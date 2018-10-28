@@ -1,11 +1,14 @@
 package com.ssm.demo.entity;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class ProductInfo {
     private String productId;
     private String productName;
     private String productDescribe;
-    private Byte productThumbnail;
-    private ProductDetails productDetails;
+    private byte[] productThumbnail;
+    private List<ProductDetails> productDetails;
 
     public String getProductId() {
         return productId;
@@ -31,26 +34,26 @@ public class ProductInfo {
         this.productDescribe = productDescribe;
     }
 
-    public Byte getProductThumbnail() {
+    public byte[] getProductThumbnail() {
         return productThumbnail;
     }
 
-    public void setProductThumbnail(Byte productThumbnail) {
+    public void setProductThumbnail(byte[] productThumbnail) {
         this.productThumbnail = productThumbnail;
     }
 
-    public ProductDetails getProductDetails() {
+    public List<ProductDetails> getProductDetails() {
         return productDetails;
     }
 
-    public void setProductDetails(ProductDetails productDetails) {
+    public void setProductDetails(List<ProductDetails> productDetails) {
         this.productDetails = productDetails;
     }
 
     public ProductInfo() {
     }
 
-    public ProductInfo(String productId, String productName, String productDescribe, Byte productThumbnail, ProductDetails productDetails) {
+    public ProductInfo(String productId, String productName, String productDescribe, byte[] productThumbnail, List<ProductDetails> productDetails) {
         this.productId = productId;
         this.productName = productName;
         this.productDescribe = productDescribe;
@@ -64,7 +67,7 @@ public class ProductInfo {
                 "productId='" + productId + '\'' +
                 ", productName='" + productName + '\'' +
                 ", productDescribe='" + productDescribe + '\'' +
-                ", productThumbnail=" + productThumbnail +
+                ", productThumbnail=" + Arrays.toString(productThumbnail) +
                 ", productDetails=" + productDetails +
                 '}';
     }
