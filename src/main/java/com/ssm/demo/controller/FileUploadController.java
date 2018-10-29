@@ -41,44 +41,6 @@ public class FileUploadController {
     @Autowired
     private FileUploadService fileUploadService;
 
-    public ProductInfo productInfoByteAndString = new ProductInfo();
-
-    /*直接用二进制存图片到数据库*/
-    @RequestMapping(value = "/imageByte", method = {RequestMethod.POST})
-    @ResponseBody
-    public String imageByte(HttpServletRequest request) throws IllegalStateException, IOException {
-
-        long startTime = System.currentTimeMillis();
-
-        //将当前上下文初始化给  CommonsMutipartResolver （多部分解析器）
-        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(
-                request.getSession().getServletContext());
-
-        //检查form中是否有enctype="multipart/form-data"
-        if (multipartResolver.isMultipart(request)) {
-            //将request变成多部分request
-            MultipartHttpServletRequest multiRequest = (MultipartHttpServletRequest) request;
-            //获取multiRequest 中所有的文件名
-            Iterator iter = multiRequest.getFileNames();
-
-            while (iter.hasNext()) {
-                //一次遍历所有文件
-                MultipartFile file = multiRequest.getFile(iter.next().toString());
-                if (file != null) {
-                    byte[] fileBytes = file.getBytes();
-                    System.out.println("imageByte");
-                    System.out.println(fileBytes);
-                    productInfoByteAndString.setProductThumbnail(fileBytes);
-                    System.out.println(productInfoByteAndString);
-
-                }
-            }
-        }
-        long endTime = System.currentTimeMillis();
-
-        return "upload file successfully";
-    }
-
 
     /*接收来自前端的文件-比如图片、视频*/
     @RequestMapping(value = "/fileUpload", method = {RequestMethod.POST})

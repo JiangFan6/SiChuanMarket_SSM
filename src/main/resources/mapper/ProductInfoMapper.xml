@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为ProductInfoMapperDao接口方法提供sql语句配置 -->
+<mapper namespace="com.ssm.demo.dao.ProductInfoMapperDao">
+
+    <!--添加一个产品-->
+    <insert id="addAProductInfo" parameterType="ProductInfo">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO
+        product_info(product_id,product_name,product_describe,product_thumbnail)
+        VALUES
+        (#{productId},#{productName},#{productDescribe},#{productThumbnail});
+    </insert>
+</mapper>
