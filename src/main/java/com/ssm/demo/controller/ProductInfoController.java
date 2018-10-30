@@ -1,5 +1,6 @@
 package com.ssm.demo.controller;
 
+import com.ssm.demo.entity.ProductDetail;
 import com.ssm.demo.entity.ProductInfo;
 import com.ssm.demo.entity.ResponseData;
 import com.ssm.demo.service.ProductInfoService;
@@ -121,19 +122,30 @@ public class ProductInfoController {
     @RequestMapping(value = "/addAProductInfo", method = {RequestMethod.POST})
     @ResponseBody
     public ResponseData addAProductInfo(@RequestBody ProductInfo productInfo) throws Exception {
+        System.out.println(productInfo);
+
         ResponseData res = ResponseData.ok();
         productInfo.setProductThumbnail(productInfoByteAndString.getProductThumbnail());
         if (null == productInfoByteAndString.getProductId()) {
             productInfoByteAndString.setProductId(UUID.randomUUID().toString());
         }
         productInfo.setProductId(productInfoByteAndString.getProductId());
-        System.out.println("productInfo-01");
-        System.out.println(productInfo);
+
+        int addProductDetails = 0;
+        for (ProductDetail productDetail : productInfo.getProductDetails()) {
+            productDetail.setProductId(productInfo.getProductId());
+            System.out.println(productDetail);
+            int detailRes = productInfoService.addAProductDetail(productDetail);
+            addProductDetails += detailRes;
+        }
 
         int addRes = productInfoService.addAProductInfo(productInfo);
-        System.out.println("addRes");
+
+        System.out.println("addRes-05");
         System.out.println(addRes);
-        if (0 == addRes) {
+        System.out.println(addProductDetails);
+
+        if (0 == addRes || addProductDetails < productInfo.getProductDetails().size()) {
             res = ResponseData.serverInternalError();
         }
 

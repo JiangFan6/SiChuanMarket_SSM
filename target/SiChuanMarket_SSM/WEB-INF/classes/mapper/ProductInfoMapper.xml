@@ -14,4 +14,15 @@
         VALUES
         (#{productId},#{productName},#{productDescribe},#{productThumbnail});
     </insert>
+
+    <!--添加一条产品详情-->
+    <insert id="addAProductDetail" parameterType="ProductDetail">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO
+        product_details(product_id,file_title,file_url,file_txt)
+        VALUES
+        (#{productId},#{fileTitle},#{fileUrl},#{fileTxt});
+    </insert>
 </mapper>

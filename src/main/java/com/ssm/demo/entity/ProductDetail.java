@@ -2,7 +2,7 @@ package com.ssm.demo.entity;
 
 import java.util.List;
 
-public class ProductDetails {
+public class ProductDetail {
     private String productId;
     private String fileTitle;
     private String fileUrl;
@@ -41,10 +41,10 @@ public class ProductDetails {
         this.fileTxt = fileTxt;
     }
 
-    public ProductDetails() {
+    public ProductDetail() {
     }
 
-    public ProductDetails(String productId, String fileTitle, String fileUrl, String fileTxt) {
+    public ProductDetail(String productId, String fileTitle, String fileUrl, String fileTxt) {
         this.productId = productId;
         this.fileTitle = fileTitle;
         this.fileUrl = fileUrl;
@@ -54,7 +54,7 @@ public class ProductDetails {
 
     @Override
     public String toString() {
-        return "ProductDetails{" +
+        return "ProductDetail{" +
                 "productId='" + productId + '\'' +
                 ", fileTitle='" + fileTitle + '\'' +
                 ", fileUrl='" + fileUrl + '\'' +
