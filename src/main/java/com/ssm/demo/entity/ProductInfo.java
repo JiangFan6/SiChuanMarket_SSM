@@ -8,6 +8,7 @@ public class ProductInfo {
     private String productName;
     private String productDescribe;
     private byte[] productThumbnail;
+    private String productCode;
     private List<ProductDetail> productDetails;
 
     public String getProductId() {
@@ -42,6 +43,14 @@ public class ProductInfo {
         this.productThumbnail = productThumbnail;
     }
 
+    public String getProductCode() {
+        return productCode;
+    }
+
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
+    }
+
     public List<ProductDetail> getProductDetails() {
         return productDetails;
     }
@@ -53,11 +62,12 @@ public class ProductInfo {
     public ProductInfo() {
     }
 
-    public ProductInfo(String productId, String productName, String productDescribe, byte[] productThumbnail, List<ProductDetail> productDetails) {
+    public ProductInfo(String productId, String productName, String productDescribe, byte[] productThumbnail, String productCode, List<ProductDetail> productDetails) {
         this.productId = productId;
         this.productName = productName;
         this.productDescribe = productDescribe;
         this.productThumbnail = productThumbnail;
+        this.productCode = productCode;
         this.productDetails = productDetails;
     }
 
@@ -68,6 +78,7 @@ public class ProductInfo {
                 ", productName='" + productName + '\'' +
                 ", productDescribe='" + productDescribe + '\'' +
                 ", productThumbnail=" + Arrays.toString(productThumbnail) +
+                ", productCode='" + productCode + '\'' +
                 ", productDetails=" + productDetails +
                 '}';
     }

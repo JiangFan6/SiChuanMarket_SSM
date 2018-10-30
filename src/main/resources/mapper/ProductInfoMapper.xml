@@ -10,9 +10,9 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         INSERT INTO
-        product_info(product_id,product_name,product_describe,product_thumbnail)
+        product_info(product_id,product_name,product_describe,product_thumbnail,product_code)
         VALUES
-        (#{productId},#{productName},#{productDescribe},#{productThumbnail});
+        (#{productId},#{productName},#{productDescribe},#{productThumbnail},#{productCode});
     </insert>
 
     <!--添加一条产品详情-->
@@ -25,4 +25,19 @@
         VALUES
         (#{productId},#{fileTitle},#{fileUrl},#{fileTxt});
     </insert>
+
+    <!--通过产品code查询-->
+    <select id="findProductsByCode" parameterType="String" resultType="ProductInfo">
+        SELECT *
+        FROM product_info
+        WHERE product_code=#{productCode}
+    </select>
+
+    <!--通过产品ID查询产品详情-->
+    <select id="findProDetailsById" parameterType="String" resultType="ProductDetail">
+        SELECT *
+        FROM product_details
+        WHERE product_id=#{productId}
+    </select>
+
 </mapper>

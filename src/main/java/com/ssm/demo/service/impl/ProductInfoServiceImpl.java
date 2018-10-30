@@ -7,6 +7,8 @@ import com.ssm.demo.service.ProductInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductInfoServiceImpl implements ProductInfoService {
     @Autowired
@@ -20,5 +22,15 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     @Override
     public int addAProductDetail(ProductDetail productDetail) {
         return productInfoMapperDao.addAProductDetail(productDetail);
+    }
+
+    @Override
+    public List<ProductInfo> findProductsByCode(String productCode) {
+        return productInfoMapperDao.findProductsByCode(productCode);
+    }
+
+    @Override
+    public List<ProductDetail> findProDetailsById(String productId) {
+        return productInfoMapperDao.findProDetailsById(productId);
     }
 }

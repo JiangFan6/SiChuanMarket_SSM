@@ -1,5 +1,6 @@
 package com.ssm.demo.controller;
 
+import com.auth0.jwt.internal.org.bouncycastle.util.encoders.Base64;
 import com.ssm.demo.entity.ProductDetail;
 import com.ssm.demo.entity.ProductInfo;
 import com.ssm.demo.entity.ResponseData;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.List;
 import java.util.UUID;
 
 @Controller
@@ -52,14 +54,10 @@ public class ProductInfoController {
                 MultipartFile file = multiRequest.getFile(iter.next().toString());
                 if (file != null) {
                     byte[] fileBytes = file.getBytes();
-                    System.out.println("imageByte-id");
-                    System.out.println(productInfoByteAndString.getProductId());
                     if (null == productInfoByteAndString.getProductId()) {
                         productInfoByteAndString.setProductId(UUID.randomUUID().toString());
                     }
                     productInfoByteAndString.setProductThumbnail(fileBytes);
-                    System.out.println(productInfoByteAndString);
-
                 }
             }
         }
@@ -89,8 +87,6 @@ public class ProductInfoController {
                 MultipartFile file = multiRequest.getFile(iter.next().toString());
                 if (file != null) {
                     String fileType = CheckFileType.checkFileName(file.getOriginalFilename());
-                    System.out.println("fileType");
-                    System.out.println(fileType);
 
                     String realPathName = "";
                     if ("image" == fileType) {
@@ -104,7 +100,6 @@ public class ProductInfoController {
                     } else {
                         realPathName = "static/others/";
                     }
-                    System.out.println(realPathName);
                     String basePath = request.getServletContext().getRealPath(realPathName);
                     finalPath = basePath + file.getOriginalFilename();
                     //上传
@@ -112,7 +107,6 @@ public class ProductInfoController {
                 }
             }
         }
-        System.out.println(finalPath);
         ResponseData res = ResponseData.ok();
         res.putDataValue("filePath", finalPath);
         return res;
@@ -122,8 +116,6 @@ public class ProductInfoController {
     @RequestMapping(value = "/addAProductInfo", method = {RequestMethod.POST})
     @ResponseBody
     public ResponseData addAProductInfo(@RequestBody ProductInfo productInfo) throws Exception {
-        System.out.println(productInfo);
-
         ResponseData res = ResponseData.ok();
         productInfo.setProductThumbnail(productInfoByteAndString.getProductThumbnail());
         if (null == productInfoByteAndString.getProductId()) {
@@ -134,16 +126,11 @@ public class ProductInfoController {
         int addProductDetails = 0;
         for (ProductDetail productDetail : productInfo.getProductDetails()) {
             productDetail.setProductId(productInfo.getProductId());
-            System.out.println(productDetail);
             int detailRes = productInfoService.addAProductDetail(productDetail);
             addProductDetails += detailRes;
         }
 
         int addRes = productInfoService.addAProductInfo(productInfo);
-
-        System.out.println("addRes-05");
-        System.out.println(addRes);
-        System.out.println(addProductDetails);
 
         if (0 == addRes || addProductDetails < productInfo.getProductDetails().size()) {
             res = ResponseData.serverInternalError();
@@ -151,4 +138,27 @@ public class ProductInfoController {
 
         return res;
     }
+
+
+    /*分类查找产品信息*/
+    @RequestMapping(value = "/findProductsByCode", method = {RequestMethod.GET})
+    @ResponseBody
+    public ResponseData findProductsByCode(HttpServletRequest request) throws Exception {
+        ResponseData res = ResponseData.ok();
+        String productCode = request.getParameter("productCode");
+
+        /*查找产品信息*/
+        List<ProductInfo> productInfos = productInfoService.findProductsByCode(productCode);
+
+        /*查找产品信息详情*/
+        for (ProductInfo productInfo : productInfos) {
+//            byte[] bs = Base64.decode(productInfo.getProductThumbnail());
+//            productInfo.setProductThumbnail(bs);
+            List<ProductDetail> productDetails = productInfoService.findProDetailsById(productInfo.getProductId());
+            productInfo.setProductDetails(productDetails);
+        }
+        res.putDataValue("productInfo", productInfos);
+        return res;
+    }
+
 }

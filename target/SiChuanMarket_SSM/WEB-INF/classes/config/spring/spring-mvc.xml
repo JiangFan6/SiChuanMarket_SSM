@@ -40,6 +40,7 @@
             <mvc:mapping path="/**"/><!--拦截所有的路径-->
             <mvc:exclude-mapping path="/person/login"/> <!--不拦截login-->
             <mvc:exclude-mapping path="/files/*"/> <!--不拦截files-->
+            <mvc:exclude-mapping path="/target/*"/> <!--不拦截static-->
             <bean class="com.ssm.demo.Interceptor.AdminLoginInterceptor">
             </bean>
         </mvc:interceptor>
