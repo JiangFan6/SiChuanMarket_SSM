@@ -7,14 +7,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/CUIT.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/sichuan_market.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sichuan_market.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/ProductInfoMapperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/ProductInfoMapperDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/ProductInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/ProductInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/ProductInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/controller/ProductInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/controller/ProductInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/config/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/config/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/audios/audios.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/audios/风继续吹.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/documents/662.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/documents/documents.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/20150925142453_9013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/CUIT2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/Maven第一天笔记.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/images.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/pomegranate01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (5).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (6).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (7).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (8).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/others/66.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/others/others.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/videos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/ProductInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/ProductInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,80 +52,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ProductInfoController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductInfoController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="155" column="50" lean-forward="true" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+            <state relative-caret-position="212">
+              <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#imageByte#0;class#ProductInfoController#0" />
-                <element signature="method#storeInFileSystem#0;class#ProductInfoController#0" />
-                <element signature="method#addAProductInfo#0;class#ProductInfoController#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminLoginInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1121#1122#0" expanded="true" />
-                <element signature="e#1175#1176#0" expanded="true" />
-                <element signature="e#1221#1222#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1312#1313#0" expanded="true" />
-                <element signature="e#1385#1386#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductInfoMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductInfoMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -120,7 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>batchImport</find>
       <find>industry_compnay</find>
       <find>System.out.println</find>
       <find>statisticDate</find>
@@ -150,6 +109,7 @@
       <find>path</find>
       <find>fileName</find>
       <find>System.out</find>
+      <find>finalPath</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -164,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CityInfoMapperDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CityInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CodeMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Industry.java" />
@@ -213,8 +172,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/ProductInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/ProductInfoMapperDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java" />
       </list>
     </option>
   </component>
@@ -264,8 +224,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2056" />
-    <option name="y" value="146" />
+    <option name="x" value="2120" />
+    <option name="y" value="309" />
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
@@ -278,92 +238,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
               <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
@@ -383,10 +263,29 @@
               <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="videos" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,18 +299,16 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ssm.demo.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\static\images" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources\mapper" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\static\videos" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\static\images" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\WEB-INF\static" />
     </key>
@@ -419,8 +316,10 @@
       <recent name="com.ssm.demo.controller" />
       <recent name="com.ssm.demo.service" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ssm.demo.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -478,7 +377,7 @@
       <listeners />
     </configuration>
     <configuration name="sichuanmarket" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="SiChuanMarket_SSM:war exploded">
           <settings>
@@ -616,27 +515,27 @@
       <workItem from="1540807161821" duration="12447000" />
       <workItem from="1540862300518" duration="3616000" />
       <workItem from="1540895615918" duration="7818000" />
+      <workItem from="1540978805349" duration="13105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296956000" />
+    <option name="totallyTimeSpent" value="310061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="82" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32972136" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.19584955" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.19584955" />
       <window_info anchor="right" id="CDI" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="JSF" order="3" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -646,21 +545,21 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" weight="0.014662757" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" weight="0.3079179" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.22957198" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.15758754" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,27 +582,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PersonMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/sichuan_market.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-633">
-          <caret line="625" column="30" lean-forward="true" selection-start-line="625" selection-start-column="30" selection-end-line="625" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CityGDPTotal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CityInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="971">
@@ -740,13 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="39" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -996,15 +867,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        <state relative-caret-position="858">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+        <state relative-caret-position="584">
+          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#355#356#0" expanded="true" />
@@ -1035,30 +906,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="155" column="50" lean-forward="true" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#imageByte#0;class#ProductInfoController#0" />
-            <element signature="method#storeInFileSystem#0;class#ProductInfoController#0" />
-            <element signature="method#addAProductInfo#0;class#ProductInfoController#0" />
-          </folding>
+        <state relative-caret-position="814">
+          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+        <state relative-caret-position="1365">
+          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+        <state relative-caret-position="911">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+          <folding>
+            <element signature="n#bean#2;n#beans#0;n#!!top" />
+            <element signature="n#mvc:annotation-driven#1;n#beans#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/config/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/CUIT.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#imageByte#0;class#ProductInfoController#0" />
+          </folding>
         </state>
       </provider>
     </entry>

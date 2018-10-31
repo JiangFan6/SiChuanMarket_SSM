@@ -1,5 +1,7 @@
 package com.ssm.demo.controller;
 
+import com.alibaba.fastjson.JSONObject;
+import com.auth0.jwt.internal.org.apache.commons.lang3.StringUtils;
 import com.auth0.jwt.internal.org.bouncycastle.util.encoders.Base64;
 import com.ssm.demo.entity.ProductDetail;
 import com.ssm.demo.entity.ProductInfo;
@@ -13,9 +15,16 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import javax.activation.MimetypesFileTypeMap;
+import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.IOException;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
@@ -76,7 +85,8 @@ public class ProductInfoController {
                 request.getSession().getServletContext());
 
         //检查form中是否有enctype="multipart/form-data"
-        String finalPath = "";
+        String storeFilePath = "";
+        String dataBasePath = "";
         if (multipartResolver.isMultipart(request)) {
             //将request变成多部分request
             MultipartHttpServletRequest multiRequest = (MultipartHttpServletRequest) request;
@@ -90,25 +100,40 @@ public class ProductInfoController {
 
                     String realPathName = "";
                     if ("image" == fileType) {
-                        realPathName = "static/images/";
+                        realPathName = "static\\images\\";
                     } else if ("document" == fileType) {
-                        realPathName = "static/documents/";
+                        realPathName = "static\\documents\\";
                     } else if ("video" == fileType) {
-                        realPathName = "static/videos/";
+                        realPathName = "static\\videos\\";
                     } else if ("audio" == fileType) {
-                        realPathName = "static/audios/";
+                        realPathName = "static\\audios\\";
                     } else {
-                        realPathName = "static/others/";
+                        realPathName = "static\\others\\";
                     }
-                    String basePath = request.getServletContext().getRealPath(realPathName);
-                    finalPath = basePath + file.getOriginalFilename();
+//                    String basePath = request.getServletContext().getRealPath(realPathName);
+                    String rootPath = request.getSession().getServletContext().getRealPath("/");
+                    System.out.println(rootPath);
+
+                    /*文件存放的路径*/
+                    storeFilePath = rootPath + realPathName + file.getOriginalFilename();
+                    /*数据库访问的路径*/
+                    dataBasePath = "http:\\\\localhost:8080\\SiChuanMarket_SSM\\" + realPathName + file.getOriginalFilename();
+
+                    System.out.println("文件存放的路径");
+                    System.out.println(storeFilePath);
+                    System.out.println("数据库访问的路径");
+                    System.out.println(dataBasePath);
+
                     //上传
-                    file.transferTo(new File(finalPath));
+                    file.transferTo(new File(storeFilePath));
                 }
             }
         }
         ResponseData res = ResponseData.ok();
-        res.putDataValue("filePath", finalPath);
+
+        /*数据库访问的路径*/
+        res.putDataValue("filePath", dataBasePath);
+
         return res;
     }
 
@@ -143,7 +168,7 @@ public class ProductInfoController {
     /*分类查找产品信息*/
     @RequestMapping(value = "/findProductsByCode", method = {RequestMethod.GET})
     @ResponseBody
-    public ResponseData findProductsByCode(HttpServletRequest request) throws Exception {
+    public ResponseData findProductsByCode(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ResponseData res = ResponseData.ok();
         String productCode = request.getParameter("productCode");
 
@@ -152,13 +177,12 @@ public class ProductInfoController {
 
         /*查找产品信息详情*/
         for (ProductInfo productInfo : productInfos) {
-//            byte[] bs = Base64.decode(productInfo.getProductThumbnail());
-//            productInfo.setProductThumbnail(bs);
             List<ProductDetail> productDetails = productInfoService.findProDetailsById(productInfo.getProductId());
             productInfo.setProductDetails(productDetails);
         }
         res.putDataValue("productInfo", productInfos);
         return res;
     }
+
 
 }

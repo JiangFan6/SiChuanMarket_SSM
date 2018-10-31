@@ -19,6 +19,7 @@
     <!-- 静态资源默认servlet配置 -->
     <mvc:default-servlet-handler/>
 
+
     <!-- 配置jsp 显示ViewResolver -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
@@ -40,11 +41,16 @@
             <mvc:mapping path="/**"/><!--拦截所有的路径-->
             <mvc:exclude-mapping path="/person/login"/> <!--不拦截login-->
             <mvc:exclude-mapping path="/files/*"/> <!--不拦截files-->
-            <mvc:exclude-mapping path="/target/*"/> <!--不拦截static-->
+            <mvc:exclude-mapping path="/static/*"/> <!--不拦截files-->
             <bean class="com.ssm.demo.Interceptor.AdminLoginInterceptor">
             </bean>
         </mvc:interceptor>
     </mvc:interceptors>
+
+    <!-- 静态资源访问 -->
+    <mvc:annotation-driven/>
+    <mvc:resources location="/static/" mapping="/static/**/"/>
+
 
     <!--调整日期格式-json-timestamp-datetime-->
     <bean id="acmJacksonConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">

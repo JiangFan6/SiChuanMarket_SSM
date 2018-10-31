@@ -5,8 +5,11 @@ com\ssm\demo\dao\FileUploadMapperDao.class
 com\ssm\demo\service\CityInfoService.class
 com\ssm\demo\dao\CompanyInfoMapperDao.class
 com\ssm\demo\entity\Person.class
+com\ssm\demo\controller\ProductInfoController.class
+com\ssm\demo\service\ProductInfoService.class
 com\ssm\demo\controller\FileUploadController.class
 com\ssm\demo\service\impl\CityInfoServiceImpl.class
+com\ssm\demo\entity\ProductDetail.class
 com\ssm\demo\util\CustomObjectMapper.class
 com\ssm\demo\service\impl\CompanyInfoServiceImpl.class
 com\ssm\demo\service\impl\FileUploadImpl.class
@@ -14,7 +17,6 @@ com\ssm\demo\entity\Token.class
 com\ssm\demo\entity\CompanyInfo.class
 com\ssm\demo\service\FileUploadService.class
 com\ssm\demo\Interceptor\AdminLoginInterceptor.class
-com\ssm\demo\entity\Image.class
 com\ssm\demo\entity\CodeMsg.class
 com\ssm\demo\controller\CityInfoController.class
 com\ssm\demo\entity\IndustryCompany.class
@@ -22,11 +24,10 @@ com\ssm\demo\service\impl\PersonServiceImpl.class
 com\ssm\demo\util\ReadExcel.class
 com\ssm\demo\controller\IndustryInfoController.class
 com\ssm\demo\service\CompanyInfoService.class
+com\ssm\demo\dao\ProductInfoMapperDao.class
 com\ssm\demo\controller\CompanyInfoController.class
 com\ssm\demo\service\PersonService.class
 com\ssm\demo\entity\Result.class
-com\ssm\demo\entity\ProductDetails.class
-com\ssm\demo\entity\Video.class
 com\ssm\demo\dao\IndustryInfoMapperDao.class
 com\ssm\demo\service\impl\IndustryInfoServiceImpl.class
 com\ssm\demo\controller\PersonController.class
@@ -37,4 +38,6 @@ com\ssm\demo\entity\IndustryInfo.class
 com\ssm\demo\dao\CityInfoMapperDao.class
 com\ssm\demo\entity\ProductInfo.class
 com\ssm\demo\Interceptor\JWT.class
+com\ssm\demo\util\CheckFileType.class
 com\ssm\demo\entity\CityGDPTotal.class
+com\ssm\demo\service\impl\ProductInfoServiceImpl.class
