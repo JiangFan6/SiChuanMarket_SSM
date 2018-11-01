@@ -18,4 +18,8 @@ public interface ProductInfoMapperDao {
 
     List<ProductDetail> findProDetailsById(String productId);
 
+    int deleteAProductInfo(String productId);
+
+    int deleteProDetailsById(String productId);
+
 }

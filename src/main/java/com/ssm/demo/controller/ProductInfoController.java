@@ -147,6 +147,8 @@ public class ProductInfoController {
             productInfoByteAndString.setProductId(UUID.randomUUID().toString());
         }
         productInfo.setProductId(productInfoByteAndString.getProductId());
+        System.out.println("保存-1203");
+        System.out.println(productInfo.getProductId());
 
         int addProductDetails = 0;
         for (ProductDetail productDetail : productInfo.getProductDetails()) {
@@ -160,7 +162,27 @@ public class ProductInfoController {
         if (0 == addRes || addProductDetails < productInfo.getProductDetails().size()) {
             res = ResponseData.serverInternalError();
         }
+        productInfoByteAndString.setProductId(null);//初始化productId;
+        return res;
+    }
 
+    /*删除一条产品信息*/
+    @RequestMapping(value = "/deleteAProductInfo", method = {RequestMethod.GET})
+    @ResponseBody
+    public ResponseData deleteAProductInfo(HttpServletRequest request) throws Exception {
+        ResponseData res = ResponseData.ok();
+        String productId = request.getParameter("productId");
+
+        int deleteProInfoRes = productInfoService.deleteAProductInfo(productId);
+        int deleteProDetailsRes = productInfoService.deleteProDetailsById(productId);
+
+        System.out.println("deleteProInfoRes");
+        System.out.println(deleteProDetailsRes);
+        System.out.println(deleteProInfoRes);
+
+        if (0 == deleteProInfoRes || 0 == deleteProDetailsRes) {
+            res = ResponseData.serverInternalError();
+        }
         return res;
     }
 

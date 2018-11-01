@@ -26,6 +26,19 @@
         (#{productId},#{fileTitle},#{fileUrl},#{fileTxt});
     </insert>
 
+    <!--删除一条产品信息-->
+    <delete id="deleteAProductInfo" parameterType="String">
+        DELETE FROM product_info
+        WHERE product_id=#{productId}
+    </delete>
+
+    <!--删除一条产品详情-->
+    <delete id="deleteProDetailsById" parameterType="String">
+        DELETE FROM product_details
+        WHERE product_id=#{productId}
+    </delete>
+
+
     <!--通过产品code查询-->
     <select id="findProductsByCode" parameterType="String" resultType="ProductInfo">
         SELECT *
