@@ -14,14 +14,17 @@ public interface ProductInfoMapperDao {
 
     int addAProductDetail(ProductDetail productDetail);
 
-    List<ProductInfo> findProductsByCode(String productCode);
-
-    List<ProductDetail> findProDetailsById(String productId);
-
     int deleteAProductInfo(String productId);
 
     int deleteProDetailsById(String productId);
 
+    int updateProductInfo(ProductInfo productInfo);
+
+    int updateProductDetails(ProductDetail productDetail);
+
     ProductInfo findProductInfoById(String productId);
 
+    List<ProductInfo> findProductsByCode(String productCode);
+
+    List<ProductDetail> findProDetailsById(String productId);
 }

@@ -25,16 +25,6 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     }
 
     @Override
-    public List<ProductInfo> findProductsByCode(String productCode) {
-        return productInfoMapperDao.findProductsByCode(productCode);
-    }
-
-    @Override
-    public List<ProductDetail> findProDetailsById(String productId) {
-        return productInfoMapperDao.findProDetailsById(productId);
-    }
-
-    @Override
     public int deleteAProductInfo(String productId) {
         return productInfoMapperDao.deleteAProductInfo(productId);
     }
@@ -45,7 +35,30 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     }
 
     @Override
+    public int updateProductInfo(ProductInfo productInfo) {
+        return productInfoMapperDao.updateProductInfo(productInfo);
+    }
+
+    @Override
+    public int updateProductDetails(ProductDetail productDetail) {
+        return productInfoMapperDao.updateProductDetails(productDetail);
+    }
+
+    @Override
     public ProductInfo findProductInfoById(String productId) {
         return productInfoMapperDao.findProductInfoById(productId);
     }
+
+    @Override
+    public List<ProductInfo> findProductsByCode(String productCode) {
+        return productInfoMapperDao.findProductsByCode(productCode);
+    }
+
+    @Override
+    public List<ProductDetail> findProDetailsById(String productId) {
+        return productInfoMapperDao.findProDetailsById(productId);
+    }
+
+
+
 }

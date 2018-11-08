@@ -21,9 +21,9 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         INSERT INTO
-        product_details(product_id,file_title,file_url,file_txt)
+        product_details(file_id,product_id,file_title,file_url,file_txt)
         VALUES
-        (#{productId},#{fileTitle},#{fileUrl},#{fileTxt});
+        (#{fileId},#{productId},#{fileTitle},#{fileUrl},#{fileTxt});
     </insert>
 
     <!--删除一条产品信息-->
@@ -37,6 +37,28 @@
         DELETE FROM product_details
         WHERE product_id=#{productId}
     </delete>
+
+    <!--修改一条产品信息-->
+    <update id="updateProductInfo" parameterType="ProductInfo">
+        UPDATE product_info
+        SET
+        product_name=#{productName},
+        product_describe=#{productDescribe},
+        product_thumbnail=#{productThumbnail},
+        product_code=#{productCode}
+        WHERE product_id=#{productId}
+    </update>
+
+    <!--修改一条产品详情-->
+    <update id="updateProductDetails" parameterType="ProductDetail">
+        UPDATE product_details
+        SET
+        file_title=#{fileTitle},
+        file_url=#{fileUrl},
+        file_txt=#{fileTxt}
+        WHERE file_id=#{fileId}
+
+    </update>
 
 
     <!--通过产品code查询-->

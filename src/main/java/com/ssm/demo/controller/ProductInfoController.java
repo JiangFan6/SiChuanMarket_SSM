@@ -155,6 +155,7 @@ public class ProductInfoController {
         int addProductDetails = 0;
         for (ProductDetail productDetail : productInfo.getProductDetails()) {
             productDetail.setProductId(productInfo.getProductId());
+            productDetail.setFileId(UUID.randomUUID().toString());
             int detailRes = productInfoService.addAProductDetail(productDetail);
             addProductDetails += detailRes;
         }
@@ -188,6 +189,30 @@ public class ProductInfoController {
         return res;
     }
 
+    /*修改一条产品信息*/
+    @RequestMapping(value = "/updateAProductInfo", method = {RequestMethod.POST})
+    @ResponseBody
+    public ResponseData updateAProductInfo(@RequestBody ProductInfo productInfo) throws Exception {
+        System.out.println(productInfo);
+        ResponseData res = ResponseData.ok();
+
+        int updateInfoRes = productInfoService.updateProductInfo(productInfo);
+        List<ProductDetail> productDetailList = productInfo.getProductDetails();
+
+        int updateProDetailsRes = 0;
+        for (ProductDetail productDetail : productDetailList) {
+            updateProDetailsRes += productInfoService.updateProductDetails(productDetail);
+        }
+        System.out.println("productDetail-01");
+        System.out.println(updateProDetailsRes);
+        System.out.println(updateInfoRes);
+
+        if (0 == updateInfoRes || updateProDetailsRes != productDetailList.size()) {
+            res = ResponseData.serverInternalError();
+        }
+
+        return res;
+    }
 
     /*分类查找产品信息*/
     @RequestMapping(value = "/findProductsByCode", method = {RequestMethod.GET})
@@ -208,33 +233,6 @@ public class ProductInfoController {
         return res;
     }
 
-    /*
-     *//** *//*
-     */
-
-    /**
-     * 文件重命名
-     * <p>
-     * //@param path    文件目录
-     * //@param oldname 原来的文件名
-     * //@param newname 新文件名
-     *//*
-    public void renameFile(String path, String oldname, String newname) {
-        if (!oldname.equals(newname)) {//新的文件名和以前文件名不同时,才有必要进行重命名
-            File oldfile = new File(path + "/" + oldname);
-            File newfile = new File(path + "/" + newname);
-            if (!oldfile.exists()) {
-                return;//重命名文件不存在
-            }
-            if (newfile.exists())//若在该目录下已经有一个文件和新文件名相同，则不允许重命名
-                System.out.println(newname + "已经存在！");
-            else {
-                oldfile.renameTo(newfile);
-            }
-        } else {
-            System.out.println("新文件名和旧文件名相同...");
-        }
-    }*/
 
     /*按照productId查找产品详情*/
     @RequestMapping(value = "/findProductInfoById", method = {RequestMethod.GET})
