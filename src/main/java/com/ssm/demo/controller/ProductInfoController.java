@@ -208,15 +208,17 @@ public class ProductInfoController {
         return res;
     }
 
+    /*
+     *//** *//*
+     */
 
-/** */
     /**
      * 文件重命名
-     *
-     * @param path    文件目录
-     * @param oldname 原来的文件名
-     * @param newname 新文件名
-     */
+     * <p>
+     * //@param path    文件目录
+     * //@param oldname 原来的文件名
+     * //@param newname 新文件名
+     *//*
     public void renameFile(String path, String oldname, String newname) {
         if (!oldname.equals(newname)) {//新的文件名和以前文件名不同时,才有必要进行重命名
             File oldfile = new File(path + "/" + oldname);
@@ -232,5 +234,24 @@ public class ProductInfoController {
         } else {
             System.out.println("新文件名和旧文件名相同...");
         }
+    }*/
+
+    /*按照productId查找产品详情*/
+    @RequestMapping(value = "/findProductInfoById", method = {RequestMethod.GET})
+    @ResponseBody
+    public ResponseData findProductInfoById(HttpServletRequest request) throws Exception {
+        String productId = request.getParameter("productId");
+        ResponseData res = ResponseData.ok();
+
+        ProductInfo productInfo = productInfoService.findProductInfoById(productId);
+        List<ProductDetail> productDetails = productInfoService.findProDetailsById(productId);
+        productInfo.setProductDetails(productDetails);
+
+        if (null != productInfo) {
+            res.putDataValue("productInfo", productInfo);
+        } else {
+            res = ResponseData.notFound();
+        }
+        return res;
     }
 }

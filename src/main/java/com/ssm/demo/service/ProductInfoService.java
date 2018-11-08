@@ -19,4 +19,6 @@ public interface ProductInfoService {
 
     int deleteProDetailsById(String productId);
 
+    ProductInfo findProductInfoById(String productId);
+
 }

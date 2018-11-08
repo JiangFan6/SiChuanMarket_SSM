@@ -22,4 +22,6 @@ public interface ProductInfoMapperDao {
 
     int deleteProDetailsById(String productId);
 
+    ProductInfo findProductInfoById(String productId);
+
 }

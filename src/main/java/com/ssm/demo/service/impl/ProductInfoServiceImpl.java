@@ -43,4 +43,9 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     public int deleteProDetailsById(String productId) {
         return productInfoMapperDao.deleteProDetailsById(productId);
     }
+
+    @Override
+    public ProductInfo findProductInfoById(String productId) {
+        return productInfoMapperDao.findProductInfoById(productId);
+    }
 }
