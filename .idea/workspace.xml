@@ -6,32 +6,53 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ProductInfoController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="98" column="65" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="65" />
+            <state relative-caret-position="623">
+              <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
               <folding>
-                <element signature="method#imageByte#0;class#ProductInfoController#0" />
-                <element signature="e#5693#5767#0" />
-                <element signature="method#addAProductInfo#0;class#ProductInfoController#0" />
-                <element signature="method#deleteAProductInfo#0;class#ProductInfoController#0" />
-                <element signature="method#findProductsByCode#0;class#ProductInfoController#0" />
-                <element signature="method#findProductInfoById#0;class#ProductInfoController#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#onOpen#0;class#WebSocketServer#0" />
+                <element signature="method#onOpen#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#onClose#0;class#WebSocketServer#0" />
+                <element signature="method#onClose#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#onMessage#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#onError#0;class#WebSocketServer#0" />
+                <element signature="method#onError#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#SendMessage#0;class#WebSocketServer#0" />
+                <element signature="method#SendMessage#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#BroadCastInfo#0;class#WebSocketServer#0" />
+                <element signature="method#BroadCastInfo#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#SendMessage#1;class#WebSocketServer#0" />
               </folding>
             </state>
           </provider>
@@ -52,20 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>city_id</find>
-      <find>city_name</find>
-      <find>city_code</find>
-      <find>city_areas</find>
-      <find>cityAreas_unit</find>
-      <find>city_population</find>
-      <find>cityPopulation_unit</find>
-      <find>city_gov_address</find>
-      <find>city_scenic_spots</find>
-      <find>cityAirlines</find>
-      <find>city_airlines</find>
-      <find>cityAirlines_unit</find>
-      <find>city_train</find>
-      <find>cityTrain_unit</find>
       <find>city_cars_counts</find>
       <find>cityGdpTotal</find>
       <find>city_gdp_total</find>
@@ -82,6 +89,20 @@
       <find>rootPath</find>
       <find>updateInfo</find>
       <find>checkFileName</find>
+      <find>javax.ser</find>
+      <find>driverClassName</find>
+      <find>mysql-connector-java</find>
+      <find>login</find>
+      <find>Forbidden, token expired</find>
+      <find>forbidden</find>
+      <find>SpringConfigurator</find>
+      <find>用户信息-01</find>
+      <find>springframework</find>
+      <find>ApiReturnObject</find>
+      <find>org.springframework.web</find>
+      <find>RequestMappingHandlerAdapter</find>
+      <find>spring-boot-starter-websocket</find>
+      <find>连接成功 (From Server，Session ID=0)</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -97,25 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CodeMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Industry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/IndustryMapperDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/WDWUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/FileUploadMapperDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/FileUploadService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ResponseData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/FileUploadImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Token.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/PersonController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/CompanyInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CompanyInfoMapperDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CompanyInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/mybatis/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CityGDPTotal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CityInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CityList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CompanyInfo.java" />
@@ -134,13 +136,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Image.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Video.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/checkFileType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/CheckFileType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/ProductInfoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/ProductInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/ProductInfoMapperDao.java" />
@@ -148,14 +148,29 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/MyWebsocket.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/SseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/WebSocketServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/Websocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/webSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/webSocket/HttpSessionConfigurator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/webSocket/WebSockets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/MyHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/MyHandshakeInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/SendMsgController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/ApiReturnObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/ApiReturnUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/CheckCenterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketH5Config.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -167,7 +182,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../software/backEnd/apache-maven-3.5.4" />
+        <option name="mavenHome" value="D:/../software/backEnd/apache-maven-3.5.4" />
         <option name="userSettingsFile" value="D:\backupData\software\backEnd\apache-maven-3.5.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -193,16 +208,13 @@
       <select />
     </treeState>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="232" />
+    <option name="y" value="232" />
+    <option name="width" value="1625" />
+    <option name="height" value="775" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1912" />
-    <option name="y" value="82" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
-  </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -211,31 +223,47 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiChuanMarket_SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="SiChuanMarket_SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,37 +274,40 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/basicSoftwares/tech/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../websocket_examples/WebSocket" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.40204272" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ssm.demo.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FJiang6\projects_jf\SiChuanMarket_SSM-master\src\main\java\com\ssm\demo\controller" />
+      <recent name="D:\FJiang6\projects_jf\SiChuanMarket_SSM-master\src\main\java\com\ssm\demo\websocket" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\static\images" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources\mapper" />
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\static\videos" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\WEB-INF\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ssm.demo.controller" />
       <recent name="com.ssm.demo.service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ssm.demo.websocket" />
+      <recent name="com.ssm.demo.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -294,46 +325,28 @@
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="sichuanmarket" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="SiChuanMarket_SSM:war exploded">
@@ -345,11 +358,11 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_SiChuanMarket_SSM" />
       </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="57685" />
       </RunnerSettings>
@@ -398,7 +411,8 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="SiChuanMarket_SSM:war exploded" />
         </option>
@@ -486,58 +500,66 @@
       <workItem from="1541751433001" duration="2441000" />
       <workItem from="1541762147321" duration="1689000" />
       <workItem from="1541831635135" duration="1216000" />
+      <workItem from="1562224382965" duration="2883000" />
+      <workItem from="1562227764144" duration="1966000" />
+      <workItem from="1562230886668" duration="735000" />
+      <workItem from="1562237683353" duration="4614000" />
+      <workItem from="1562242555626" duration="628000" />
+      <workItem from="1562289497208" duration="10099000" />
+      <workItem from="1562309974066" duration="7863000" />
+      <workItem from="1562323593386" duration="2033000" />
+      <workItem from="1562550934566" duration="2867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334124000" />
+    <option name="totallyTimeSpent" value="367812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="82" width="1616" height="876" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32972136" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.18741894" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="CDI" order="4" />
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="JSF" order="3" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.26539588" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" visible="true" weight="0.26979473" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.1919585" />
-      <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.23414305" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" sideWeight="0.49932525" weight="0.055474453" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329927" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006748" side_tool="true" weight="0.5459854" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.24233577" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32972136" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.18741894" />
+      <window_info anchor="right" id="JSF" order="6" weight="0.3299595" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3299595" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="CDI" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Maven" order="12" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -549,230 +571,116 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/PersonController.java">
+    <entry file="file://$PROJECT_DIR$/sql/sichuan_market.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="89" column="12" lean-forward="true" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
-        </state>
+        <state relative-caret-position="-37882" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/IndustryInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/IndustryInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="81" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/IndustryInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="53" column="29" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/IndustryInfoMapperDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/IndustryInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CompanyInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="45" column="55" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/CompanyInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/IndustryInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CompanyInfoMapperDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CompanyInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Company.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CityList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Video.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Image.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/CityInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
+        <state relative-caret-position="88">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/CityInfoMapperDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="66">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CityInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/ProductInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="44">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/CheckFileType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1743">
-          <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+        <state relative-caret-position="748">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index_person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1980" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/images/62474200f9d74ea3b5d441b1db92e4c4_th.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/Fj_ITaqRMz4NgsD9oCaU28pSHDKU.jpg!730x0.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/FileUploadController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/images/CUIT.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="22">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/ReadExcel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f61a9b37-441b-47e0-a520-5e890dd583a8/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/mapper/PersonMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3591">
-          <caret line="214" column="88" lean-forward="true" selection-start-line="214" selection-start-column="88" selection-end-line="214" selection-end-column="88" />
-        </state>
+        <state relative-caret-position="-297" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/CustomObjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="59" column="39" lean-forward="true" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/WDWUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CompanyInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ResponseData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="24" />
+        <state relative-caret-position="331">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/config/spring/spring-mvc.xml">
+    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/CUIT.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CompanyInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1130">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        <state relative-caret-position="242">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (1).jpg" />
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (2).jpg" />
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (3).jpg" />
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/timg (4).jpg" />
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/666timg (1).jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/ProductInfoService.java">
+    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/mapper/PersonMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state relative-caret-position="66">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/ProductInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="38" column="67" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/ProductInfoMapperDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="-374">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -783,65 +691,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductInfoMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/JWT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        <state relative-caret-position="265">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/CheckFileType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/dao/PersonMapperDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="176">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PersonMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="352">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mybatis.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/PersonService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        <state relative-caret-position="132">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/PersonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/maven-archiver/pom.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/MyWebsocket.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+          <folding>
+            <element signature="method#addAnewPerson#0;class#PersonController#0" />
+            <element signature="method#findAllUsers#0;class#PersonController#0" />
+            <element signature="method#updateUser#0;class#PersonController#0" />
+            <element signature="e#2327#2396#0" />
+            <element signature="method#deleteUser#0;class#PersonController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/SseTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/Websocket.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/WebSocketServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/webSocket.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/webSocket/HttpSessionConfigurator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/MyWebSocket.java" />
+    <entry file="file://$PROJECT_DIR$/../websocket_examples/WebSocket/src/main/java/cn/ssm/test/websocket/MyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../websocket_examples/WebSocket/src/main/java/cn/ssm/test/controller/SendMsgController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="113" selection-start-line="2" selection-start-column="113" selection-end-line="2" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/MyHandshakeInterceptor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/MyHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/SendMsgController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/ApiReturnUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/WDWUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1358">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/62474200f9d74ea3b5d441b1db92e4c4_th.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="98" column="65" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="65" />
+        <state relative-caret-position="813">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="51" selection-end-column="43" />
           <folding>
-            <element signature="method#imageByte#0;class#ProductInfoController#0" />
-            <element signature="e#5693#5767#0" />
-            <element signature="method#addAProductInfo#0;class#ProductInfoController#0" />
-            <element signature="method#deleteAProductInfo#0;class#ProductInfoController#0" />
-            <element signature="method#findProductsByCode#0;class#ProductInfoController#0" />
-            <element signature="method#findProductInfoById#0;class#ProductInfoController#0" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/ApiReturnObject.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/CustomObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <element signature="n#mvc:annotation-driven#2;n#beans#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/CheckCenterController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketH5Config.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="288" column="21" lean-forward="true" selection-start-line="288" selection-start-column="21" selection-end-line="288" selection-end-column="21" />
+          <folding>
+            <element signature="n#plugins#0;n#pluginManagement#0;n#build#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#onOpen#0;class#WebSocketServer#0" />
+            <element signature="method#onOpen#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#onClose#0;class#WebSocketServer#0" />
+            <element signature="method#onClose#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#onMessage#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#onError#0;class#WebSocketServer#0" />
+            <element signature="method#onError#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#SendMessage#0;class#WebSocketServer#0" />
+            <element signature="method#SendMessage#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#BroadCastInfo#0;class#WebSocketServer#0" />
+            <element signature="method#BroadCastInfo#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#SendMessage#1;class#WebSocketServer#0" />
           </folding>
         </state>
       </provider>
@@ -857,7 +882,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -905,7 +929,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -925,11 +948,22 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: asm:asm:3.3.1</last-edited>
+          <last-edited>Maven: com.sun.mail:javax.mail:1.6.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.40204272" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.40204272" />
               </list>
             </option>
           </splitter-proportions>

@@ -43,6 +43,14 @@ public class AdminLoginInterceptor implements HandlerInterceptor {
                 return false;
             }
         } else {
+            String requestUrl = request.getScheme() //当前链接使用的协议
+                    + "://" + request.getServerName()//服务器地址
+                    + ":" + request.getServerPort() //端口号
+                    + request.getContextPath() //应用名称，如果应用名称为
+                    + request.getServletPath() //请求的相对url
+                    + "?" + request.getQueryString(); //请求参数
+            System.out.println(requestUrl);
+
             System.out.println("拦截03");
             String header = request.getHeader("Authorization");//你需要的header
 

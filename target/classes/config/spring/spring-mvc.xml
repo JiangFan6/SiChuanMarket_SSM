@@ -3,12 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:websocket="http://www.springframework.org/schema/websocket"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/mvc
-       http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+       http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd http://www.springframework.org/schema/websocket http://www.springframework.org/schema/websocket/spring-websocket.xsd">
 
     <!-- 扫描web相关的bean -->
     <context:component-scan base-package="com.ssm.demo"/>
@@ -44,6 +45,7 @@
             <mvc:exclude-mapping path="/static/*"/> <!--不拦截files-->
             <bean class="com.ssm.demo.Interceptor.AdminLoginInterceptor">
             </bean>
+
         </mvc:interceptor>
     </mvc:interceptors>
 
@@ -84,6 +86,8 @@
             <!--<bean class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter"/>-->
         </mvc:message-converters>
     </mvc:annotation-driven>
+
+
 
 
 </beans>
