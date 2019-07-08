@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="" />
+    <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+            <state relative-caret-position="286">
+              <caret line="140" column="45" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#onOpen#0;class#WebSocketServer#0" />
@@ -53,6 +57,21 @@
                 <element signature="docComment;method#BroadCastInfo#0;class#WebSocketServer#0" />
                 <element signature="method#BroadCastInfo#0;class#WebSocketServer#0" />
                 <element signature="docComment;method#SendMessage#1;class#WebSocketServer#0" />
+                <element signature="method#SendMessage#1;class#WebSocketServer#0" />
+                <element signature="e#3675#4218#0" expanded="true" />
+                <element signature="e#4217#4218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer02.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216">
+              <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+              <folding>
+                <element signature="method#onError#0;class#WebSocketServer02#0" />
               </folding>
             </state>
           </provider>
@@ -73,8 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>city_cars_counts</find>
-      <find>cityGdpTotal</find>
       <find>city_gdp_total</find>
       <find>cityGdpTotal_unit</find>
       <find>city_gdp_pp</find>
@@ -103,6 +120,8 @@
       <find>RequestMappingHandlerAdapter</find>
       <find>spring-boot-starter-websocket</find>
       <find>连接成功 (From Server，Session ID=0)</find>
+      <find>SendMessage</find>
+      <find>showDayTime</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -118,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CompanyInfo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/FileUploadMapper.xml" />
@@ -168,6 +186,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/CheckCenterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketH5Config.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer02.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java" />
       </list>
     </option>
@@ -208,9 +227,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="232" />
-    <option name="y" value="232" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="231" />
+    <option name="y" value="231" />
     <option name="width" value="1625" />
     <option name="height" value="775" />
   </component>
@@ -223,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,7 +290,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,10 +308,9 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ssm.demo.websocket" />
+      <recent name="com.ssm.demo.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\FJiang6\projects_jf\SiChuanMarket_SSM-master\src\main\java\com\ssm\demo\controller" />
@@ -302,12 +320,14 @@
       <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp\static\videos" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ssm.demo.websocket" />
       <recent name="com.ssm.demo.controller" />
       <recent name="com.ssm.demo.service" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ssm.demo.websocket" />
-      <recent name="com.ssm.demo.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -509,11 +529,12 @@
       <workItem from="1562309974066" duration="7863000" />
       <workItem from="1562323593386" duration="2033000" />
       <workItem from="1562550934566" duration="2867000" />
+      <workItem from="1562555485351" duration="1940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="367812000" />
+    <option name="totallyTimeSpent" value="369752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -526,10 +547,10 @@
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.23414305" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.23819163" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" sideWeight="0.49932525" weight="0.055474453" />
+      <window_info active="true" anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" sideWeight="0.49932525" visible="true" weight="0.055474453" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -574,11 +595,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sql/sichuan_market.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37882" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/CityInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -849,10 +865,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="method#onError#0;class#WebSocketServer02#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+        <state relative-caret-position="286">
+          <caret line="140" column="45" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#onOpen#0;class#WebSocketServer#0" />
@@ -867,6 +893,9 @@
             <element signature="docComment;method#BroadCastInfo#0;class#WebSocketServer#0" />
             <element signature="method#BroadCastInfo#0;class#WebSocketServer#0" />
             <element signature="docComment;method#SendMessage#1;class#WebSocketServer#0" />
+            <element signature="method#SendMessage#1;class#WebSocketServer#0" />
+            <element signature="e#3675#4218#0" expanded="true" />
+            <element signature="e#4217#4218#0" expanded="true" />
           </folding>
         </state>
       </provider>

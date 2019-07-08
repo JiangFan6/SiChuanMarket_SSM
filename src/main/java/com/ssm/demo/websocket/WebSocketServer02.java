@@ -1,25 +1,18 @@
 package com.ssm.demo.websocket;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import javax.websocket.*;
+import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import javax.websocket.OnClose;
-import javax.websocket.OnError;
-import javax.websocket.OnMessage;
-import javax.websocket.OnOpen;
-import javax.websocket.Session;
-import javax.websocket.server.ServerEndpoint;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
 
 /**
@@ -27,11 +20,11 @@ import org.springframework.stereotype.Component;
  *
  * @author wallimn，http://wallimn.iteye.com
  */
-@ServerEndpoint(value = "/ws/asset")
+@ServerEndpoint(value = "/ws/asset02")
 @Component
-public class WebSocketServer {
+public class WebSocketServer02 {
 
-    private static Logger log = LoggerFactory.getLogger(WebSocketServer.class);
+    private static Logger log = LoggerFactory.getLogger(WebSocketServer02.class);
     private static final AtomicInteger OnlineCount = new AtomicInteger(0);
     // concurrent包的线程安全Set，用来存放每个客户端对应的Session对象。
     private static CopyOnWriteArraySet<Session> SessionSet = new CopyOnWriteArraySet<Session>();
@@ -69,8 +62,8 @@ public class WebSocketServer {
         System.out.println("123");
         System.out.println(session);
         SendMessage(session, "收到消息，消息内容：" + message);
-        String sessionId01 = session.getId();
-        showDayTime(sessionId01);
+        String sessionId = session.getId();
+        showDayTime(sessionId);
     }
 
     /**
@@ -132,13 +125,13 @@ public class WebSocketServer {
         if (session != null) {
             SendMessage(session, message);
         } else {
-            log.warn("没有找到你指定ID的会话：{}", sessionId);
+            log.warn(".没有找到你指定ID的会话：{}", sessionId);
         }
     }
 
 
     public static void showDayTime(String sessionId) {
-        final String sessionId01 = sessionId;
+        final String sessionId02 = sessionId;
         Date sendDate = new Date();
         Timer dTimer = new Timer();
         dTimer.schedule(new TimerTask() {
@@ -146,13 +139,13 @@ public class WebSocketServer {
             public void run() {
                 Date date = new Date();
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd :hh:mm:ss");
-                System.out.println("每5秒任务已执行");
+                System.out.println("每6秒任务已执行");
                 try {
-                    SendMessage(sessionId01, "01后台给前端推送一条消息：" + dateFormat.format(date));
+                    SendMessage(sessionId02, "02后台给前端推送一条消息：" + dateFormat.format(date));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-        }, sendDate, 5 * 1000);//设置5秒钟执行一次
+        }, sendDate, 6 * 1000);//设置6秒钟执行一次
     }
 }
