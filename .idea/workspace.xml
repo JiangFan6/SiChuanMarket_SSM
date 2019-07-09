@@ -7,72 +7,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63f7f254-9284-4d3c-8fbd-75a76d499771" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsonCatalog.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/META-INF/SiChuanMarket_SSM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/websocket/WebSocketServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/websocket/WebSocketServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/websocket/WebSocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/com/ssm/demo/websocket/WebSocketServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/lib/jackson-core-asl-1.8.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762352268_62474200f9d74ea3b5d441b1db92e4c4_th.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762423569_pomegranate01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762429170_timg (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762469252_timg (6).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762493100_timg (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762513617_timg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762545178_timg (6).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762552458_timg (7).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762563805_timg (10).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762614265_101f35ff-5595-4072-af34-740bcefeca7b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762621540_20150925142453_9013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762629919_timg (2).gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762643616_timg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762659204_timg (5).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762721521_timg (4).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762734651_mango01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762742554_timg (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762882239_timg (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762886289_timg (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541762893686_timg (5).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541763639429_timg (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541763643346_timg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541763842150_timg (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541768843621_timg (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541768852452_timg (4).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541768865709_timg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541768921755_timg (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541768927257_timg (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541768934876_timg (4).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541769009901_timg (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541769014225_timg (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541769020819_timg (5).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541833736891_1499071166393679.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541833745505_rBADsloB3CKAPqimAAK4hMNhALo004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541833780999_timg (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/images/1541833796713_timg (8).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762366040_成都龙泉驿形象宣传片 超清(720P).MP4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762440540_攀西明珠会理.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762573597_蒲江猕猴桃.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762669618_柠檬酱.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762749474_攀枝花芒果.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762814963_大米.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762851083_玉米.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762866120_小麦.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541762899034_油菜花.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541763658699_花椒01.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541763665094_花椒02.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541763763226_油菜02.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/static/videos/1541763772600_油菜花.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SiChuanMarket_SSM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/websocket/WebSocketServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/websocket/WebSocketServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/websocket/WebSocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/demo/websocket/WebSocketServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/config/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/config/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/mapper/CityInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/mapper/CityInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/Interceptor/AdminLoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/Interceptor/JWT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/CityInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/CompanyInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/FileUploadController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/IndustryInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/PersonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/controller/ProductInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/dao/CityInfoMapperDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/dao/CompanyInfoMapperDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/dao/FileUploadMapperDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/dao/IndustryInfoMapperDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/dao/PersonMapperDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/dao/ProductInfoMapperDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/CityGDPTotal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/CityInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/CityList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/CodeMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/CompanyInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/IndustryCompany.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/IndustryInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/ProductDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/ProductInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/ResponseData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/entity/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/CityInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/CompanyInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/FileUploadService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/IndustryInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/PersonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/ProductInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/impl/CityInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/impl/CompanyInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/impl/FileUploadImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/impl/IndustryInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/impl/PersonServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/service/impl/ProductInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/util/CheckFileType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/util/CustomObjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/util/ReadExcel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/util/WDWUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/websocket/WebSocketServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/websocket/WebSocketServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/websocket/WebSocketServer02$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/demo/websocket/WebSocketServer02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CityInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CityInfoMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -100,18 +94,55 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="264">
+              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
               <folding>
-                <element signature="n#select#0;n#mapper#0;n#!!top" />
-                <element signature="n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#delete#0;n#mapper#0;n#!!top" />
-                <element signature="n#select#1;n#mapper#0;n#!!top" />
-                <element signature="n#select#2;n#mapper#0;n#!!top" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#onOpen#0;class#WebSocketServer#0" />
+                <element signature="method#onOpen#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#onClose#0;class#WebSocketServer#0" />
+                <element signature="method#onClose#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#onMessage#0;class#WebSocketServer#0" />
+                <element signature="method#onMessage#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#onError#0;class#WebSocketServer#0" />
+                <element signature="method#onError#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#SendMessage#0;class#WebSocketServer#0" />
+                <element signature="method#SendMessage#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#BroadCastInfo#0;class#WebSocketServer#0" />
+                <element signature="method#BroadCastInfo#0;class#WebSocketServer#0" />
+                <element signature="docComment;method#SendMessage#1;class#WebSocketServer#0" />
+                <element signature="method#SendMessage#1;class#WebSocketServer#0" />
+                <element signature="method#showDayTime#0;class#WebSocketServer#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#updateCityInfo#0;class#CityInfoController#0" />
+                <element signature="method#roundByScale#0;class#CityInfoController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="316" selection-start-line="316" selection-end-line="316" />
+              <folding>
+                <element signature="n#plugins#0;n#pluginManagement#0;n#build#0;n#project#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -132,13 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>city_gdp_total</find>
-      <find>cityGdpTotal_unit</find>
-      <find>city_gdp_pp</find>
-      <find>cityGdpPp_unit</find>
-      <find>statistic_date</find>
-      <find>startTime</find>
-      <find>iter</find>
       <find>path</find>
       <find>fileName</find>
       <find>System.out</find>
@@ -162,12 +186,20 @@
       <find>showDayTime</find>
       <find>SendMessage</find>
       <find>spring-boot-starter-websocket</find>
+      <find>spring</find>
+      <find>xsi</find>
+      <find>spring-boot-starter-tomcat</find>
+      <find>main</find>
+      <find>@SpringBootApplication</find>
+      <find>Application</find>
+      <find>public static void main</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
     <dirStrings>
       <dir>D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src</dir>
+      <dir>D:\FJiang6\projects_jf\SiChuanMarket_SSM-master</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -177,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/CompanyInfo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/FileUploadMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/util/CustomObjectMapper.java" />
@@ -204,7 +235,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/entity/ProductDetail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/ProductInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/target/SiChuanMarket_SSM/WEB-INF/classes/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/MyWebsocket.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
@@ -218,16 +248,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/MyHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/MyHandshakeInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/SendMsgController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/ApiReturnObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/ApiReturnUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/CheckCenterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketH5Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer02.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -264,6 +296,11 @@
           <item name="SiChuanMarket_SSM Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SiChuanMarket_SSM Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -287,6 +324,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,63 +337,10 @@
               <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiChuanMarket_SSM-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiChuanMarket_SSM-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,12 +356,13 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40204272" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.json.schema.catalog" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ssm.demo.websocket" />
-      <recent name="com.ssm.demo.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
+      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\FJiang6\projects_jf\SiChuanMarket_SSM-master\src\main\java\com\ssm\demo\controller" />
@@ -390,10 +376,9 @@
       <recent name="com.ssm.demo.controller" />
       <recent name="com.ssm.demo.service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\resources" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main\webapp" />
-      <recent name="D:\backupData\bigData\Java\javaCode\SiChuanMarket_SSM\src\main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ssm.demo.websocket" />
+      <recent name="com.ssm.demo.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -459,6 +444,31 @@
             <option name="goals">
               <list>
                 <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="SiChuanMarket_SSM [validate]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="validate" />
               </list>
             </option>
             <option name="pomFileName" value="pom.xml" />
@@ -556,6 +566,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.SiChuanMarket_SSM [validate]" />
         <item itemvalue="Maven.SiChuanMarket_SSM [install]" />
         <item itemvalue="Maven.SiChuanMarket_SSM [deploy]" />
       </list>
@@ -654,12 +665,14 @@
       <workItem from="1562555485351" duration="4965000" />
       <workItem from="1562568977488" duration="4334000" />
       <workItem from="1562582297195" duration="631000" />
-      <workItem from="1562633817439" duration="1230000" />
+      <workItem from="1562633817439" duration="4971000" />
+      <workItem from="1562644371541" duration="5778000" />
+      <workItem from="1562657992304" duration="284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378972000" />
+    <option name="totallyTimeSpent" value="388775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -672,10 +685,10 @@
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.21727395" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.1268556" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" sideWeight="0.49865046" visible="true" weight="0.06715328" />
+      <window_info anchor="bottom" x="73" y="462" width="1363" height="567" id="Run" order="2" sideWeight="0.49865046" weight="0.4379562" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -701,7 +714,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
-      <window_info anchor="right" id="Maven" order="12" weight="0.26248312" />
+      <window_info active="true" anchor="right" id="Maven" order="12" visible="true" weight="0.39271256" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -720,9 +733,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f61a9b37-441b-47e0-a520-5e890dd583a8/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -884,38 +894,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="51" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/ApiReturnObject.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/util/CustomObjectMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-          <folding>
-            <element signature="n#mvc:annotation-driven#2;n#beans#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,39 +921,6 @@
         <state relative-caret-position="-5440" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="281" column="24" selection-start-line="281" selection-start-column="24" selection-end-line="281" selection-end-column="24" />
-          <folding>
-            <element signature="n#plugins#0;n#pluginManagement#0;n#build#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-682">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding>
-            <element signature="docComment;method#onOpen#0;class#WebSocketServer#0" />
-            <element signature="method#onOpen#0;class#WebSocketServer#0" />
-            <element signature="docComment;method#onClose#0;class#WebSocketServer#0" />
-            <element signature="method#onClose#0;class#WebSocketServer#0" />
-            <element signature="docComment;method#onMessage#0;class#WebSocketServer#0" />
-            <element signature="docComment;method#onError#0;class#WebSocketServer#0" />
-            <element signature="method#onError#0;class#WebSocketServer#0" />
-            <element signature="docComment;method#SendMessage#0;class#WebSocketServer#0" />
-            <element signature="method#SendMessage#0;class#WebSocketServer#0" />
-            <element signature="docComment;method#BroadCastInfo#0;class#WebSocketServer#0" />
-            <element signature="method#BroadCastInfo#0;class#WebSocketServer#0" />
-            <element signature="docComment;method#SendMessage#1;class#WebSocketServer#0" />
-            <element signature="method#SendMessage#1;class#WebSocketServer#0" />
-            <element signature="method#showDayTime#0;class#WebSocketServer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.2/mybatis-3.2.2.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -978,27 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CityInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/CityInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1012,20 +941,120 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CompanyInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/impl/CityInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/service/CityInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CityInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="1561">
+          <caret line="71" column="72" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
           <folding>
-            <element signature="n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#2;n#mapper#0;n#!!top" />
+            <element signature="n#mvc:interceptors#0;n#beans#0;n#!!top" />
+            <element signature="n#mvc:annotation-driven#2;n#beans#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/Interceptor/AdminLoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="51" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="n#filter#0;n#web-app#0;n#!!top" />
+            <element signature="n#servlet#0;n#web-app#0;n#!!top" />
+            <element signature="n#servlet-mapping#0;n#web-app#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/websocket/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#onOpen#0;class#WebSocketServer#0" />
+            <element signature="method#onOpen#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#onClose#0;class#WebSocketServer#0" />
+            <element signature="method#onClose#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#onMessage#0;class#WebSocketServer#0" />
+            <element signature="method#onMessage#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#onError#0;class#WebSocketServer#0" />
+            <element signature="method#onError#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#SendMessage#0;class#WebSocketServer#0" />
+            <element signature="method#SendMessage#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#BroadCastInfo#0;class#WebSocketServer#0" />
+            <element signature="method#BroadCastInfo#0;class#WebSocketServer#0" />
+            <element signature="docComment;method#SendMessage#1;class#WebSocketServer#0" />
+            <element signature="method#SendMessage#1;class#WebSocketServer#0" />
+            <element signature="method#showDayTime#0;class#WebSocketServer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/demo/controller/CityInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateCityInfo#0;class#CityInfoController#0" />
+            <element signature="method#roundByScale#0;class#CityInfoController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="316" selection-start-line="316" selection-end-line="316" />
+          <folding>
+            <element signature="n#plugins#0;n#pluginManagement#0;n#build#0;n#project#0;n#!!top" />
           </folding>
         </state>
       </provider>

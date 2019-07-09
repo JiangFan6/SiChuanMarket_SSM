@@ -21,12 +21,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-
 /**
  * WebSocket服务端示例
  *
  * @author wallimn，http://wallimn.iteye.com
  */
+
+
 @ServerEndpoint(value = "/ws/asset")
 @Component
 public class WebSocketServer {
