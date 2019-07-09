@@ -136,7 +136,6 @@ public class WebSocketServer {
         }
     }
 
-
     public static void showDayTime(String sessionId) {
         final String sessionId01 = sessionId;
         Date sendDate = new Date();
