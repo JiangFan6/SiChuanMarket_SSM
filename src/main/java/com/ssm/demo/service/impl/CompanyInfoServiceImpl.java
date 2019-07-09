@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 
-@Service
+@Service("CompanyInfoService")
 public class CompanyInfoServiceImpl implements CompanyInfoService {
 
     @Autowired

@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 
-@Service
+@Service("FileUploadService")
 public class FileUploadImpl implements FileUploadService {
 
     @Autowired

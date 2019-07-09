@@ -16,7 +16,6 @@ import java.text.DecimalFormat;
 import java.util.List;
 import java.util.UUID;
 
-@Service
 
 @Controller
 @CrossOrigin(origins = "*", maxAge = 3600)

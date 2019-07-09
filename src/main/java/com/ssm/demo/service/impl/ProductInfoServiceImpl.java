@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("ProductInfoService")
 public class ProductInfoServiceImpl implements ProductInfoService {
     @Autowired
     ProductInfoMapperDao productInfoMapperDao;

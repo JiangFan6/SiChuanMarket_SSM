@@ -27,11 +27,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!--    <dependency>
-              <groupId>javaee</groupId>
-              <artifactId>javaee-api</artifactId>
-              <version>5</version>
-            </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
         <dependency>
@@ -127,30 +122,19 @@
             <version>2.2.2</version>
         </dependency>
 
-        <dependency>
-            <groupId>c3p0</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.1.2</version>
-        </dependency>
+        <!--
+                <dependency>
+                    <groupId>c3p0</groupId>
+                    <artifactId>c3p0</artifactId>
+                    <version>0.9.1.2</version>
+                </dependency>
+        -->
 
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
-        <!--    <dependency>
-              <groupId>com.fasterxml.jackson.dataformat</groupId>
-              <artifactId>jackson-dataformat-xml</artifactId>
-              <version>2.9.6</version>
-            </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.6</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
             <version>2.9.6</version>
         </dependency>
 
@@ -160,13 +144,6 @@
             <artifactId>jackson-annotations</artifactId>
             <version>2.9.6</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.clojars.aperiodic/jackson-core-asl -->
-        <!--        <dependency>
-                    <groupId>org.clojars.aperiodic</groupId>
-                    <artifactId>jackson-core-asl</artifactId>
-                    <version>1.8.8</version>
-                </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
         <dependency>
@@ -181,14 +158,6 @@
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.13</version>
-        </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.11</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
@@ -276,46 +245,44 @@
         </dependency>
 
         <!-- WebSocket配置开始-->
-        <!--        <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-websocket</artifactId>
-                </dependency>-->
+
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.8.0-beta4</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-websocket</artifactId>
-            <version>4.0.6.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-messaging</artifactId>
-            <version>4.0.6.RELEASE</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.1.1.RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-parent</artifactId>
-            <version>2.1.3.RELEASE</version>
-            <type>pom</type>
-        </dependency>
 
 
         <!-- WebSocket配置结束-->
+
+        <!--虚拟机tomcat部署异常修复-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+
 
 
     </dependencies>
