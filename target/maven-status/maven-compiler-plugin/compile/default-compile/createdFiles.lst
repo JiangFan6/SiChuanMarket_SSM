@@ -2,7 +2,7 @@ com\ssm\demo\entity\CityList.class
 com\ssm\demo\dao\PersonMapperDao.class
 com\ssm\demo\entity\CityInfo.class
 com\ssm\demo\dao\FileUploadMapperDao.class
-com\ssm\demo\websocket\WebSocketServer$1.class
+com\ssm\demo\websocket\WebSocketServer01.class
 com\ssm\demo\service\CityInfoService.class
 com\ssm\demo\dao\CompanyInfoMapperDao.class
 com\ssm\demo\entity\Person.class
@@ -27,7 +27,6 @@ com\ssm\demo\util\ReadExcel.class
 com\ssm\demo\controller\IndustryInfoController.class
 com\ssm\demo\service\CompanyInfoService.class
 com\ssm\demo\dao\ProductInfoMapperDao.class
-com\ssm\demo\websocket\WebSocketServer.class
 com\ssm\demo\controller\CompanyInfoController.class
 com\ssm\demo\service\PersonService.class
 com\ssm\demo\websocket\WebSocketServer02.class
@@ -42,6 +41,7 @@ com\ssm\demo\entity\IndustryInfo.class
 com\ssm\demo\dao\CityInfoMapperDao.class
 com\ssm\demo\entity\ProductInfo.class
 com\ssm\demo\Interceptor\JWT.class
+com\ssm\demo\websocket\WebSocketServer01$1.class
 com\ssm\demo\util\CheckFileType.class
 com\ssm\demo\entity\CityGDPTotal.class
 com\ssm\demo\service\impl\ProductInfoServiceImpl.class
