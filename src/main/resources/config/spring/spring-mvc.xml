@@ -41,7 +41,9 @@
             <mvc:mapping path="/**"/><!--拦截所有的路径-->
             <mvc:exclude-mapping path="/person/login"/> <!--不拦截login-->
             <mvc:exclude-mapping path="/files/*"/> <!--不拦截files-->
-            <mvc:exclude-mapping path="/static/*"/> <!--不拦截files-->
+            <mvc:exclude-mapping path="/static/*"/> <!--不拦截static-->
+            <mvc:exclude-mapping path="/ws/*"/> <!--不拦截ws-->
+            <mvc:exclude-mapping path="/my-websocket/*"/> <!--不拦截my-websocket-->
             <bean class="com.ssm.demo.Interceptor.AdminLoginInterceptor">
             </bean>
 
@@ -85,8 +87,6 @@
             <!--<bean class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter"/>-->
         </mvc:message-converters>
     </mvc:annotation-driven>
-
-
 
 
 </beans>

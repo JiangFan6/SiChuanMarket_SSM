@@ -27,7 +27,6 @@
             <scope>test</scope>
         </dependency>
 
-
         <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
         <dependency>
             <groupId>javax</groupId>
@@ -36,66 +35,65 @@
             <scope>provided</scope>
         </dependency>
 
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>5.0.5.RELEASE</version>
+            <version>5.1.5.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.0.6.RELEASE</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -121,15 +119,6 @@
             <artifactId>cglib</artifactId>
             <version>2.2.2</version>
         </dependency>
-
-        <!--
-                <dependency>
-                    <groupId>c3p0</groupId>
-                    <artifactId>c3p0</artifactId>
-                    <version>0.9.1.2</version>
-                </dependency>
-        -->
-
 
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
@@ -245,16 +234,27 @@
         </dependency>
 
         <!-- WebSocket配置开始-->
-
-
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.8.0-beta4</version>
         </dependency>
 
+        <!--for Sockjs-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-websocket -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+            <version>2.1.6.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-messaging -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-messaging</artifactId>
+            <version>5.1.7.RELEASE</version>
+        </dependency>
 
 
         <!-- WebSocket配置结束-->
@@ -281,8 +281,6 @@
             <artifactId>activation</artifactId>
             <version>1.1.1</version>
         </dependency>
-
-
 
 
     </dependencies>

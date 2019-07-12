@@ -22,12 +22,19 @@ public class AdminLoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        System.out.println("preHandle-01");
+        System.out.println(request.getHeader("origin"));
+        System.out.println("request.getHeader(\"origin\")");
+
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json;charset=utf-8");
         String method = request.getMethod();
-        response.setHeader("Access-Control-Allow-Origin", "*");//解决跨域问题
+
+//        response.setHeader("Access-Control-Allow-Origin", "*");//解决跨域问题
+        response.setHeader("Access-Control-Allow-Origin", request.getHeader("origin"));//解决跨域问题
         response.setHeader("Access-Control-Allow-Headers", "Content-Type,Authorization,Cpp_Authorization,Cpp_Reuqest_***"); // 特殊的header需要定义,Content-Type等常用请求头不需要设置加入
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+        response.setHeader("Access-Control-Allow-Credentials", "true");
 
         /*配置返回数据*/
         ResponseData responseData = ResponseData.ok();
@@ -59,6 +66,7 @@ public class AdminLoginInterceptor implements HandlerInterceptor {
             System.out.println(person);
             System.out.println("用户信息-01");
             System.out.println(serviceResult);
+
 
             //判断是否成功  比如做验证之类的
             if (null != serviceResult) {

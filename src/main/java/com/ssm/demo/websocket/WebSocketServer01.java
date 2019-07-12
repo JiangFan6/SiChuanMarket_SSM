@@ -18,6 +18,7 @@ import javax.websocket.server.ServerEndpoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 /**
  * WebSocket服务端示例
@@ -25,7 +26,7 @@ import org.springframework.stereotype.Component;
  * @author wallimn，http://wallimn.iteye.com
  */
 
-
+//@CrossOrigin(origins = "*", maxAge = 3600)
 @ServerEndpoint(value = "/ws/asset01")
 @Component
 public class WebSocketServer01 {
