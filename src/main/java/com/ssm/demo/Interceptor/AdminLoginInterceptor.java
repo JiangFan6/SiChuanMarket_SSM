@@ -60,16 +60,22 @@ public class AdminLoginInterceptor implements HandlerInterceptor {
 
             System.out.println("拦截03");
             String header = request.getHeader("Authorization");//你需要的header
+            String authCode = request.getParameter("AuthCode");
 
             Person person = JWT.unsign(header, Person.class);
+            Person person2 = JWT.unsign(authCode, Person.class);
             Person serviceResult = personService.login(person);
+            Person serviceResult2 = personService.login(person2);
             System.out.println(person);
             System.out.println("用户信息-01");
             System.out.println(serviceResult);
+            System.out.println("用户信息-02");
+            System.out.println(authCode);
+            System.out.println(serviceResult2);
 
 
             //判断是否成功  比如做验证之类的
-            if (null != serviceResult) {
+            if (null != serviceResult | null != serviceResult2) {
                 return true;
             } else {
                 responseData = ResponseData.forbidden();

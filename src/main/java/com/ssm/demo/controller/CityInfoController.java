@@ -12,6 +12,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.net.URLEncoder;
 import java.text.DecimalFormat;
 import java.util.List;
 import java.util.UUID;
@@ -133,6 +136,30 @@ public class CityInfoController {
         }
 
         return final_responseData;
+    }
+
+    @RequestMapping(value = "/fileDown", method = RequestMethod.GET)
+    public void down(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        //模拟文件，myfile.txt为需要下载的文件
+        String fileName = request.getSession().getServletContext().getRealPath("static/file/response.xls");
+        System.out.println(fileName);
+        //获取输入流
+        InputStream bis = new BufferedInputStream(new FileInputStream(new File(fileName)));
+        //假如以中文名下载的话
+        String filename = "知识库导入模板66.xls";
+        //转码，免得文件名中文乱码
+        filename = URLEncoder.encode(filename,"UTF-8");
+        //设置文件下载头
+        response.addHeader("Content-Disposition", "attachment;filename=" + filename);
+        //1.设置文件ContentType类型，这样设置，会自动判断下载文件类型
+        response.setContentType("multipart/form-data");
+        BufferedOutputStream out = new BufferedOutputStream(response.getOutputStream());
+        int len = 0;
+        while((len = bis.read()) != -1){
+            out.write(len);
+            out.flush();
+        }
+        out.close();
     }
 
 

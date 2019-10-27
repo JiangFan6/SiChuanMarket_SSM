@@ -16,7 +16,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@CrossOrigin
 @Controller
 @EnableScheduling
 @SpringBootApplication
@@ -29,13 +28,11 @@ public class App {
     @Autowired
     private SimpMessagingTemplate messagingTemplate;
 
-    @CrossOrigin
     @GetMapping("/")
     public String index() {
         return "index";
     }
 
-    @CrossOrigin
     @MessageMapping("/send")
     @SendTo("/topic/send")
     public SocketMessage send(SocketMessage message) throws Exception {
@@ -44,7 +41,6 @@ public class App {
         return message;
     }
 
-    @CrossOrigin
     @Scheduled(fixedRate = 1000)
     @SendTo("/topic/callback")
     public Object callback() throws Exception {
